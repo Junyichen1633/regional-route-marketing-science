@@ -15,7 +15,7 @@ At first, I assumed the answer was only weak passenger demand. However, route su
 
 That led to a larger and more actionable question:
 
-If regional airports and airlines have limited marketing resources, which routes are worth supporting, and where can incremental marketing realistically improve route sustainability?
+> If regional airports and airlines have limited marketing resources, which routes are worth supporting, and where can incremental marketing realistically improve route sustainability?
 
 The YKF–YVR route is therefore the motivation for the project, not a case where this analysis claims to reconstruct Flair Airlines’ internal decision. The project expands from one personal travel disruption into a broader Marketing Science decision framework for Canadian regional airports.
 
