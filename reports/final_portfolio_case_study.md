@@ -131,9 +131,6 @@ A production-grade version would use Google Cloud as follows:
 - Use Meridian only when real marketing spend and route-level outcomes exist; until then, keep the response module scenario-based.
 - Export recommendations to Looker Studio or a lightweight dashboard for planning review.
 
-## Interview Framing
-
-This project demonstrates L4-level product data science because it handles an ambiguous business problem under imperfect data, avoids false causal claims, builds a complete decision workflow, and proposes an experiment design to validate recommendations.
 
 Strongest takeaways:
 
