@@ -30,17 +30,6 @@ The project has three modeling layers:
    - Compare objectives such as incremental passengers, contribution margin, route sustainability score, and marginal ROI.
    - Recommend where to invest, where to hold, and where marketing is unlikely to change the business outcome.
 
-## L4 Product Data Scientist Bar
-
-This project is designed to demonstrate:
-
-- Business problem framing
-- Data feasibility judgment
-- Measurement strategy under imperfect public data
-- Forecasting and causal reasoning
-- Optimization under constraints
-- Experiment design for validation
-- Clear executive communication
 
 ## Key Constraint
 
