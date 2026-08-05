@@ -1,4 +1,23 @@
+
 # Regional Air Route Marketing Science
+
+## Personal Motivation
+
+This project began with a personal travel problem.
+
+While studying at the University of Waterloo, I frequently traveled between Waterloo and Vancouver. For a period of time, Flair Airlines operated a direct and relatively affordable route between Waterloo International Airport (YKF) and Vancouver International Airport (YVR), which made the trip much more convenient than traveling through Toronto Pearson.
+
+When that route was discontinued, my travel became more expensive, less direct, and more time-consuming. This made me curious about a simple question:
+
+> Why do regional air routes disappear, even when they appear valuable to local travelers?
+
+At first, I assumed the answer was only weak passenger demand. However, route sustainability depends on a broader set of factors, including flight frequency, competition from nearby hub airports, seasonality, operating economics, network strategy, and passenger awareness.
+
+That led to a larger and more actionable question:
+
+If regional airports and airlines have limited marketing resources, which routes are worth supporting, and where can incremental marketing realistically improve route sustainability?
+
+The YKF–YVR route is therefore the motivation for the project, not a case where this analysis claims to reconstruct Flair Airlines’ internal decision. The project expands from one personal travel disruption into a broader Marketing Science decision framework for Canadian regional airports.
 
 ## Project Thesis
 
