@@ -1,0 +1,7 @@
+decision_bucket,experiment_design,pre_period_weeks,test_period_weeks,post_period_weeks,primary_metric,secondary_metrics,scale_success_ratio,maintain_success_ratio,guardrail
+scale_defend,matched_route_geo_lift,12,8,4,route_bookings_or_booking_proxy,route_searches;landing_page_conversions;load_factor;fare_yield,1.00,0.60,Do not scale if load factor or fare yield deteriorates materially.
+test_and_learn,matched_route_geo_lift,12,8,4,route_bookings_or_booking_proxy,route_searches;landing_page_conversions;load_factor;fare_yield,0.85,0.50,Do not scale if incremental demand appears to cannibalize nearby supported routes.
+maintain,incrementality_guardrail_test,12,6,4,route_booking_proxy_or_search_lift,route_page_conversion;search_share;load_factor,0.75,0.40,Keep spend capped unless there is clear evidence of leakage recapture or retention value.
+relaunch_feasibility,two_stage_capacity_gated_test,8,6,4,qualified_demand_signal,route_waitlist;survey_purchase_intent;search_demand;airline_capacity_commitment,0.90,0.50,Do not interpret demand signals as passenger lift until airline capacity is committed.
+evidence_first,data_quality_validation_test,12,4,4,schedule_and_booking_data_completeness,route_active_observation;frequency_observation;campaign_tracking_integrity,1.00,0.70,Improve measurement before allocating material media budget.
+low_priority,monitor_only,12,0,4,route_health_monitoring,airport_movement_context;search_demand;route_active_status,1.00,0.70,Do not fund unless route opportunity score changes materially.

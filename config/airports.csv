@@ -1,0 +1,12 @@
+iata,icao,name,city,province,country,latitude,longitude,airport_role,notes
+YKF,CYKF,Region of Waterloo International Airport,Waterloo Region,ON,Canada,43.4608,-80.3786,regional,Personal motivation anchor airport.
+YHM,CYHM,John C. Munro Hamilton International Airport,Hamilton,ON,Canada,43.1736,-79.9350,regional,Secondary Southern Ontario regional airport.
+YXU,CYXU,London International Airport,London,ON,Canada,43.0356,-81.1539,regional,Southwestern Ontario regional airport.
+YXX,CYXX,Abbotsford International Airport,Abbotsford,BC,Canada,49.0253,-122.3606,regional,Lower Mainland alternative airport.
+YLW,CYLW,Kelowna International Airport,Kelowna,BC,Canada,49.9561,-119.3778,regional,Interior BC regional airport.
+YVR,CYVR,Vancouver International Airport,Vancouver,BC,Canada,49.1967,-123.1815,hub,Western Canada hub and destination context.
+YYZ,CYYZ,Toronto Pearson International Airport,Toronto,ON,Canada,43.6777,-79.6248,hub,Primary hub competitor for Southern Ontario.
+YYC,CYYC,Calgary International Airport,Calgary,AB,Canada,51.1225,-114.0133,hub,Western Canada hub and common regional route destination.
+YEG,CYEG,Edmonton International Airport,Edmonton,AB,Canada,53.3097,-113.5800,hub,Western Canada hub and common regional route destination.
+YHZ,CYHZ,Halifax Stanfield International Airport,Halifax,NS,Canada,44.8808,-63.5086,hub,Eastern Canada hub/context airport.
+

@@ -1,0 +1,5 @@
+channel,true_rank,max_lift_pct,half_saturation_monthly_spend_cad,adstock_decay,default_budget_share,notes
+paid_search,1,0.070,12000,0.35,0.35,Highest intent channel; expected strongest passenger-proxy response per dollar.
+paid_social,2,0.050,18000,0.45,0.30,Mid-funnel demand creation and retargeting channel.
+local_ooh,3,0.035,25000,0.65,0.20,Slower-build awareness channel with longer carryover.
+display_video,4,0.025,14000,0.25,0.15,Lower-intent reach channel; useful but weaker direct response.

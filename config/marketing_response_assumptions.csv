@@ -1,0 +1,10 @@
+scenario,route_segment,max_lift_pct,half_saturation_spend_cad,adstock_carryover_multiplier,notes
+conservative,short_haul,0.015,60000,0.90,Low response because many short-haul routes are already convenience-driven or substitution-heavy.
+conservative,medium_haul,0.020,90000,0.90,Lower-bound response for regional connectivity campaigns.
+conservative,long_haul,0.025,130000,0.90,Lower-bound response for long-haul regional access where awareness may matter but capacity risk remains.
+base,short_haul,0.030,50000,1.00,Central scenario for short-haul route marketing support.
+base,medium_haul,0.045,80000,1.00,Central scenario for medium-haul regional-to-hub campaigns.
+base,long_haul,0.060,120000,1.00,Central scenario for long-haul regional access campaigns.
+optimistic,short_haul,0.055,45000,1.12,Upper scenario when route awareness and leakage recapture are meaningful.
+optimistic,medium_haul,0.080,70000,1.12,Upper scenario for well-timed regional route campaigns.
+optimistic,long_haul,0.110,100000,1.12,Upper scenario for long-haul routes with pent-up demand or strong anchor-market demand.

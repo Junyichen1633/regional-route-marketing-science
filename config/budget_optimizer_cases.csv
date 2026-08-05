@@ -1,0 +1,8 @@
+case_id,scenario,total_budget_cad,objective,allow_relaunch,max_relaunch_budget_cad,max_budget_per_route_cad,max_routes_funded,min_active_routes_funded,notes
+pilot_health_250k,base,250000,route_health,0,0,100000,4,2,Small active-route pilot optimized for route-health lift.
+balanced_health_500k,base,500000,route_health,1,75000,150000,7,4,Balanced active plus limited relaunch portfolio optimized for route-health lift.
+growth_passengers_500k,base,500000,incremental_passengers,0,0,150000,6,3,Active-route allocation optimized for incremental passenger proxy.
+portfolio_value_500k,base,500000,portfolio_value,1,75000,150000,7,4,Recommended balanced case combining health lift passenger proxy and strategic priority.
+downside_portfolio_500k,conservative,500000,portfolio_value,1,75000,150000,7,4,Downside stress test using conservative response assumptions.
+upside_portfolio_500k,optimistic,500000,portfolio_value,1,75000,150000,7,4,Upside stress test using optimistic response assumptions.
+broad_test_875k,base,875000,portfolio_value,1,150000,150000,10,6,Broader test portfolio roughly matching the Phase 4 selected-test budget envelope.

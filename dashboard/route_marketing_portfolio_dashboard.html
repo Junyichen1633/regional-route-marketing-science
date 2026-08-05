@@ -1,0 +1,1071 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Regional Air Route Marketing Science Dashboard</title>
+  <style>
+    :root {
+      --paper: #f6f8f5;
+      --surface: #ffffff;
+      --surface-alt: #eef3f1;
+      --ink: #23262b;
+      --muted: #66706d;
+      --line: #d8dedb;
+      --green: #23756b;
+      --blue: #2f6ea5;
+      --amber: #c47c2c;
+      --red: #b84a45;
+      --violet: #755e9a;
+      --shadow: 0 14px 30px rgba(29, 39, 44, 0.09);
+      --radius: 8px;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      min-width: 320px;
+    }
+
+    button, select {
+      font: inherit;
+    }
+
+    .shell {
+      min-height: 100vh;
+      display: grid;
+      grid-template-columns: 248px minmax(0, 1fr);
+    }
+
+    .sidebar {
+      background: #20272a;
+      color: #f7faf8;
+      padding: 24px 20px;
+      border-right: 1px solid rgba(255, 255, 255, 0.08);
+      position: sticky;
+      top: 0;
+      height: 100vh;
+      overflow: auto;
+    }
+
+    .brand {
+      display: grid;
+      gap: 8px;
+      margin-bottom: 28px;
+    }
+
+    .brand-mark {
+      width: 40px;
+      height: 40px;
+      border-radius: var(--radius);
+      background: linear-gradient(135deg, var(--green), var(--amber));
+      display: grid;
+      place-items: center;
+      font-weight: 800;
+      color: white;
+    }
+
+    .brand h1 {
+      font-size: 18px;
+      line-height: 1.18;
+      margin: 0;
+      font-weight: 750;
+    }
+
+    .brand p {
+      color: #b7c2be;
+      margin: 0;
+      font-size: 13px;
+      line-height: 1.45;
+    }
+
+    .nav {
+      display: grid;
+      gap: 8px;
+    }
+
+    .nav button {
+      border: 0;
+      width: 100%;
+      text-align: left;
+      padding: 10px 12px;
+      color: #d8e2de;
+      background: transparent;
+      border-left: 3px solid transparent;
+      cursor: pointer;
+    }
+
+    .nav button.active {
+      background: rgba(255, 255, 255, 0.08);
+      border-left-color: var(--amber);
+      color: white;
+    }
+
+    .sidebar-note {
+      margin-top: 28px;
+      padding: 12px;
+      background: rgba(255, 255, 255, 0.07);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: var(--radius);
+      color: #dbe5e1;
+      font-size: 12px;
+      line-height: 1.5;
+    }
+
+    main {
+      min-width: 0;
+    }
+
+    .topbar {
+      background: rgba(246, 248, 245, 0.92);
+      border-bottom: 1px solid var(--line);
+      padding: 18px 28px;
+      position: sticky;
+      top: 0;
+      z-index: 8;
+      backdrop-filter: blur(12px);
+      display: flex;
+      justify-content: space-between;
+      gap: 18px;
+      align-items: center;
+    }
+
+    .topbar h2 {
+      margin: 0;
+      font-size: 20px;
+    }
+
+    .topbar p {
+      margin: 4px 0 0;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .case-select {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+
+    .case-select label {
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    select {
+      border: 1px solid var(--line);
+      background: var(--surface);
+      color: var(--ink);
+      padding: 8px 30px 8px 10px;
+      border-radius: var(--radius);
+      min-width: 240px;
+    }
+
+    .content {
+      padding: 24px 28px 36px;
+      display: grid;
+      gap: 22px;
+    }
+
+    .view {
+      display: none;
+      gap: 22px;
+    }
+
+    .view.active {
+      display: grid;
+    }
+
+    .kpi-grid {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(120px, 1fr));
+      gap: 12px;
+    }
+
+    .kpi {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 14px;
+      box-shadow: var(--shadow);
+      min-height: 96px;
+    }
+
+    .kpi .label {
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    .kpi .value {
+      font-size: 26px;
+      font-weight: 760;
+      margin-top: 8px;
+      white-space: nowrap;
+    }
+
+    .kpi .hint {
+      color: var(--muted);
+      font-size: 12px;
+      margin-top: 4px;
+    }
+
+    .grid-two {
+      display: grid;
+      grid-template-columns: minmax(0, 1.1fr) minmax(360px, 0.9fr);
+      gap: 16px;
+    }
+
+    .grid-three {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .panel {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    .panel-head {
+      padding: 14px 16px;
+      border-bottom: 1px solid var(--line);
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      align-items: center;
+    }
+
+    .panel-head h3 {
+      margin: 0;
+      font-size: 15px;
+    }
+
+    .panel-head span {
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .panel-body {
+      padding: 16px;
+    }
+
+    .map-wrap {
+      position: relative;
+      min-height: 420px;
+    }
+
+    #routeMap {
+      width: 100%;
+      height: 420px;
+      display: block;
+      background: #edf2ef;
+      border-radius: var(--radius);
+      border: 1px solid var(--line);
+    }
+
+    .legend {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 12px;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .legend span {
+      display: inline-flex;
+      gap: 6px;
+      align-items: center;
+    }
+
+    .dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--green);
+      display: inline-block;
+    }
+
+    .dot.relaunch { background: var(--amber); }
+    .dot.maintain { background: var(--blue); }
+    .dot.evidence { background: var(--violet); }
+
+    .route-list {
+      display: grid;
+      gap: 8px;
+      max-height: 414px;
+      overflow: auto;
+      padding-right: 4px;
+    }
+
+    .route-row {
+      border: 1px solid var(--line);
+      background: var(--surface);
+      border-radius: var(--radius);
+      padding: 10px 12px;
+      cursor: pointer;
+      display: grid;
+      grid-template-columns: 88px minmax(0, 1fr) 90px;
+      gap: 10px;
+      align-items: center;
+      min-height: 60px;
+    }
+
+    .route-row.active {
+      border-color: var(--green);
+      box-shadow: inset 3px 0 0 var(--green);
+    }
+
+    .route-code {
+      font-weight: 760;
+      white-space: nowrap;
+    }
+
+    .route-meta {
+      color: var(--muted);
+      font-size: 12px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .route-budget {
+      text-align: right;
+      font-weight: 720;
+    }
+
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 4px 8px;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 700;
+      background: var(--surface-alt);
+      color: var(--ink);
+      border: 1px solid var(--line);
+      white-space: nowrap;
+    }
+
+    .pill.relaunch_feasibility { border-color: rgba(196, 124, 44, 0.45); color: #825018; background: #fbf1e4; }
+    .pill.scale_defend { border-color: rgba(35, 117, 107, 0.45); color: #15564e; background: #e5f2ef; }
+    .pill.test_and_learn { border-color: rgba(47, 110, 165, 0.42); color: #244f77; background: #e8f0f8; }
+    .pill.maintain { border-color: rgba(117, 94, 154, 0.34); color: #53416f; background: #f1edf7; }
+
+    .detail-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+    }
+
+    .metric {
+      background: var(--surface-alt);
+      border-radius: var(--radius);
+      padding: 10px;
+      min-height: 70px;
+    }
+
+    .metric strong {
+      display: block;
+      font-size: 20px;
+      margin-bottom: 4px;
+    }
+
+    .metric span {
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .section-title {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 12px;
+    }
+
+    .section-title h3 {
+      margin: 0;
+      font-size: 16px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 13px;
+    }
+
+    th, td {
+      padding: 10px 8px;
+      border-bottom: 1px solid var(--line);
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th {
+      color: var(--muted);
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0;
+      background: #f8faf8;
+      position: sticky;
+      top: 0;
+    }
+
+    td.num, th.num {
+      text-align: right;
+      white-space: nowrap;
+    }
+
+    .bar-list {
+      display: grid;
+      gap: 10px;
+    }
+
+    .bar-row {
+      display: grid;
+      grid-template-columns: 168px minmax(100px, 1fr) 64px;
+      align-items: center;
+      gap: 10px;
+      font-size: 13px;
+    }
+
+    .bar-track {
+      height: 12px;
+      background: var(--surface-alt);
+      border-radius: 999px;
+      overflow: hidden;
+      border: 1px solid var(--line);
+    }
+
+    .bar-fill {
+      height: 100%;
+      background: var(--green);
+      width: 0%;
+    }
+
+    .bar-fill.blue { background: var(--blue); }
+    .bar-fill.amber { background: var(--amber); }
+    .bar-fill.red { background: var(--red); }
+
+    .scenario-table-wrap,
+    .experiment-table-wrap {
+      overflow: auto;
+      max-height: 430px;
+    }
+
+    .callout {
+      border-left: 4px solid var(--amber);
+      background: #fff8ee;
+      padding: 12px 14px;
+      border-radius: var(--radius);
+      color: #624015;
+      line-height: 1.5;
+      font-size: 13px;
+    }
+
+    .empty {
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    @media (max-width: 1050px) {
+      .shell {
+        grid-template-columns: 1fr;
+      }
+      .sidebar {
+        position: static;
+        height: auto;
+      }
+      .nav {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+      }
+      .topbar {
+        position: static;
+        flex-direction: column;
+        align-items: stretch;
+      }
+      .case-select {
+        justify-content: flex-start;
+      }
+      .kpi-grid,
+      .grid-three,
+      .grid-two {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .content,
+      .topbar {
+        padding-left: 16px;
+        padding-right: 16px;
+      }
+      .nav {
+        grid-template-columns: 1fr 1fr;
+      }
+      .kpi-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+      .route-row {
+        grid-template-columns: 74px minmax(0, 1fr);
+      }
+      .route-budget {
+        grid-column: 1 / -1;
+        text-align: left;
+      }
+      .bar-row {
+        grid-template-columns: 1fr;
+        gap: 5px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-mark">RM</div>
+        <h1>Regional Route Marketing Science</h1>
+        <p>Portfolio view for route opportunity, response sensitivity, budget allocation, and validation design.</p>
+      </div>
+      <nav class="nav" aria-label="Dashboard sections">
+        <button class="active" type="button" data-view="portfolio">Portfolio</button>
+        <button type="button" data-view="sensitivity">Sensitivity</button>
+        <button type="button" data-view="experiments">Experiments</button>
+        <button type="button" data-view="method">Method</button>
+      </nav>
+      <div class="sidebar-note">
+        Passenger and lift values are proxies. The dashboard supports planning and experiment prioritization, not observed causal channel ROI.
+      </div>
+    </aside>
+
+    <main>
+      <header class="topbar">
+        <div>
+          <h2 id="viewTitle">Portfolio Allocation</h2>
+          <p id="viewSubtitle">Recommended budget plan, route map, and allocation details.</p>
+        </div>
+        <div class="case-select">
+          <label for="caseSelect">Optimization case</label>
+          <select id="caseSelect"></select>
+        </div>
+      </header>
+
+      <section class="content">
+        <div id="portfolio" class="view active">
+          <div class="kpi-grid" id="kpiGrid"></div>
+
+          <div class="grid-two">
+            <section class="panel">
+              <div class="panel-head">
+                <h3>Route Portfolio Map</h3>
+                <span id="mapHint">Funded route network</span>
+              </div>
+              <div class="panel-body">
+                <div class="map-wrap">
+                  <canvas id="routeMap" width="980" height="520"></canvas>
+                </div>
+                <div class="legend">
+                  <span><i class="dot"></i>Scale / test</span>
+                  <span><i class="dot relaunch"></i>Relaunch feasibility</span>
+                  <span><i class="dot maintain"></i>Maintain</span>
+                  <span><i class="dot evidence"></i>Evidence first</span>
+                </div>
+              </div>
+            </section>
+
+            <section class="panel">
+              <div class="panel-head">
+                <h3>Funded Routes</h3>
+                <span id="routeCount"></span>
+              </div>
+              <div class="panel-body">
+                <div class="route-list" id="routeList"></div>
+              </div>
+            </section>
+          </div>
+
+          <div class="grid-two">
+            <section class="panel">
+              <div class="panel-head">
+                <h3 id="selectedRouteTitle">Route Detail</h3>
+                <span id="selectedRouteStatus"></span>
+              </div>
+              <div class="panel-body">
+                <div class="detail-grid" id="routeDetails"></div>
+              </div>
+            </section>
+
+            <section class="panel">
+              <div class="panel-head">
+                <h3>Case Comparison</h3>
+                <span>Objective tradeoffs</span>
+              </div>
+              <div class="panel-body scenario-table-wrap">
+                <table id="caseTable"></table>
+              </div>
+            </section>
+          </div>
+        </div>
+
+        <div id="sensitivity" class="view">
+          <div class="grid-three">
+            <section class="panel">
+              <div class="panel-head"><h3>Recovery Summary</h3><span>Average across scenarios</span></div>
+              <div class="panel-body"><div id="sensitivityBars" class="bar-list"></div></div>
+            </section>
+            <section class="panel">
+              <div class="panel-head"><h3>Mechanism Stress Test</h3><span>Controlled saturation</span></div>
+              <div class="panel-body"><div id="mechanismBars" class="bar-list"></div></div>
+            </section>
+            <section class="panel">
+              <div class="panel-head"><h3>Interpretation</h3><span>Planning caveat</span></div>
+              <div class="panel-body">
+                <div class="callout">
+                  Budget direction is more stable than exact channel ranking. Simulated spend can guide scenario planning, but precise channel ROI still needs real spend variation and partner outcome data.
+                </div>
+              </div>
+            </section>
+          </div>
+          <section class="panel">
+            <div class="panel-head"><h3>Sensitivity Scenario Table</h3><span>Model recovery by mechanism and effect strength</span></div>
+            <div class="panel-body scenario-table-wrap">
+              <table id="sensitivityTable"></table>
+            </div>
+          </section>
+        </div>
+
+        <div id="experiments" class="view">
+          <section class="panel">
+            <div class="panel-head"><h3>Validation Plan</h3><span>Recommended case: portfolio_value_500k</span></div>
+            <div class="panel-body experiment-table-wrap">
+              <table id="experimentTable"></table>
+            </div>
+          </section>
+          <section class="panel">
+            <div class="panel-head"><h3>Control Matches</h3><span>Three candidates per funded route</span></div>
+            <div class="panel-body experiment-table-wrap">
+              <table id="controlTable"></table>
+            </div>
+          </section>
+        </div>
+
+        <div id="method" class="view">
+          <div class="grid-two">
+            <section class="panel">
+              <div class="panel-head"><h3>Model Flow</h3><span>Decision workflow</span></div>
+              <div class="panel-body">
+                <table>
+                  <tbody>
+                    <tr><th>1</th><td>Build route-month panel from public airport context and sourced route events.</td></tr>
+                    <tr><th>2</th><td>Score route opportunity using service viability, demand context, strategic fit, hub pressure, and evidence confidence.</td></tr>
+                    <tr><th>3</th><td>Simulate marketing response curves with adstock and saturation assumptions.</td></tr>
+                    <tr><th>4</th><td>Run sensitivity and recovery analysis to test channel ranking and budget direction.</td></tr>
+                    <tr><th>5</th><td>Optimize route-budget pairs under portfolio constraints.</td></tr>
+                    <tr><th>6</th><td>Validate recommendations with matched-route, geo-lift, or capacity-gated tests.</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+            <section class="panel">
+              <div class="panel-head"><h3>Claims And Guardrails</h3><span>Interview-safe framing</span></div>
+              <div class="panel-body">
+                <div class="callout">
+                  The project supports route-level portfolio direction and experiment prioritization under public-data constraints. It does not claim observed causal channel ROI.
+                </div>
+                <div style="height:12px"></div>
+                <table>
+                  <tbody>
+                    <tr><th>Future production path</th><td>BigQuery for route-month data, Vertex AI Pipelines for reproducible scoring, Meridian when real marketing spend and outcomes exist.</td></tr>
+                    <tr><th>Primary missing data</th><td>Route-level bookings, campaign spend, conversion events, load factor, and fare/yield guardrails.</td></tr>
+                    <tr><th>Best interview point</th><td>Budget direction is more stable than exact channel ranking, so the recommendation must flow into experiments before scaling.</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script>
+    const DATA = {"cases": [{"case_id": "pilot_health_250k", "scenario": "base", "objective": "route_health", "total_budget_cad": 250000.0, "allocated_budget_cad": 250000.0, "unspent_budget_cad": 0.0, "funded_routes": 4.0, "active_routes_funded": 4.0, "relaunch_routes_funded": 0.0, "relaunch_budget_cad": 0.0, "incremental_passenger_proxy": 4550.4496, "incremental_route_health_points": 13.7584, "cost_per_incremental_passenger_proxy_cad": 54.9396, "objective_value": 13.7584, "notes": "Small active-route pilot optimized for route-health lift."}, {"case_id": "balanced_health_500k", "scenario": "base", "objective": "route_health", "total_budget_cad": 500000.0, "allocated_budget_cad": 500000.0, "unspent_budget_cad": 0.0, "funded_routes": 7.0, "active_routes_funded": 7.0, "relaunch_routes_funded": 0.0, "relaunch_budget_cad": 0.0, "incremental_passenger_proxy": 18080.9174, "incremental_route_health_points": 24.4766, "cost_per_incremental_passenger_proxy_cad": 27.6535, "objective_value": 24.4766, "notes": "Balanced active plus limited relaunch portfolio optimized for route-health lift."}, {"case_id": "growth_passengers_500k", "scenario": "base", "objective": "incremental_passengers", "total_budget_cad": 500000.0, "allocated_budget_cad": 500000.0, "unspent_budget_cad": 0.0, "funded_routes": 6.0, "active_routes_funded": 6.0, "relaunch_routes_funded": 0.0, "relaunch_budget_cad": 0.0, "incremental_passenger_proxy": 23734.2216, "incremental_route_health_points": 17.3945, "cost_per_incremental_passenger_proxy_cad": 21.0666, "objective_value": 23734.2216, "notes": "Active-route allocation optimized for incremental passenger proxy."}, {"case_id": "portfolio_value_500k", "scenario": "base", "objective": "portfolio_value", "total_budget_cad": 500000.0, "allocated_budget_cad": 500000.0, "unspent_budget_cad": 0.0, "funded_routes": 7.0, "active_routes_funded": 6.0, "relaunch_routes_funded": 1.0, "relaunch_budget_cad": 75000.0, "incremental_passenger_proxy": 16935.9506, "incremental_route_health_points": 22.2229, "cost_per_incremental_passenger_proxy_cad": 29.523, "objective_value": 23.6681, "notes": "Recommended balanced case combining health lift passenger proxy and strategic priority."}, {"case_id": "downside_portfolio_500k", "scenario": "conservative", "objective": "portfolio_value", "total_budget_cad": 500000.0, "allocated_budget_cad": 500000.0, "unspent_budget_cad": 0.0, "funded_routes": 7.0, "active_routes_funded": 6.0, "relaunch_routes_funded": 1.0, "relaunch_budget_cad": 50000.0, "incremental_passenger_proxy": 7970.0024, "incremental_route_health_points": 14.2976, "cost_per_incremental_passenger_proxy_cad": 62.7352, "objective_value": 16.6563, "notes": "Downside stress test using conservative response assumptions."}, {"case_id": "upside_portfolio_500k", "scenario": "optimistic", "objective": "portfolio_value", "total_budget_cad": 500000.0, "allocated_budget_cad": 500000.0, "unspent_budget_cad": 0.0, "funded_routes": 7.0, "active_routes_funded": 6.0, "relaunch_routes_funded": 1.0, "relaunch_budget_cad": 75000.0, "incremental_passenger_proxy": 37855.0293, "incremental_route_health_points": 34.7583, "cost_per_incremental_passenger_proxy_cad": 13.2083, "objective_value": 34.5739, "notes": "Upside stress test using optimistic response assumptions."}, {"case_id": "broad_test_875k", "scenario": "base", "objective": "portfolio_value", "total_budget_cad": 875000.0, "allocated_budget_cad": 875000.0, "unspent_budget_cad": 0.0, "funded_routes": 10.0, "active_routes_funded": 8.0, "relaunch_routes_funded": 2.0, "relaunch_budget_cad": 150000.0, "incremental_passenger_proxy": 24538.7911, "incremental_route_health_points": 36.2108, "cost_per_incremental_passenger_proxy_cad": 35.6578, "objective_value": 33.6155, "notes": "Broader test portfolio roughly matching the Phase 4 selected-test budget envelope."}], "allocations": [{"case_id": "pilot_health_250k", "scenario": "base", "objective": "route_health", "route_id": "YKF_YEG", "campaign_budget_cad": 75000.0, "route_segment": "long_haul", "end_of_period_route_status": "active", "capacity_required_flag": 0.0, "decision_bucket": "scale_defend", "incremental_passenger_proxy": 776.3288, "incremental_route_health_points": 3.849, "cost_per_incremental_passenger_proxy_cad": 96.6086, "marketing_support_priority_score_v0": 71.6207, "route_sustainability_score_v0": 73.3315, "data_confidence_score": 93.9236, "source_recommendation": "Scale or defend with controlled campaign"}, {"case_id": "pilot_health_250k", "scenario": "base", "objective": "route_health", "route_id": "YKF_YHZ", "campaign_budget_cad": 75000.0, "route_segment": "medium_haul", "end_of_period_route_status": "active", "capacity_required_flag": 0.0, "decision_bucket": "evidence_first", "incremental_passenger_proxy": 847.709, "incremental_route_health_points": 4.0283, "cost_per_incremental_passenger_proxy_cad": 88.4738, "marketing_support_priority_score_v0": 59.4606, "route_sustainability_score_v0": 67.9848, "data_confidence_score": 100.0, "source_recommendation": "Watchlist; improve evidence first"}, {"case_id": "pilot_health_250k", "scenario": "base", "objective": "route_health", "route_id": "YLW_YYC", "campaign_budget_cad": 50000.0, "route_segment": "medium_haul", "end_of_period_route_status": "active", "capacity_required_flag": 0.0, "decision_bucket": "maintain", "incremental_passenger_proxy": 1005.3463, "incremental_route_health_points": 3.042, "cost_per_incremental_passenger_proxy_cad": 49.7341, "marketing_support_priority_score_v0": 56.8998, "route_sustainability_score_v0": 81.4194, "data_confidence_score": 93.75, "source_recommendation": "Maintain service; monitor capacity and leakage"}, {"case_id": "pilot_health_250k", "scenario": "base", "objective": "route_health", "route_id": "YXX_YYC", "campaign_budget_cad": 50000.0, "route_segment": "medium_haul", "end_of_period_route_status": "active", "capacity_required_flag": 0.0, "decision_bucket": "test_and_learn", "incremental_passenger_proxy": 1921.0655, "incremental_route_health_points": 2.8391, "cost_per_incremental_passenger_proxy_cad": 26.0272, "marketing_support_priority_score_v0": 65.8572, "route_sustainability_score_v0": 77.5137, "data_confidence_score": 93.75, "source_recommendation": "Run test-and-learn marketing"}, {"case_id": "balanced_health_500k", "scenario": "base", "objective": "route_health", "route_id": "YKF_YEG", "campaign_budget_cad": 100000.0, "route_segment": "long_haul", "end_of_period_route_status": "active", "capacity_required_flag": 0.0, "decision_bucket": "scale_defend", "incremental_passenger_proxy": 917.4795, "incremental_route_health_points": 4.5489, "cost_per_incremental_passenger_proxy_cad": 108.9943, "marketing_support_priority_score_v0": 71.6207, "route_sustainability_score_v0": 73.3315, "data_confidence_score": 93.9236, "source_recommendation": "Scale or defend with controlled campaign"}, {"case_id": "balanced_health_500k", "scenario": "base", "objective": "route_health", "route_id": "YKF_YHZ", "campaign_budget_cad": 75000.0, "route_segment": "medium_haul", "end_of_period_route_status": "active", "capacity_required_flag": 0.0, "decision_bucket": "evidence_first", "incremental_passenger_proxy": 847.709, "incremental_route_health_points": 4.0283, "cost_per_incremental_passenger_proxy_cad": 88.4738, "marketing_support_priority_score_v0": 59.4606, "route_sustainability_score_v0": 67.9848, "data_confidence_score": 100.0, "source_recommendation": "Watchlist; improve evidence first"}, {"case_id": "balanced_health_500k", "scenario": "base", "objective": "route_health", "route_id": "YLW_YYC", "campaign_budget_cad": 75000.0, "route_segment": "medium_haul", "end_of_period_route_status": "active", "capacity_required_flag": 0.0, "decision_bucket": "maintain", "incremental_passenger_proxy": 1264.7905, "incremental_route_health_points": 3.8271, "cost_per_incremental_passenger_proxy_cad": 59.2984, "marketing_support_priority_score_v0": 56.8998, "route_sustainability_score_v0": 81.4194, "data_confidence_score": 93.75, "source_recommendation": "Maintain service; monitor capacity and leakage"}, {"case_id": "balanced_health_500k", "scenario": "base", "objective": "route_health", "route_id": "YXU_YYC", "campaign_budget_cad": 75000.0, "route_segment": "long_haul", "end_of_period_route_status": "active", "capacity_required_flag": 0.0, "decision_bucket": "test_and_learn", "incremental_passenger_proxy": 1526.9246, "incremental_route_health_points": 3.4975, "cost_per_incremental_passenger_proxy_cad": 49.1183, "marketing_support_priority_score_v0": 63.3966, "route_sustainability_score_v0": 80.8266, "data_confidence_score": 100.0, "source_recommendation": "Run test-and-learn marketing"}, {"case_id": "balanced_health_500k", "scenario": "base", "objective": "route_health", "route_id": "YXX_YYC", "campaign_budget_cad": 75000.0, "route_segment": "medium_haul", "end_of_period_route_status": "active", "capacity_required_flag": 0.0, "decision_bucket": "test_and_learn", "incremental_passenger_proxy": 2416.8243, "incremental_route_health_points": 3.5717, "cost_per_incremental_passenger_proxy_cad": 31.0325, "marketing_support_priority_score_v0": 65.8572, "route_sustainability_score_v0": 77.5137, "data_confidence_score": 93.75, "source_recommendation": "Run test-and-learn marketing"}, {"case_id": "balanced_health_500k", "scenario": "base", "objective": "route_health", "route_id": "YLW_YVR", "campaign_budget_cad": 50000.0, "route_segment": "short_haul", "end_of_period_route_status": "active", "capacity_required_flag": 0.0, "decision_bucket": "maintain", "incremental_passenger_proxy": 9308.7015, "incremental_route_health_points": 2.4047, "cost_per_incremental_passenger_proxy_cad": 5.3713, "marketing_support_priority_score_v0": 50.5784, "route_sustainability_score_v0": 86.3659, "data_confidence_score": 93.75, "source_recommendation": "Maintain service; monitor capacity and leakage"}, {"case_id": "balanced_health_500k", "scenario": "base", "objective": "route_health", "route_id": "YXX_YEG", "campaign_budget_cad": 50000.0, "route_segment": "medium_haul", "end_of_period_route_status": "active", "capacity_required_flag": 0.0, "decision_bucket": "maintain", "incremental_passenger_proxy": 1798.488, "incremental_route_health_points": 2.5984, "cost_per_incremental_passenger_proxy_cad": 27.8011, "marketing_support_priority_score_v0": 58.7321, "route_sustainability_score_v0": 71.5851, "data_confidence_score": 93.75, "source_recommendation": "Maintain service; monitor capacity and leakage"}, {"case_id": "growth_passengers_500k", "scenario": "base", "objective": "incremental_passengers", "route_id": "YLW_YVR", "campaign_budget_cad": 150000.0, "route_segment": "short_haul", "end_of_period_route_status": "active", "capacity_required_flag": 0.0, "decision_bucket": "maintain", "incremental_passenger_proxy": 13963.0523, "incremental_route_health_points": 3.607, "cost_per_incremental_passenger_proxy_cad": 10.7426, "marketing_support_priority_score_v0": 50.5784, "route_sustainability_score_v0": 86.3659, "data_confidence_score": 93.75, "source_recommendation": "Maintain service; monitor capacity and leakage"}, {"case_id": "growth_passengers_500k", "scenario": "base", "objective": "incremental_passengers", "route_id": "YKF_YYC", "campaign_budget_cad": 100000.0, "route_segment": "long_haul", "end_of_period_route_status": "active", "capacity_required_flag": 0.0, "decision_bucket": "test_and_learn", "incremental_passenger_proxy": 2645.9702, "incremental_route_health_points": 3.3923, "cost_per_incremental_passenger_proxy_cad": 37.7933, "marketing_support_priority_score_v0": 68.1332, "route_sustainability_score_v0": 76.3453, "data_confidence_score": 52.0833, "source_recommendation": "Run test-and-learn marketing"}, {"case_id": "growth_passengers_500k", "scenario": "base", "objective": "incremental_passengers", "route_id": "YXX_YEG", "campaign_budget_cad": 75000.0, "route_segment": "medium_haul", "end_of_period_route_status": "active", "capacity_required_flag": 0.0, "decision_bucket": "maintain", "incremental_passenger_proxy": 2262.6139, "incremental_route_health_points": 3.269, "cost_per_incremental_passenger_proxy_cad": 33.1475, "marketing_support_priority_score_v0": 58.7321, "route_sustainability_score_v0": 71.5851, "data_confidence_score": 93.75, "source_recommendation": "Maintain service; monitor capacity and leakage"}, {"case_id": "growth_passengers_500k", "scenario": "base", "objective": "incremental_passengers", "route_id": "YXX_YYC", "campaign_budget_cad": 75000.0, "route_segment": "medium_haul", "end_of_period_route_status": "active", "capacity_required_flag": 0.0, "decision_bucket": "test_and_learn", "incremental_passenger_proxy": 2416.8243, "incremental_route_health_points": 3.5717, "cost_per_incremental_passenger_proxy_cad": 31.0325, "marketing_support_priority_score_v0": 65.8572, "route_sustainability_score_v0": 77.5137, "data_confidence_score": 93.75, "source_recommendation": "Run test-and-learn marketing"}, {"case_id": "growth_passengers_500k", "scenario": "base", "objective": "incremental_passengers", "route_id": "YHM_YVR", "campaign_budget_cad": 50000.0, "route_segment": "long_haul", "end_of_period_route_status": "active", "capacity_required_flag": 0.0, "decision_bucket": "evidence_first", "incremental_passenger_proxy": 1205.5463, "incremental_route_health_points": 1.7482, "cost_per_incremental_passenger_proxy_cad": 41.475, "marketing_support_priority_score_v0": 44.1572, "route_sustainability_score_v0": 64.4343, "data_confidence_score": 19.4444, "source_recommendation": "Needs schedule data before spend decision"}, {"case_id": "growth_passengers_500k", "scenario": "base", "objective": "incremental_passengers", "route_id": "YHM_YYC", "campaign_budget_cad": 50000.0, "route_segment": "long_haul", "end_of_period_route_status": "active", "capacity_required_flag": 0.0, "decision_bucket": "evidence_first", "incremental_passenger_proxy": 1240.2146, "incremental_route_health_points": 1.8063, "cost_per_incremental_passenger_proxy_cad": 40.3156, "marketing_support_priority_score_v0": 46.5879, "route_sustainability_score_v0": 68.0399, "data_confidence_score": 35.0694, "source_recommendation": "Needs schedule data before spend decision"}, {"case_id": "portfolio_value_500k", "scenario": "base", "objective": "portfolio_value", "route_id": "YKF_YEG", "campaign_budget_cad": 100000.0, "route_segment": "long_haul", "end_of_period_route_status": "active", "capacity_required_flag": 0.0, "decision_bucket": "scale_defend", "incremental_passenger_proxy": 917.4795, "incremental_route_health_points": 4.5489, "cost_per_incremental_passenger_proxy_cad": 108.9943, "marketing_support_priority_score_v0": 71.6207, "route_sustainability_score_v0": 73.3315, "data_confidence_score": 93.9236, "source_recommendation": "Scale or defend with controlled campaign"}, {"case_id": "portfolio_value_500k", "scenario": "base", "objective": "portfolio_value", "route_id": "YKF_YYC", "campaign_budget_cad": 100000.0, "route_segment": "long_haul", "end_of_period_route_status": "active", "capacity_required_flag": 0.0, "decision_bucket": "test_and_learn", "incremental_passenger_proxy": 2645.9702, "incremental_route_health_points": 3.3923, "cost_per_incremental_passenger_proxy_cad": 37.7933, "marketing_support_priority_score_v0": 68.1332, "route_sustainability_score_v0": 76.3453, "data_confidence_score": 52.0833, "source_recommendation": "Run test-and-learn marketing"}, {"case_id": "portfolio_value_500k", "scenario": "base", "objective": "portfolio_value", "route_id": "YKF_YVR", "campaign_budget_cad": 75000.0, "route_segment": "long_haul", "end_of_period_route_status": "inactive", "capacity_required_flag": 1.0, "decision_bucket": "relaunch_feasibility", "incremental_passenger_proxy": 1424.463, "incremental_route_health_points": 3.011, "cost_per_incremental_passenger_proxy_cad": 52.6514, "marketing_support_priority_score_v0": 81.9442, "route_sustainability_score_v0": 76.7484, "data_confidence_score": 99.4792, "source_recommendation": "Relaunch feasibility test; verify airline capacity first"}, {"case_id": "portfolio_value_500k", "scenario": "base", "objective": "portfolio_value", "route_id": "YXU_YYC", "campaign_budget_cad": 75000.0, "route_segment": "long_haul", "end_of_period_route_status": "active", "capacity_required_flag": 0.0, "decision_bucket": "test_and_learn", "incremental_passenger_proxy": 1526.9246, "incremental_route_health_points": 3.4975, "cost_per_incremental_passenger_proxy_cad": 49.1183, "marketing_support_priority_score_v0": 63.3966, "route_sustainability_score_v0": 80.8266, "data_confidence_score": 100.0, "source_recommendation": "Run test-and-learn marketing"}, {"case_id": "portfolio_value_500k", "scenario": "base", "objective": "portfolio_value", "route_id": "YXX_YYC", "campaign_budget_cad": 75000.0, "route_segment": "medium_haul", "end_of_period_route_status": "active", "capacity_required_flag": 0.0, "decision_bucket": "test_and_learn", "incremental_passenger_proxy": 2416.8243, "incremental_route_health_points": 3.5717, "cost_per_incremental_passenger_proxy_cad": 31.0325, "marketing_support_priority_score_v0": 65.8572, "route_sustainability_score_v0": 77.5137, "data_confidence_score": 93.75, "source_recommendation": "Run test-and-learn marketing"}, {"case_id": "portfolio_value_500k", "scenario": "base", "objective": "portfolio_value", "route_id": "YXX_YEG", "campaign_budget_cad": 50000.0, "route_segment": "medium_haul", "end_of_period_route_status": "active", "capacity_required_flag": 0.0, "decision_bucket": "maintain", "incremental_passenger_proxy": 1798.488, "incremental_route_health_points": 2.5984, "cost_per_incremental_passenger_proxy_cad": 27.8011, "marketing_support_priority_score_v0": 58.7321, "route_sustainability_score_v0": 71.5851, "data_confidence_score": 93.75, "source_recommendation": "Maintain service; monitor capacity and leakage"}, {"case_id": "portfolio_value_500k", "scenario": "base", "objective": "portfolio_value", "route_id": "YLW_YVR", "campaign_budget_cad": 25000.0, "route_segment": "short_haul", "end_of_period_route_status": "active", "capacity_required_flag": 0.0, "decision_bucket": "maintain", "incremental_passenger_proxy": 6205.801, "incremental_route_health_points": 1.6031, "cost_per_incremental_passenger_proxy_cad": 4.0285, "marketing_support_priority_score_v0": 50.5784, "route_sustainability_score_v0": 86.3659, "data_confidence_score": 93.75, "source_recommendation": "Maintain service; monitor capacity and leakage"}, {"case_id": "downside_portfolio_500k", "scenario": "conservative", "objective": "portfolio_value", "route_id": "YKF_YEG", "campaign_budget_cad": 100000.0, "route_segment": "long_haul", "end_of_period_route_status": "active", "capacity_required_flag": 0.0, "decision_bucket": "scale_defend", "incremental_passenger_proxy": 329.0959, "incremental_route_health_points": 2.8908, "cost_per_incremental_passenger_proxy_cad": 303.8628, "marketing_support_priority_score_v0": 71.6207, "route_sustainability_score_v0": 73.3315, "data_confidence_score": 93.9236, "source_recommendation": "Scale or defend with controlled campaign"}, {"case_id": "downside_portfolio_500k", "scenario": "conservative", "objective": "portfolio_value", "route_id": "YKF_YYC", "campaign_budget_cad": 75000.0, "route_segment": "long_haul", "end_of_period_route_status": "active", "capacity_required_flag": 0.0, "decision_bucket": "test_and_learn", "incremental_passenger_proxy": 786.0593, "incremental_route_health_points": 1.7768, "cost_per_incremental_passenger_proxy_cad": 95.4126, "marketing_support_priority_score_v0": 68.1332, "route_sustainability_score_v0": 76.3453, "data_confidence_score": 52.0833, "source_recommendation": "Run test-and-learn marketing"}, {"case_id": "downside_portfolio_500k", "scenario": "conservative", "objective": "portfolio_value", "route_id": "YLW_YVR", "campaign_budget_cad": 75000.0, "route_segment": "short_haul", "end_of_period_route_status": "active", "capacity_required_flag": 0.0, "decision_bucket": "maintain", "incremental_passenger_proxy": 4654.3508, "incremental_route_health_points": 1.8317, "cost_per_incremental_passenger_proxy_cad": 16.114, "marketing_support_priority_score_v0": 50.5784, "route_sustainability_score_v0": 86.3659, "data_confidence_score": 93.75, "source_recommendation": "Maintain service; monitor capacity and leakage"}, {"case_id": "downside_portfolio_500k", "scenario": "conservative", "objective": "portfolio_value", "route_id": "YXU_YYC", "campaign_budget_cad": 75000.0, "route_segment": "long_haul", "end_of_period_route_status": "active", "capacity_required_flag": 0.0, "decision_bucket": "test_and_learn", "incremental_passenger_proxy": 544.6652, "incremental_route_health_points": 2.1878, "cost_per_incremental_passenger_proxy_cad": 137.6993, "marketing_support_priority_score_v0": 63.3966, "route_sustainability_score_v0": 80.8266, "data_confidence_score": 100.0, "source_recommendation": "Run test-and-learn marketing"}, {"case_id": "downside_portfolio_500k", "scenario": "conservative", "objective": "portfolio_value", "route_id": "YXX_YYC", "campaign_budget_cad": 75000.0, "route_segment": "medium_haul", "end_of_period_route_status": "active", "capacity_required_flag": 0.0, "decision_bucket": "test_and_learn", "incremental_passenger_proxy": 908.14, "incremental_route_health_points": 2.2511, "cost_per_incremental_passenger_proxy_cad": 82.5864, "marketing_support_priority_score_v0": 65.8572, "route_sustainability_score_v0": 77.5137, "data_confidence_score": 93.75, "source_recommendation": "Run test-and-learn marketing"}, {"case_id": "downside_portfolio_500k", "scenario": "conservative", "objective": "portfolio_value", "route_id": "YKF_YVR", "campaign_budget_cad": 50000.0, "route_segment": "long_haul", "end_of_period_route_status": "inactive", "capacity_required_flag": 1.0, "decision_bucket": "relaunch_feasibility", "incremental_passenger_proxy": 374.2769, "incremental_route_health_points": 1.4407, "cost_per_incremental_passenger_proxy_cad": 133.5909, "marketing_support_priority_score_v0": 81.9442, "route_sustainability_score_v0": 76.7484, "data_confidence_score": 99.4792, "source_recommendation": "Relaunch feasibility test; verify airline capacity first"}, {"case_id": "downside_portfolio_500k", "scenario": "conservative", "objective": "portfolio_value", "route_id": "YLW_YYC", "campaign_budget_cad": 50000.0, "route_segment": "medium_haul", "end_of_period_route_status": "active", "capacity_required_flag": 0.0, "decision_bucket": "maintain", "incremental_passenger_proxy": 373.4143, "incremental_route_health_points": 1.9187, "cost_per_incremental_passenger_proxy_cad": 133.8995, "marketing_support_priority_score_v0": 56.8998, "route_sustainability_score_v0": 81.4194, "data_confidence_score": 93.75, "source_recommendation": "Maintain service; monitor capacity and leakage"}, {"case_id": "upside_portfolio_500k", "scenario": "optimistic", "objective": "portfolio_value", "route_id": "YKF_YYC", "campaign_budget_cad": 100000.0, "route_segment": "long_haul", "end_of_period_route_status": "active", "capacity_required_flag": 0.0, "decision_bucket": "test_and_learn", "incremental_passenger_proxy": 6025.756, "incremental_route_health_points": 5.419, "cost_per_incremental_passenger_proxy_cad": 16.5954, "marketing_support_priority_score_v0": 68.1332, "route_sustainability_score_v0": 76.3453, "data_confidence_score": 52.0833, "source_recommendation": "Run test-and-learn marketing"}, {"case_id": "upside_portfolio_500k", "scenario": "optimistic", "objective": "portfolio_value", "route_id": "YXU_YYC", "campaign_budget_cad": 100000.0, "route_segment": "long_haul", "end_of_period_route_status": "active", "capacity_required_flag": 0.0, "decision_bucket": "test_and_learn", "incremental_passenger_proxy": 4075.8708, "incremental_route_health_points": 6.5834, "cost_per_incremental_passenger_proxy_cad": 24.5346, "marketing_support_priority_score_v0": 63.3966, "route_sustainability_score_v0": 80.8266, "data_confidence_score": 100.0, "source_recommendation": "Run test-and-learn marketing"}, {"case_id": "upside_portfolio_500k", "scenario": "optimistic", "objective": "portfolio_value", "route_id": "YKF_YEG", "campaign_budget_cad": 75000.0, "route_segment": "long_haul", "end_of_period_route_status": "active", "capacity_required_flag": 0.0, "decision_bucket": "scale_defend", "incremental_passenger_proxy": 1776.2402, "incremental_route_health_points": 6.1477, "cost_per_incremental_passenger_proxy_cad": 42.224, "marketing_support_priority_score_v0": 71.6207, "route_sustainability_score_v0": 73.3315, "data_confidence_score": 93.9236, "source_recommendation": "Scale or defend with controlled campaign"}, {"case_id": "upside_portfolio_500k", "scenario": "optimistic", "objective": "portfolio_value", "route_id": "YKF_YVR", "campaign_budget_cad": 75000.0, "route_segment": "long_haul", "end_of_period_route_status": "inactive", "capacity_required_flag": 1.0, "decision_bucket": "relaunch_feasibility", "incremental_passenger_proxy": 3300.9557, "incremental_route_health_points": 4.7359, "cost_per_incremental_passenger_proxy_cad": 22.7207, "marketing_support_priority_score_v0": 81.9442, "route_sustainability_score_v0": 76.7484, "data_confidence_score": 99.4792, "source_recommendation": "Relaunch feasibility test; verify airline capacity first"}, {"case_id": "upside_portfolio_500k", "scenario": "optimistic", "objective": "portfolio_value", "route_id": "YXX_YYC", "campaign_budget_cad": 75000.0, "route_segment": "medium_haul", "end_of_period_route_status": "active", "capacity_required_flag": 0.0, "decision_bucket": "test_and_learn", "incremental_passenger_proxy": 5144.0392, "incremental_route_health_points": 5.412, "cost_per_incremental_passenger_proxy_cad": 14.58, "marketing_support_priority_score_v0": 65.8572, "route_sustainability_score_v0": 77.5137, "data_confidence_score": 93.75, "source_recommendation": "Run test-and-learn marketing"}, {"case_id": "upside_portfolio_500k", "scenario": "optimistic", "objective": "portfolio_value", "route_id": "YXX_YEG", "campaign_budget_cad": 50000.0, "route_segment": "medium_haul", "end_of_period_route_status": "active", "capacity_required_flag": 0.0, "decision_bucket": "maintain", "incremental_passenger_proxy": 3879.4052, "incremental_route_health_points": 4.0168, "cost_per_incremental_passenger_proxy_cad": 12.8886, "marketing_support_priority_score_v0": 58.7321, "route_sustainability_score_v0": 71.5851, "data_confidence_score": 93.75, "source_recommendation": "Maintain service; monitor capacity and leakage"}, {"case_id": "upside_portfolio_500k", "scenario": "optimistic", "objective": "portfolio_value", "route_id": "YLW_YVR", "campaign_budget_cad": 25000.0, "route_segment": "short_haul", "end_of_period_route_status": "active", "capacity_required_flag": 0.0, "decision_bucket": "maintain", "incremental_passenger_proxy": 13652.7622, "incremental_route_health_points": 2.4435, "cost_per_incremental_passenger_proxy_cad": 1.8311, "marketing_support_priority_score_v0": 50.5784, "route_sustainability_score_v0": 86.3659, "data_confidence_score": 93.75, "source_recommendation": "Maintain service; monitor capacity and leakage"}, {"case_id": "broad_test_875k", "scenario": "base", "objective": "portfolio_value", "route_id": "YKF_YYC", "campaign_budget_cad": 150000.0, "route_segment": "long_haul", "end_of_period_route_status": "active", "capacity_required_flag": 0.0, "decision_bucket": "test_and_learn", "incremental_passenger_proxy": 3293.9628, "incremental_route_health_points": 4.223, "cost_per_incremental_passenger_proxy_cad": 45.5379, "marketing_support_priority_score_v0": 68.1332, "route_sustainability_score_v0": 76.3453, "data_confidence_score": 52.0833, "source_recommendation": "Run test-and-learn marketing"}, {"case_id": "broad_test_875k", "scenario": "base", "objective": "portfolio_value", "route_id": "YKF_YEG", "campaign_budget_cad": 100000.0, "route_segment": "long_haul", "end_of_period_route_status": "active", "capacity_required_flag": 0.0, "decision_bucket": "scale_defend", "incremental_passenger_proxy": 917.4795, "incremental_route_health_points": 4.5489, "cost_per_incremental_passenger_proxy_cad": 108.9943, "marketing_support_priority_score_v0": 71.6207, "route_sustainability_score_v0": 73.3315, "data_confidence_score": 93.9236, "source_recommendation": "Scale or defend with controlled campaign"}, {"case_id": "broad_test_875k", "scenario": "base", "objective": "portfolio_value", "route_id": "YKF_YVR", "campaign_budget_cad": 100000.0, "route_segment": "long_haul", "end_of_period_route_status": "inactive", "capacity_required_flag": 1.0, "decision_bucket": "relaunch_feasibility", "incremental_passenger_proxy": 1718.0547, "incremental_route_health_points": 3.6315, "cost_per_incremental_passenger_proxy_cad": 58.2054, "marketing_support_priority_score_v0": 81.9442, "route_sustainability_score_v0": 76.7484, "data_confidence_score": 99.4792, "source_recommendation": "Relaunch feasibility test; verify airline capacity first"}, {"case_id": "broad_test_875k", "scenario": "base", "objective": "portfolio_value", "route_id": "YXU_YYC", "campaign_budget_cad": 100000.0, "route_segment": "long_haul", "end_of_period_route_status": "active", "capacity_required_flag": 0.0, "decision_bucket": "test_and_learn", "incremental_passenger_proxy": 1804.5473, "incremental_route_health_points": 4.1334, "cost_per_incremental_passenger_proxy_cad": 55.4156, "marketing_support_priority_score_v0": 63.3966, "route_sustainability_score_v0": 80.8266, "data_confidence_score": 100.0, "source_recommendation": "Run test-and-learn marketing"}, {"case_id": "broad_test_875k", "scenario": "base", "objective": "portfolio_value", "route_id": "YXX_YYC", "campaign_budget_cad": 100000.0, "route_segment": "medium_haul", "end_of_period_route_status": "active", "capacity_required_flag": 0.0, "decision_bucket": "test_and_learn", "incremental_passenger_proxy": 2774.8723, "incremental_route_health_points": 4.1009, "cost_per_incremental_passenger_proxy_cad": 36.0377, "marketing_support_priority_score_v0": 65.8572, "route_sustainability_score_v0": 77.5137, "data_confidence_score": 93.75, "source_recommendation": "Run test-and-learn marketing"}, {"case_id": "broad_test_875k", "scenario": "base", "objective": "portfolio_value", "route_id": "YKF_YHZ", "campaign_budget_cad": 75000.0, "route_segment": "medium_haul", "end_of_period_route_status": "active", "capacity_required_flag": 0.0, "decision_bucket": "evidence_first", "incremental_passenger_proxy": 847.709, "incremental_route_health_points": 4.0283, "cost_per_incremental_passenger_proxy_cad": 88.4738, "marketing_support_priority_score_v0": 59.4606, "route_sustainability_score_v0": 67.9848, "data_confidence_score": 100.0, "source_recommendation": "Watchlist; improve evidence first"}, {"case_id": "broad_test_875k", "scenario": "base", "objective": "portfolio_value", "route_id": "YLW_YYC", "campaign_budget_cad": 75000.0, "route_segment": "medium_haul", "end_of_period_route_status": "active", "capacity_required_flag": 0.0, "decision_bucket": "maintain", "incremental_passenger_proxy": 1264.7905, "incremental_route_health_points": 3.8271, "cost_per_incremental_passenger_proxy_cad": 59.2984, "marketing_support_priority_score_v0": 56.8998, "route_sustainability_score_v0": 81.4194, "data_confidence_score": 93.75, "source_recommendation": "Maintain service; monitor capacity and leakage"}, {"case_id": "broad_test_875k", "scenario": "base", "objective": "portfolio_value", "route_id": "YXX_YEG", "campaign_budget_cad": 75000.0, "route_segment": "medium_haul", "end_of_period_route_status": "active", "capacity_required_flag": 0.0, "decision_bucket": "maintain", "incremental_passenger_proxy": 2262.6139, "incremental_route_health_points": 3.269, "cost_per_incremental_passenger_proxy_cad": 33.1475, "marketing_support_priority_score_v0": 58.7321, "route_sustainability_score_v0": 71.5851, "data_confidence_score": 93.75, "source_recommendation": "Maintain service; monitor capacity and leakage"}, {"case_id": "broad_test_875k", "scenario": "base", "objective": "portfolio_value", "route_id": "YLW_YVR", "campaign_budget_cad": 50000.0, "route_segment": "short_haul", "end_of_period_route_status": "active", "capacity_required_flag": 0.0, "decision_bucket": "maintain", "incremental_passenger_proxy": 9308.7015, "incremental_route_health_points": 2.4047, "cost_per_incremental_passenger_proxy_cad": 5.3713, "marketing_support_priority_score_v0": 50.5784, "route_sustainability_score_v0": 86.3659, "data_confidence_score": 93.75, "source_recommendation": "Maintain service; monitor capacity and leakage"}, {"case_id": "broad_test_875k", "scenario": "base", "objective": "portfolio_value", "route_id": "YXU_YVR", "campaign_budget_cad": 50000.0, "route_segment": "long_haul", "end_of_period_route_status": "inactive", "capacity_required_flag": 1.0, "decision_bucket": "relaunch_feasibility", "incremental_passenger_proxy": 346.0596, "incremental_route_health_points": 2.044, "cost_per_incremental_passenger_proxy_cad": 144.4838, "marketing_support_priority_score_v0": 67.3961, "route_sustainability_score_v0": 68.8231, "data_confidence_score": 81.4236, "source_recommendation": "Relaunch feasibility test; verify airline capacity first"}], "routes": [{"route_id": "YKF_YVR", "model_role": "target", "origin_iata": "YKF", "destination_iata": "YVR", "route_group": "personal_anchor", "strategic_role": "long_haul_regional", "route_segment": "long_haul", "distance_km": 3301.9, "nearest_origin_hub_iata": "YYZ", "nearest_origin_hub_distance_km": "65.3000", "total_months_2023_2025": "36", "labeled_months_2023_2025": "36", "active_months_2023_2025": "33", "inactive_months_2023_2025": "3", "uncovered_months_2023_2025": "0", "label_coverage_2023_2025": 1.0, "active_rate_2023_2025": 0.9167, "recent_active_rate_2025": 0.75, "last_labeled_month_2023_2025": "2025-12-01", "end_of_period_route_status": "inactive", "median_weekly_frequency_proxy_2023_2025": 7.0, "avg_origin_domestic_air_carrier_movements_2023_2025": "4666.8333", "avg_destination_domestic_air_carrier_movements_2023_2025": "15765.3333", "avg_nearest_hub_domestic_air_carrier_movements_2023_2025": "12073.6667", "avg_destination_screened_passengers_2023_2025": "891076.1111", "competition_pressure_score": 49.5383, "demand_context_score": 86.1288, "service_viability_score": 59.8333, "regional_strategic_fit_score": 100.0, "service_gap_score": 75.0, "data_confidence_score": 99.4792, "route_sustainability_score_v0": 76.7484, "marketing_support_priority_score_v0": 81.9442, "opportunity_rank_target_only": 1.0, "recommendation": "Relaunch feasibility test; verify airline capacity first"}, {"route_id": "YKF_YEG", "model_role": "target", "origin_iata": "YKF", "destination_iata": "YEG", "route_group": "regional_to_hub", "strategic_role": "western_access", "route_segment": "long_haul", "distance_km": 2654.3, "nearest_origin_hub_iata": "YYZ", "nearest_origin_hub_distance_km": "65.3000", "total_months_2023_2025": "36", "labeled_months_2023_2025": "36", "active_months_2023_2025": "21", "inactive_months_2023_2025": "15", "uncovered_months_2023_2025": "0", "label_coverage_2023_2025": 1.0, "active_rate_2023_2025": 0.5833, "recent_active_rate_2025": 1.0, "last_labeled_month_2023_2025": "2025-12-01", "end_of_period_route_status": "active", "median_weekly_frequency_proxy_2023_2025": 2.0, "avg_origin_domestic_air_carrier_movements_2023_2025": "4666.8333", "avg_destination_domestic_air_carrier_movements_2023_2025": "7263.2500", "avg_nearest_hub_domestic_air_carrier_movements_2023_2025": "12073.6667", "avg_destination_screened_passengers_2023_2025": "281945.1944", "competition_pressure_score": 49.5383, "demand_context_score": 54.8784, "service_viability_score": 83.8095, "regional_strategic_fit_score": 92.0, "service_gap_score": 85.7143, "data_confidence_score": 93.9236, "route_sustainability_score_v0": 73.3315, "marketing_support_priority_score_v0": 71.6207, "opportunity_rank_target_only": 2.0, "recommendation": "Scale or defend with controlled campaign"}, {"route_id": "YKF_YYC", "model_role": "target", "origin_iata": "YKF", "destination_iata": "YYC", "route_group": "regional_to_hub", "strategic_role": "western_access", "route_segment": "long_haul", "distance_km": 2648.9, "nearest_origin_hub_iata": "YYZ", "nearest_origin_hub_distance_km": "65.3000", "total_months_2023_2025": "36", "labeled_months_2023_2025": "20", "active_months_2023_2025": "20", "inactive_months_2023_2025": "0", "uncovered_months_2023_2025": "16", "label_coverage_2023_2025": 0.5556, "active_rate_2023_2025": 1.0, "recent_active_rate_2025": 1.0, "last_labeled_month_2023_2025": "2025-12-01", "end_of_period_route_status": "active", "median_weekly_frequency_proxy_2023_2025": 7.0, "avg_origin_domestic_air_carrier_movements_2023_2025": "4666.8333", "avg_destination_domestic_air_carrier_movements_2023_2025": "12083.2222", "avg_nearest_hub_domestic_air_carrier_movements_2023_2025": "12073.6667", "avg_destination_screened_passengers_2023_2025": "585932.9167", "competition_pressure_score": 49.5383, "demand_context_score": 75.0572, "service_viability_score": 93.0556, "regional_strategic_fit_score": 92.0, "service_gap_score": 50.0, "data_confidence_score": 52.0833, "route_sustainability_score_v0": 76.3453, "marketing_support_priority_score_v0": 68.1332, "opportunity_rank_target_only": 3.0, "recommendation": "Run test-and-learn marketing"}, {"route_id": "YXU_YVR", "model_role": "target", "origin_iata": "YXU", "destination_iata": "YVR", "route_group": "regional_to_hub", "strategic_role": "long_haul_regional", "route_segment": "long_haul", "distance_km": 3266.9, "nearest_origin_hub_iata": "YYZ", "nearest_origin_hub_distance_km": "142.8000", "total_months_2023_2025": "36", "labeled_months_2023_2025": "31", "active_months_2023_2025": "28", "inactive_months_2023_2025": "3", "uncovered_months_2023_2025": "5", "label_coverage_2023_2025": 0.8611, "active_rate_2023_2025": 0.9032, "recent_active_rate_2025": 0.75, "last_labeled_month_2023_2025": "2025-12-01", "end_of_period_route_status": "inactive", "median_weekly_frequency_proxy_2023_2025": 3.0, "avg_origin_domestic_air_carrier_movements_2023_2025": "730.0000", "avg_destination_domestic_air_carrier_movements_2023_2025": "15765.3333", "avg_nearest_hub_domestic_air_carrier_movements_2023_2025": "12073.6667", "avg_destination_screened_passengers_2023_2025": "891076.1111", "competition_pressure_score": 17.5189, "demand_context_score": 65.0, "service_viability_score": 53.8899, "regional_strategic_fit_score": 100.0, "service_gap_score": 75.0, "data_confidence_score": 81.4236, "route_sustainability_score_v0": 68.8231, "marketing_support_priority_score_v0": 67.3961, "opportunity_rank_target_only": 4.0, "recommendation": "Relaunch feasibility test; verify airline capacity first"}, {"route_id": "YXX_YYC", "model_role": "target", "origin_iata": "YXX", "destination_iata": "YYC", "route_group": "regional_to_hub", "strategic_role": "western_access", "route_segment": "medium_haul", "distance_km": 639.3, "nearest_origin_hub_iata": "YVR", "nearest_origin_hub_distance_km": "62.7000", "total_months_2023_2025": "36", "labeled_months_2023_2025": "36", "active_months_2023_2025": "36", "inactive_months_2023_2025": "0", "uncovered_months_2023_2025": "0", "label_coverage_2023_2025": 1.0, "active_rate_2023_2025": 1.0, "recent_active_rate_2025": 1.0, "last_labeled_month_2023_2025": "2025-12-01", "end_of_period_route_status": "active", "median_weekly_frequency_proxy_2023_2025": 9.0, "avg_origin_domestic_air_carrier_movements_2023_2025": "4243.9722", "avg_destination_domestic_air_carrier_movements_2023_2025": "12083.2222", "avg_nearest_hub_domestic_air_carrier_movements_2023_2025": "15765.3333", "avg_destination_screened_passengers_2023_2025": "585932.9167", "competition_pressure_score": 62.1628, "demand_context_score": 63.975, "service_viability_score": 99.6429, "regional_strategic_fit_score": 78.0, "service_gap_score": 35.7143, "data_confidence_score": 93.75, "route_sustainability_score_v0": 77.5137, "marketing_support_priority_score_v0": 65.8572, "opportunity_rank_target_only": 5.0, "recommendation": "Run test-and-learn marketing"}, {"route_id": "YXU_YYC", "model_role": "target", "origin_iata": "YXU", "destination_iata": "YYC", "route_group": "regional_to_hub", "strategic_role": "western_access", "route_segment": "long_haul", "distance_km": 2619.6, "nearest_origin_hub_iata": "YYZ", "nearest_origin_hub_distance_km": "142.8000", "total_months_2023_2025": "36", "labeled_months_2023_2025": "36", "active_months_2023_2025": "36", "inactive_months_2023_2025": "0", "uncovered_months_2023_2025": "0", "label_coverage_2023_2025": 1.0, "active_rate_2023_2025": 1.0, "recent_active_rate_2025": 1.0, "last_labeled_month_2023_2025": "2025-12-01", "end_of_period_route_status": "active", "median_weekly_frequency_proxy_2023_2025": 4.0, "avg_origin_domestic_air_carrier_movements_2023_2025": "730.0000", "avg_destination_domestic_air_carrier_movements_2023_2025": "12083.2222", "avg_nearest_hub_domestic_air_carrier_movements_2023_2025": "12073.6667", "avg_destination_screened_passengers_2023_2025": "585932.9167", "competition_pressure_score": 17.5189, "demand_context_score": 53.9284, "service_viability_score": 94.2857, "regional_strategic_fit_score": 92.0, "service_gap_score": 71.4286, "data_confidence_score": 100.0, "route_sustainability_score_v0": 80.8266, "marketing_support_priority_score_v0": 63.3966, "opportunity_rank_target_only": 6.0, "recommendation": "Run test-and-learn marketing"}, {"route_id": "YKF_YHZ", "model_role": "target", "origin_iata": "YKF", "destination_iata": "YHZ", "route_group": "regional_to_hub", "strategic_role": "eastern_access", "route_segment": "medium_haul", "distance_km": 1352.2, "nearest_origin_hub_iata": "YYZ", "nearest_origin_hub_distance_km": "65.3000", "total_months_2023_2025": "36", "labeled_months_2023_2025": "36", "active_months_2023_2025": "36", "inactive_months_2023_2025": "0", "uncovered_months_2023_2025": "0", "label_coverage_2023_2025": 1.0, "active_rate_2023_2025": 1.0, "recent_active_rate_2025": 1.0, "last_labeled_month_2023_2025": "2025-12-01", "end_of_period_route_status": "active", "median_weekly_frequency_proxy_2023_2025": 4.0, "avg_origin_domestic_air_carrier_movements_2023_2025": "4666.8333", "avg_destination_domestic_air_carrier_movements_2023_2025": "3299.6389", "avg_nearest_hub_domestic_air_carrier_movements_2023_2025": "12073.6667", "avg_destination_screened_passengers_2023_2025": "153944.4444", "competition_pressure_score": 49.5383, "demand_context_score": 31.1288, "service_viability_score": 94.2857, "regional_strategic_fit_score": 78.0, "service_gap_score": 71.4286, "data_confidence_score": 100.0, "route_sustainability_score_v0": 67.9848, "marketing_support_priority_score_v0": 59.4606, "opportunity_rank_target_only": 7.0, "recommendation": "Watchlist; improve evidence first"}, {"route_id": "YXX_YEG", "model_role": "target", "origin_iata": "YXX", "destination_iata": "YEG", "route_group": "regional_to_hub", "strategic_role": "western_access", "route_segment": "medium_haul", "distance_km": 774.8, "nearest_origin_hub_iata": "YVR", "nearest_origin_hub_distance_km": "62.7000", "total_months_2023_2025": "36", "labeled_months_2023_2025": "36", "active_months_2023_2025": "36", "inactive_months_2023_2025": "0", "uncovered_months_2023_2025": "0", "label_coverage_2023_2025": 1.0, "active_rate_2023_2025": 1.0, "recent_active_rate_2025": 1.0, "last_labeled_month_2023_2025": "2025-12-01", "end_of_period_route_status": "active", "median_weekly_frequency_proxy_2023_2025": 10.0, "avg_origin_domestic_air_carrier_movements_2023_2025": "4243.9722", "avg_destination_domestic_air_carrier_movements_2023_2025": "7263.2500", "avg_nearest_hub_domestic_air_carrier_movements_2023_2025": "15765.3333", "avg_destination_screened_passengers_2023_2025": "281945.1944", "competition_pressure_score": 62.1628, "demand_context_score": 43.7962, "service_viability_score": 100.0, "regional_strategic_fit_score": 78.0, "service_gap_score": 28.5714, "data_confidence_score": 93.75, "route_sustainability_score_v0": 71.5851, "marketing_support_priority_score_v0": 58.7321, "opportunity_rank_target_only": 8.0, "recommendation": "Maintain service; monitor capacity and leakage"}, {"route_id": "YHM_YEG", "model_role": "target", "origin_iata": "YHM", "destination_iata": "YEG", "route_group": "regional_to_hub", "strategic_role": "western_access", "route_segment": "long_haul", "distance_km": 2702.1, "nearest_origin_hub_iata": "YYZ", "nearest_origin_hub_distance_km": "61.4000", "total_months_2023_2025": "36", "labeled_months_2023_2025": "17", "active_months_2023_2025": "17", "inactive_months_2023_2025": "0", "uncovered_months_2023_2025": "19", "label_coverage_2023_2025": 0.4722, "active_rate_2023_2025": 1.0, "recent_active_rate_2025": 1.0, "last_labeled_month_2023_2025": "2025-12-01", "end_of_period_route_status": "active", "median_weekly_frequency_proxy_2023_2025": 6.0, "avg_origin_domestic_air_carrier_movements_2023_2025": "1138.8056", "avg_destination_domestic_air_carrier_movements_2023_2025": "7263.2500", "avg_nearest_hub_domestic_air_carrier_movements_2023_2025": "12073.6667", "avg_destination_screened_passengers_2023_2025": "281945.1944", "competition_pressure_score": 52.0658, "demand_context_score": 38.8117, "service_viability_score": 91.1508, "regional_strategic_fit_score": 92.0, "service_gap_score": 57.1429, "data_confidence_score": 47.2222, "route_sustainability_score_v0": 63.823, "marketing_support_priority_score_v0": 58.3503, "opportunity_rank_target_only": 9.0, "recommendation": "Watchlist; improve evidence first"}, {"route_id": "YLW_YYC", "model_role": "target", "origin_iata": "YLW", "destination_iata": "YYC", "route_group": "regional_to_hub", "strategic_role": "western_access", "route_segment": "medium_haul", "distance_km": 400.6, "nearest_origin_hub_iata": "YVR", "nearest_origin_hub_distance_km": "286.9000", "total_months_2023_2025": "36", "labeled_months_2023_2025": "36", "active_months_2023_2025": "36", "inactive_months_2023_2025": "0", "uncovered_months_2023_2025": "0", "label_coverage_2023_2025": 1.0, "active_rate_2023_2025": 1.0, "recent_active_rate_2025": 1.0, "last_labeled_month_2023_2025": "2025-12-01", "end_of_period_route_status": "active", "median_weekly_frequency_proxy_2023_2025": 5.0, "avg_origin_domestic_air_carrier_movements_2023_2025": "3347.9167", "avg_destination_domestic_air_carrier_movements_2023_2025": "12083.2222", "avg_nearest_hub_domestic_air_carrier_movements_2023_2025": "15765.3333", "avg_destination_screened_passengers_2023_2025": "585932.9167", "competition_pressure_score": 0.0, "demand_context_score": 61.273, "service_viability_score": 95.3571, "regional_strategic_fit_score": 78.0, "service_gap_score": 64.2857, "data_confidence_score": 93.75, "route_sustainability_score_v0": 81.4194, "marketing_support_priority_score_v0": 56.8998, "opportunity_rank_target_only": 10.0, "recommendation": "Maintain service; monitor capacity and leakage"}, {"route_id": "YLW_YVR", "model_role": "target", "origin_iata": "YLW", "destination_iata": "YVR", "route_group": "regional_to_hub", "strategic_role": "bc_connectivity", "route_segment": "short_haul", "distance_km": 286.9, "nearest_origin_hub_iata": "YVR", "nearest_origin_hub_distance_km": "286.9000", "total_months_2023_2025": "36", "labeled_months_2023_2025": "36", "active_months_2023_2025": "36", "inactive_months_2023_2025": "0", "uncovered_months_2023_2025": "0", "label_coverage_2023_2025": 1.0, "active_rate_2023_2025": 1.0, "recent_active_rate_2025": 1.0, "last_labeled_month_2023_2025": "2025-12-01", "end_of_period_route_status": "active", "median_weekly_frequency_proxy_2023_2025": 87.0, "avg_origin_domestic_air_carrier_movements_2023_2025": "3347.9167", "avg_destination_domestic_air_carrier_movements_2023_2025": "15765.3333", "avg_nearest_hub_domestic_air_carrier_movements_2023_2025": "15765.3333", "avg_destination_screened_passengers_2023_2025": "891076.1111", "competition_pressure_score": 0.0, "demand_context_score": 72.3447, "service_viability_score": 100.0, "regional_strategic_fit_score": 78.0, "service_gap_score": 0.0, "data_confidence_score": 93.75, "route_sustainability_score_v0": 86.3659, "marketing_support_priority_score_v0": 50.5784, "opportunity_rank_target_only": 11.0, "recommendation": "Maintain service; monitor capacity and leakage"}, {"route_id": "YHM_YYC", "model_role": "target", "origin_iata": "YHM", "destination_iata": "YYC", "route_group": "regional_to_hub", "strategic_role": "western_access", "route_segment": "long_haul", "distance_km": 2696.1, "nearest_origin_hub_iata": "YYZ", "nearest_origin_hub_distance_km": "61.4000", "total_months_2023_2025": "36", "labeled_months_2023_2025": "13", "active_months_2023_2025": "13", "inactive_months_2023_2025": "0", "uncovered_months_2023_2025": "23", "label_coverage_2023_2025": 0.3611, "active_rate_2023_2025": 1.0, "recent_active_rate_2025": 1.0, "last_labeled_month_2023_2025": "2025-12-01", "end_of_period_route_status": "active", "median_weekly_frequency_proxy_2023_2025": 7.0, "avg_origin_domestic_air_carrier_movements_2023_2025": "1138.8056", "avg_destination_domestic_air_carrier_movements_2023_2025": "12083.2222", "avg_nearest_hub_domestic_air_carrier_movements_2023_2025": "12073.6667", "avg_destination_screened_passengers_2023_2025": "585932.9167", "competition_pressure_score": 52.0658, "demand_context_score": 58.9905, "service_viability_score": 91.1111, "regional_strategic_fit_score": 92.0, "service_gap_score": 50.0, "data_confidence_score": 35.0694, "route_sustainability_score_v0": 68.0399, "marketing_support_priority_score_v0": 46.5879, "opportunity_rank_target_only": 12.0, "recommendation": "Needs schedule data before spend decision"}, {"route_id": "YLW_YEG", "model_role": "target", "origin_iata": "YLW", "destination_iata": "YEG", "route_group": "regional_to_hub", "strategic_role": "western_access", "route_segment": "medium_haul", "distance_km": 546.7, "nearest_origin_hub_iata": "YVR", "nearest_origin_hub_distance_km": "286.9000", "total_months_2023_2025": "36", "labeled_months_2023_2025": "20", "active_months_2023_2025": "20", "inactive_months_2023_2025": "0", "uncovered_months_2023_2025": "16", "label_coverage_2023_2025": 0.5556, "active_rate_2023_2025": 1.0, "recent_active_rate_2025": 1.0, "last_labeled_month_2023_2025": "2025-12-01", "end_of_period_route_status": "active", "median_weekly_frequency_proxy_2023_2025": 7.0, "avg_origin_domestic_air_carrier_movements_2023_2025": "3347.9167", "avg_destination_domestic_air_carrier_movements_2023_2025": "7263.2500", "avg_nearest_hub_domestic_air_carrier_movements_2023_2025": "15765.3333", "avg_destination_screened_passengers_2023_2025": "281945.1944", "competition_pressure_score": 0.0, "demand_context_score": 41.0942, "service_viability_score": 93.0556, "regional_strategic_fit_score": 78.0, "service_gap_score": 50.0, "data_confidence_score": 52.0833, "route_sustainability_score_v0": 68.3102, "marketing_support_priority_score_v0": 44.5366, "opportunity_rank_target_only": 13.0, "recommendation": "Low priority for marketing allocation"}, {"route_id": "YHM_YVR", "model_role": "target", "origin_iata": "YHM", "destination_iata": "YVR", "route_group": "regional_to_hub", "strategic_role": "hub_substitution", "route_segment": "long_haul", "distance_km": 3348.2, "nearest_origin_hub_iata": "YYZ", "nearest_origin_hub_distance_km": "61.4000", "total_months_2023_2025": "36", "labeled_months_2023_2025": "7", "active_months_2023_2025": "7", "inactive_months_2023_2025": "0", "uncovered_months_2023_2025": "29", "label_coverage_2023_2025": 0.1944, "active_rate_2023_2025": 1.0, "recent_active_rate_2025": 1.0, "last_labeled_month_2023_2025": "2025-12-01", "end_of_period_route_status": "active", "median_weekly_frequency_proxy_2023_2025": 7.0, "avg_origin_domestic_air_carrier_movements_2023_2025": "1138.8056", "avg_destination_domestic_air_carrier_movements_2023_2025": "15765.3333", "avg_nearest_hub_domestic_air_carrier_movements_2023_2025": "12073.6667", "avg_destination_screened_passengers_2023_2025": "891076.1111", "competition_pressure_score": 52.0658, "demand_context_score": 70.0622, "service_viability_score": 89.4444, "regional_strategic_fit_score": 72.0, "service_gap_score": 50.0, "data_confidence_score": 19.4444, "route_sustainability_score_v0": 64.4343, "marketing_support_priority_score_v0": 44.1572, "opportunity_rank_target_only": 14.0, "recommendation": "Needs schedule data before spend decision"}, {"route_id": "YVR_YYC", "model_role": "benchmark", "origin_iata": "YVR", "destination_iata": "YYC", "route_group": "hub_to_hub", "strategic_role": "hub_benchmark", "route_segment": "medium_haul", "distance_km": 686.8, "nearest_origin_hub_iata": "YVR", "nearest_origin_hub_distance_km": "0.0000", "total_months_2023_2025": "36", "labeled_months_2023_2025": "36", "active_months_2023_2025": "36", "inactive_months_2023_2025": "0", "uncovered_months_2023_2025": "0", "label_coverage_2023_2025": 1.0, "active_rate_2023_2025": 1.0, "recent_active_rate_2025": 1.0, "last_labeled_month_2023_2025": "2025-12-01", "end_of_period_route_status": "active", "median_weekly_frequency_proxy_2023_2025": "", "avg_origin_domestic_air_carrier_movements_2023_2025": "15765.3333", "avg_destination_domestic_air_carrier_movements_2023_2025": "12083.2222", "avg_nearest_hub_domestic_air_carrier_movements_2023_2025": "15765.3333", "avg_destination_screened_passengers_2023_2025": "585932.9167", "competition_pressure_score": 100.0, "demand_context_score": 78.9284, "service_viability_score": 90.0, "regional_strategic_fit_score": 25.0, "service_gap_score": 0.0, "data_confidence_score": 93.75, "route_sustainability_score_v0": 64.241, "marketing_support_priority_score_v0": 0.0, "opportunity_rank_target_only": "", "recommendation": "Benchmark only; exclude from regional marketing allocation"}, {"route_id": "YXX_YVR", "model_role": "negative_control", "origin_iata": "YXX", "destination_iata": "YVR", "route_group": "intra_region", "strategic_role": "local_competition", "route_segment": "short_haul", "distance_km": 62.7, "nearest_origin_hub_iata": "YVR", "nearest_origin_hub_distance_km": "62.7000", "total_months_2023_2025": "36", "labeled_months_2023_2025": "36", "active_months_2023_2025": "0", "inactive_months_2023_2025": "36", "uncovered_months_2023_2025": "0", "label_coverage_2023_2025": 1.0, "active_rate_2023_2025": 0.0, "recent_active_rate_2025": 0.0, "last_labeled_month_2023_2025": "2025-12-01", "end_of_period_route_status": "inactive", "median_weekly_frequency_proxy_2023_2025": "", "avg_origin_domestic_air_carrier_movements_2023_2025": "4243.9722", "avg_destination_domestic_air_carrier_movements_2023_2025": "15765.3333", "avg_nearest_hub_domestic_air_carrier_movements_2023_2025": "15765.3333", "avg_destination_screened_passengers_2023_2025": "891076.1111", "competition_pressure_score": 62.1628, "demand_context_score": 75.0467, "service_viability_score": 15.25, "regional_strategic_fit_score": 0.0, "service_gap_score": 0.0, "data_confidence_score": 93.75, "route_sustainability_score_v0": 35.6977, "marketing_support_priority_score_v0": 0.0, "opportunity_rank_target_only": "", "recommendation": "Control route; do not prioritize"}, {"route_id": "YYZ_YVR", "model_role": "benchmark", "origin_iata": "YYZ", "destination_iata": "YVR", "route_group": "hub_to_hub", "strategic_role": "hub_benchmark", "route_segment": "long_haul", "distance_km": 3345.7, "nearest_origin_hub_iata": "YYZ", "nearest_origin_hub_distance_km": "0.0000", "total_months_2023_2025": "36", "labeled_months_2023_2025": "36", "active_months_2023_2025": "36", "inactive_months_2023_2025": "0", "uncovered_months_2023_2025": "0", "label_coverage_2023_2025": 1.0, "active_rate_2023_2025": 1.0, "recent_active_rate_2025": 1.0, "last_labeled_month_2023_2025": "2025-12-01", "end_of_period_route_status": "active", "median_weekly_frequency_proxy_2023_2025": "", "avg_origin_domestic_air_carrier_movements_2023_2025": "12073.6667", "avg_destination_domestic_air_carrier_movements_2023_2025": "15765.3333", "avg_nearest_hub_domestic_air_carrier_movements_2023_2025": "12073.6667", "avg_destination_screened_passengers_2023_2025": "891076.1111", "competition_pressure_score": 89.013, "demand_context_score": 96.9599, "service_viability_score": 90.0, "regional_strategic_fit_score": 25.0, "service_gap_score": 0.0, "data_confidence_score": 93.75, "route_sustainability_score_v0": 70.7492, "marketing_support_priority_score_v0": 0.0, "opportunity_rank_target_only": "", "recommendation": "Benchmark only; exclude from regional marketing allocation"}, {"route_id": "YYZ_YYC", "model_role": "benchmark", "origin_iata": "YYZ", "destination_iata": "YYC", "route_group": "hub_to_hub", "strategic_role": "hub_benchmark", "route_segment": "long_haul", "distance_km": 2689.2, "nearest_origin_hub_iata": "YYZ", "nearest_origin_hub_distance_km": "0.0000", "total_months_2023_2025": "36", "labeled_months_2023_2025": "36", "active_months_2023_2025": "36", "inactive_months_2023_2025": "0", "uncovered_months_2023_2025": "0", "label_coverage_2023_2025": 1.0, "active_rate_2023_2025": 1.0, "recent_active_rate_2025": 1.0, "last_labeled_month_2023_2025": "2025-12-01", "end_of_period_route_status": "active", "median_weekly_frequency_proxy_2023_2025": "", "avg_origin_domestic_air_carrier_movements_2023_2025": "12073.6667", "avg_destination_domestic_air_carrier_movements_2023_2025": "12083.2222", "avg_nearest_hub_domestic_air_carrier_movements_2023_2025": "12073.6667", "avg_destination_screened_passengers_2023_2025": "585932.9167", "competition_pressure_score": 89.013, "demand_context_score": 85.8882, "service_viability_score": 90.0, "regional_strategic_fit_score": 25.0, "service_gap_score": 0.0, "data_confidence_score": 93.75, "route_sustainability_score_v0": 67.4277, "marketing_support_priority_score_v0": 0.0, "opportunity_rank_target_only": "", "recommendation": "Benchmark only; exclude from regional marketing allocation"}], "sensitivity": [{"scenario_id": "channel_bundle_base", "spend_mechanism": "channel_bundle", "effect_strength": "base", "effect_multiplier": 1.0, "noise_pct": 0.14, "model_spec": "controlled_adstock", "replications": 40.0, "top_channel_recovery_rate": 0.25, "mean_top2_budget_direction_overlap": 0.5625, "mean_spearman_rank_corr": 0.02, "mean_budget_efficiency_ratio": 0.84592, "mean_positive_sign_accuracy": 0.64375, "dominant_estimated_top_channel": "paid_social"}, {"scenario_id": "channel_bundle_base", "spend_mechanism": "channel_bundle", "effect_strength": "base", "effect_multiplier": 1.0, "noise_pct": 0.14, "model_spec": "controlled_saturation", "replications": 40.0, "top_channel_recovery_rate": 0.3, "mean_top2_budget_direction_overlap": 0.6375, "mean_spearman_rank_corr": 0.185, "mean_budget_efficiency_ratio": 0.866219, "mean_positive_sign_accuracy": 0.5625, "dominant_estimated_top_channel": "paid_social"}, {"scenario_id": "channel_bundle_base", "spend_mechanism": "channel_bundle", "effect_strength": "base", "effect_multiplier": 1.0, "noise_pct": 0.14, "model_spec": "naive_raw_spend", "replications": 40.0, "top_channel_recovery_rate": 0.175, "mean_top2_budget_direction_overlap": 0.5375, "mean_spearman_rank_corr": -0.005, "mean_budget_efficiency_ratio": 0.835031, "mean_positive_sign_accuracy": 0.78125, "dominant_estimated_top_channel": "paid_social"}, {"scenario_id": "channel_bundle_strong", "spend_mechanism": "channel_bundle", "effect_strength": "strong", "effect_multiplier": 1.6, "noise_pct": 0.12, "model_spec": "controlled_adstock", "replications": 40.0, "top_channel_recovery_rate": 0.4, "mean_top2_budget_direction_overlap": 0.675, "mean_spearman_rank_corr": 0.24, "mean_budget_efficiency_ratio": 0.882772, "mean_positive_sign_accuracy": 0.6375, "dominant_estimated_top_channel": "paid_search"}, {"scenario_id": "channel_bundle_strong", "spend_mechanism": "channel_bundle", "effect_strength": "strong", "effect_multiplier": 1.6, "noise_pct": 0.12, "model_spec": "controlled_saturation", "replications": 40.0, "top_channel_recovery_rate": 0.4, "mean_top2_budget_direction_overlap": 0.675, "mean_spearman_rank_corr": 0.285, "mean_budget_efficiency_ratio": 0.890026, "mean_positive_sign_accuracy": 0.575, "dominant_estimated_top_channel": "paid_search"}, {"scenario_id": "channel_bundle_strong", "spend_mechanism": "channel_bundle", "effect_strength": "strong", "effect_multiplier": 1.6, "noise_pct": 0.12, "model_spec": "naive_raw_spend", "replications": 40.0, "top_channel_recovery_rate": 0.25, "mean_top2_budget_direction_overlap": 0.475, "mean_spearman_rank_corr": 0.035, "mean_budget_efficiency_ratio": 0.8445, "mean_positive_sign_accuracy": 0.775, "dominant_estimated_top_channel": "paid_social"}, {"scenario_id": "channel_bundle_weak", "spend_mechanism": "channel_bundle", "effect_strength": "weak", "effect_multiplier": 0.5, "noise_pct": 0.18, "model_spec": "controlled_adstock", "replications": 40.0, "top_channel_recovery_rate": 0.5, "mean_top2_budget_direction_overlap": 0.6, "mean_spearman_rank_corr": 0.215, "mean_budget_efficiency_ratio": 0.887527, "mean_positive_sign_accuracy": 0.53125, "dominant_estimated_top_channel": "paid_search"}, {"scenario_id": "channel_bundle_weak", "spend_mechanism": "channel_bundle", "effect_strength": "weak", "effect_multiplier": 0.5, "noise_pct": 0.18, "model_spec": "controlled_saturation", "replications": 40.0, "top_channel_recovery_rate": 0.475, "mean_top2_budget_direction_overlap": 0.675, "mean_spearman_rank_corr": 0.305, "mean_budget_efficiency_ratio": 0.901201, "mean_positive_sign_accuracy": 0.50625, "dominant_estimated_top_channel": "paid_search"}, {"scenario_id": "channel_bundle_weak", "spend_mechanism": "channel_bundle", "effect_strength": "weak", "effect_multiplier": 0.5, "noise_pct": 0.18, "model_spec": "naive_raw_spend", "replications": 40.0, "top_channel_recovery_rate": 0.275, "mean_top2_budget_direction_overlap": 0.4625, "mean_spearman_rank_corr": 0.095, "mean_budget_efficiency_ratio": 0.856737, "mean_positive_sign_accuracy": 0.76875, "dominant_estimated_top_channel": "local_ooh"}, {"scenario_id": "demand_following_base", "spend_mechanism": "demand_following", "effect_strength": "base", "effect_multiplier": 1.0, "noise_pct": 0.14, "model_spec": "controlled_adstock", "replications": 40.0, "top_channel_recovery_rate": 1.0, "mean_top2_budget_direction_overlap": 0.5, "mean_spearman_rank_corr": 0.49, "mean_budget_efficiency_ratio": 0.980548, "mean_positive_sign_accuracy": 0.4625, "dominant_estimated_top_channel": "paid_search"}, {"scenario_id": "demand_following_base", "spend_mechanism": "demand_following", "effect_strength": "base", "effect_multiplier": 1.0, "noise_pct": 0.14, "model_spec": "controlled_saturation", "replications": 40.0, "top_channel_recovery_rate": 0.775, "mean_top2_budget_direction_overlap": 0.65, "mean_spearman_rank_corr": 0.515, "mean_budget_efficiency_ratio": 0.959999, "mean_positive_sign_accuracy": 0.49375, "dominant_estimated_top_channel": "paid_search"}, {"scenario_id": "demand_following_base", "spend_mechanism": "demand_following", "effect_strength": "base", "effect_multiplier": 1.0, "noise_pct": 0.14, "model_spec": "naive_raw_spend", "replications": 40.0, "top_channel_recovery_rate": 0.0, "mean_top2_budget_direction_overlap": 0.5, "mean_spearman_rank_corr": -0.2, "mean_budget_efficiency_ratio": 0.824086, "mean_positive_sign_accuracy": 0.75, "dominant_estimated_top_channel": "paid_social"}, {"scenario_id": "demand_following_strong", "spend_mechanism": "demand_following", "effect_strength": "strong", "effect_multiplier": 1.6, "noise_pct": 0.12, "model_spec": "controlled_adstock", "replications": 40.0, "top_channel_recovery_rate": 0.975, "mean_top2_budget_direction_overlap": 0.5125, "mean_spearman_rank_corr": 0.51, "mean_budget_efficiency_ratio": 0.97972, "mean_positive_sign_accuracy": 0.46875, "dominant_estimated_top_channel": "paid_search"}, {"scenario_id": "demand_following_strong", "spend_mechanism": "demand_following", "effect_strength": "strong", "effect_multiplier": 1.6, "noise_pct": 0.12, "model_spec": "controlled_saturation", "replications": 40.0, "top_channel_recovery_rate": 0.825, "mean_top2_budget_direction_overlap": 0.65, "mean_spearman_rank_corr": 0.635, "mean_budget_efficiency_ratio": 0.97197, "mean_positive_sign_accuracy": 0.46875, "dominant_estimated_top_channel": "paid_search"}, {"scenario_id": "demand_following_strong", "spend_mechanism": "demand_following", "effect_strength": "strong", "effect_multiplier": 1.6, "noise_pct": 0.12, "model_spec": "naive_raw_spend", "replications": 40.0, "top_channel_recovery_rate": 0.0, "mean_top2_budget_direction_overlap": 0.5, "mean_spearman_rank_corr": -0.2, "mean_budget_efficiency_ratio": 0.823971, "mean_positive_sign_accuracy": 0.75, "dominant_estimated_top_channel": "paid_social"}, {"scenario_id": "demand_following_weak", "spend_mechanism": "demand_following", "effect_strength": "weak", "effect_multiplier": 0.5, "noise_pct": 0.18, "model_spec": "controlled_adstock", "replications": 40.0, "top_channel_recovery_rate": 0.95, "mean_top2_budget_direction_overlap": 0.5, "mean_spearman_rank_corr": 0.53, "mean_budget_efficiency_ratio": 0.979263, "mean_positive_sign_accuracy": 0.4375, "dominant_estimated_top_channel": "paid_search"}, {"scenario_id": "demand_following_weak", "spend_mechanism": "demand_following", "effect_strength": "weak", "effect_multiplier": 0.5, "noise_pct": 0.18, "model_spec": "controlled_saturation", "replications": 40.0, "top_channel_recovery_rate": 0.7, "mean_top2_budget_direction_overlap": 0.6625, "mean_spearman_rank_corr": 0.485, "mean_budget_efficiency_ratio": 0.94917, "mean_positive_sign_accuracy": 0.49375, "dominant_estimated_top_channel": "paid_search"}, {"scenario_id": "demand_following_weak", "spend_mechanism": "demand_following", "effect_strength": "weak", "effect_multiplier": 0.5, "noise_pct": 0.18, "model_spec": "naive_raw_spend", "replications": 40.0, "top_channel_recovery_rate": 0.0, "mean_top2_budget_direction_overlap": 0.5, "mean_spearman_rank_corr": -0.2, "mean_budget_efficiency_ratio": 0.824125, "mean_positive_sign_accuracy": 0.75, "dominant_estimated_top_channel": "paid_social"}, {"scenario_id": "randomized_base", "spend_mechanism": "randomized", "effect_strength": "base", "effect_multiplier": 1.0, "noise_pct": 0.14, "model_spec": "controlled_adstock", "replications": 40.0, "top_channel_recovery_rate": 0.2, "mean_top2_budget_direction_overlap": 0.525, "mean_spearman_rank_corr": -0.085, "mean_budget_efficiency_ratio": 0.822213, "mean_positive_sign_accuracy": 0.5625, "dominant_estimated_top_channel": "display_video"}, {"scenario_id": "randomized_base", "spend_mechanism": "randomized", "effect_strength": "base", "effect_multiplier": 1.0, "noise_pct": 0.14, "model_spec": "controlled_saturation", "replications": 40.0, "top_channel_recovery_rate": 0.175, "mean_top2_budget_direction_overlap": 0.5125, "mean_spearman_rank_corr": 0.11, "mean_budget_efficiency_ratio": 0.84807, "mean_positive_sign_accuracy": 0.68125, "dominant_estimated_top_channel": "local_ooh"}, {"scenario_id": "randomized_base", "spend_mechanism": "randomized", "effect_strength": "base", "effect_multiplier": 1.0, "noise_pct": 0.14, "model_spec": "naive_raw_spend", "replications": 40.0, "top_channel_recovery_rate": 0.15, "mean_top2_budget_direction_overlap": 0.4125, "mean_spearman_rank_corr": -0.2, "mean_budget_efficiency_ratio": 0.808003, "mean_positive_sign_accuracy": 0.5125, "dominant_estimated_top_channel": "display_video"}, {"scenario_id": "randomized_strong", "spend_mechanism": "randomized", "effect_strength": "strong", "effect_multiplier": 1.6, "noise_pct": 0.12, "model_spec": "controlled_adstock", "replications": 40.0, "top_channel_recovery_rate": 0.35, "mean_top2_budget_direction_overlap": 0.575, "mean_spearman_rank_corr": 0.135, "mean_budget_efficiency_ratio": 0.854073, "mean_positive_sign_accuracy": 0.61875, "dominant_estimated_top_channel": "display_video"}, {"scenario_id": "randomized_strong", "spend_mechanism": "randomized", "effect_strength": "strong", "effect_multiplier": 1.6, "noise_pct": 0.12, "model_spec": "controlled_saturation", "replications": 40.0, "top_channel_recovery_rate": 0.175, "mean_top2_budget_direction_overlap": 0.5625, "mean_spearman_rank_corr": 0.21, "mean_budget_efficiency_ratio": 0.854771, "mean_positive_sign_accuracy": 0.65, "dominant_estimated_top_channel": "local_ooh"}, {"scenario_id": "randomized_strong", "spend_mechanism": "randomized", "effect_strength": "strong", "effect_multiplier": 1.6, "noise_pct": 0.12, "model_spec": "naive_raw_spend", "replications": 40.0, "top_channel_recovery_rate": 0.175, "mean_top2_budget_direction_overlap": 0.45, "mean_spearman_rank_corr": -0.045, "mean_budget_efficiency_ratio": 0.826695, "mean_positive_sign_accuracy": 0.53125, "dominant_estimated_top_channel": "local_ooh"}, {"scenario_id": "randomized_weak", "spend_mechanism": "randomized", "effect_strength": "weak", "effect_multiplier": 0.5, "noise_pct": 0.18, "model_spec": "controlled_adstock", "replications": 40.0, "top_channel_recovery_rate": 0.225, "mean_top2_budget_direction_overlap": 0.4625, "mean_spearman_rank_corr": 0.02, "mean_budget_efficiency_ratio": 0.837829, "mean_positive_sign_accuracy": 0.49375, "dominant_estimated_top_channel": "display_video"}, {"scenario_id": "randomized_weak", "spend_mechanism": "randomized", "effect_strength": "weak", "effect_multiplier": 0.5, "noise_pct": 0.18, "model_spec": "controlled_saturation", "replications": 40.0, "top_channel_recovery_rate": 0.125, "mean_top2_budget_direction_overlap": 0.4625, "mean_spearman_rank_corr": 0.065, "mean_budget_efficiency_ratio": 0.845407, "mean_positive_sign_accuracy": 0.6, "dominant_estimated_top_channel": "local_ooh"}, {"scenario_id": "randomized_weak", "spend_mechanism": "randomized", "effect_strength": "weak", "effect_multiplier": 0.5, "noise_pct": 0.18, "model_spec": "naive_raw_spend", "replications": 40.0, "top_channel_recovery_rate": 0.15, "mean_top2_budget_direction_overlap": 0.4875, "mean_spearman_rank_corr": 0.015, "mean_budget_efficiency_ratio": 0.835924, "mean_positive_sign_accuracy": 0.46875, "dominant_estimated_top_channel": "local_ooh"}, {"scenario_id": "risk_targeting_base", "spend_mechanism": "risk_targeting", "effect_strength": "base", "effect_multiplier": 1.0, "noise_pct": 0.14, "model_spec": "controlled_adstock", "replications": 40.0, "top_channel_recovery_rate": 0.25, "mean_top2_budget_direction_overlap": 0.5, "mean_spearman_rank_corr": 0.085, "mean_budget_efficiency_ratio": 0.831499, "mean_positive_sign_accuracy": 0.51875, "dominant_estimated_top_channel": "local_ooh"}, {"scenario_id": "risk_targeting_base", "spend_mechanism": "risk_targeting", "effect_strength": "base", "effect_multiplier": 1.0, "noise_pct": 0.14, "model_spec": "controlled_saturation", "replications": 40.0, "top_channel_recovery_rate": 0.925, "mean_top2_budget_direction_overlap": 0.55, "mean_spearman_rank_corr": 0.745, "mean_budget_efficiency_ratio": 0.977743, "mean_positive_sign_accuracy": 0.46875, "dominant_estimated_top_channel": "paid_search"}, {"scenario_id": "risk_targeting_base", "spend_mechanism": "risk_targeting", "effect_strength": "base", "effect_multiplier": 1.0, "noise_pct": 0.14, "model_spec": "naive_raw_spend", "replications": 40.0, "top_channel_recovery_rate": 0.0, "mean_top2_budget_direction_overlap": 0.0, "mean_spearman_rank_corr": -0.8, "mean_budget_efficiency_ratio": 0.686702, "mean_positive_sign_accuracy": 0.0, "dominant_estimated_top_channel": "display_video"}, {"scenario_id": "risk_targeting_strong", "spend_mechanism": "risk_targeting", "effect_strength": "strong", "effect_multiplier": 1.6, "noise_pct": 0.12, "model_spec": "controlled_adstock", "replications": 40.0, "top_channel_recovery_rate": 0.125, "mean_top2_budget_direction_overlap": 0.6, "mean_spearman_rank_corr": 0.17, "mean_budget_efficiency_ratio": 0.830154, "mean_positive_sign_accuracy": 0.49375, "dominant_estimated_top_channel": "paid_social"}, {"scenario_id": "risk_targeting_strong", "spend_mechanism": "risk_targeting", "effect_strength": "strong", "effect_multiplier": 1.6, "noise_pct": 0.12, "model_spec": "controlled_saturation", "replications": 40.0, "top_channel_recovery_rate": 0.925, "mean_top2_budget_direction_overlap": 0.5625, "mean_spearman_rank_corr": 0.72, "mean_budget_efficiency_ratio": 0.97222, "mean_positive_sign_accuracy": 0.46875, "dominant_estimated_top_channel": "paid_search"}, {"scenario_id": "risk_targeting_strong", "spend_mechanism": "risk_targeting", "effect_strength": "strong", "effect_multiplier": 1.6, "noise_pct": 0.12, "model_spec": "naive_raw_spend", "replications": 40.0, "top_channel_recovery_rate": 0.0, "mean_top2_budget_direction_overlap": 0.0, "mean_spearman_rank_corr": -0.8, "mean_budget_efficiency_ratio": 0.686817, "mean_positive_sign_accuracy": 0.0, "dominant_estimated_top_channel": "display_video"}, {"scenario_id": "risk_targeting_weak", "spend_mechanism": "risk_targeting", "effect_strength": "weak", "effect_multiplier": 0.5, "noise_pct": 0.18, "model_spec": "controlled_adstock", "replications": 40.0, "top_channel_recovery_rate": 0.2, "mean_top2_budget_direction_overlap": 0.6125, "mean_spearman_rank_corr": 0.26, "mean_budget_efficiency_ratio": 0.845917, "mean_positive_sign_accuracy": 0.49375, "dominant_estimated_top_channel": "paid_social"}, {"scenario_id": "risk_targeting_weak", "spend_mechanism": "risk_targeting", "effect_strength": "weak", "effect_multiplier": 0.5, "noise_pct": 0.18, "model_spec": "controlled_saturation", "replications": 40.0, "top_channel_recovery_rate": 0.85, "mean_top2_budget_direction_overlap": 0.55, "mean_spearman_rank_corr": 0.65, "mean_budget_efficiency_ratio": 0.955927, "mean_positive_sign_accuracy": 0.45, "dominant_estimated_top_channel": "paid_search"}, {"scenario_id": "risk_targeting_weak", "spend_mechanism": "risk_targeting", "effect_strength": "weak", "effect_multiplier": 0.5, "noise_pct": 0.18, "model_spec": "naive_raw_spend", "replications": 40.0, "top_channel_recovery_rate": 0.0, "mean_top2_budget_direction_overlap": 0.0, "mean_spearman_rank_corr": -0.8, "mean_budget_efficiency_ratio": 0.686756, "mean_positive_sign_accuracy": 0.0, "dominant_estimated_top_channel": "display_video"}, {"scenario_id": "seasonal_campaign_base", "spend_mechanism": "seasonal_campaign", "effect_strength": "base", "effect_multiplier": 1.0, "noise_pct": 0.14, "model_spec": "controlled_adstock", "replications": 40.0, "top_channel_recovery_rate": 0.825, "mean_top2_budget_direction_overlap": 0.525, "mean_spearman_rank_corr": 0.47, "mean_budget_efficiency_ratio": 0.948266, "mean_positive_sign_accuracy": 0.45, "dominant_estimated_top_channel": "paid_search"}, {"scenario_id": "seasonal_campaign_base", "spend_mechanism": "seasonal_campaign", "effect_strength": "base", "effect_multiplier": 1.0, "noise_pct": 0.14, "model_spec": "controlled_saturation", "replications": 40.0, "top_channel_recovery_rate": 0.725, "mean_top2_budget_direction_overlap": 0.75, "mean_spearman_rank_corr": 0.66, "mean_budget_efficiency_ratio": 0.960307, "mean_positive_sign_accuracy": 0.49375, "dominant_estimated_top_channel": "paid_search"}, {"scenario_id": "seasonal_campaign_base", "spend_mechanism": "seasonal_campaign", "effect_strength": "base", "effect_multiplier": 1.0, "noise_pct": 0.14, "model_spec": "naive_raw_spend", "replications": 40.0, "top_channel_recovery_rate": 0.0, "mean_top2_budget_direction_overlap": 1.0, "mean_spearman_rank_corr": 0.8, "mean_budget_efficiency_ratio": 0.935185, "mean_positive_sign_accuracy": 0.5, "dominant_estimated_top_channel": "paid_social"}, {"scenario_id": "seasonal_campaign_strong", "spend_mechanism": "seasonal_campaign", "effect_strength": "strong", "effect_multiplier": 1.6, "noise_pct": 0.12, "model_spec": "controlled_adstock", "replications": 40.0, "top_channel_recovery_rate": 0.925, "mean_top2_budget_direction_overlap": 0.525, "mean_spearman_rank_corr": 0.535, "mean_budget_efficiency_ratio": 0.957775, "mean_positive_sign_accuracy": 0.41875, "dominant_estimated_top_channel": "paid_search"}, {"scenario_id": "seasonal_campaign_strong", "spend_mechanism": "seasonal_campaign", "effect_strength": "strong", "effect_multiplier": 1.6, "noise_pct": 0.12, "model_spec": "controlled_saturation", "replications": 40.0, "top_channel_recovery_rate": 0.725, "mean_top2_budget_direction_overlap": 0.775, "mean_spearman_rank_corr": 0.715, "mean_budget_efficiency_ratio": 0.963566, "mean_positive_sign_accuracy": 0.48125, "dominant_estimated_top_channel": "paid_search"}, {"scenario_id": "seasonal_campaign_strong", "spend_mechanism": "seasonal_campaign", "effect_strength": "strong", "effect_multiplier": 1.6, "noise_pct": 0.12, "model_spec": "naive_raw_spend", "replications": 40.0, "top_channel_recovery_rate": 0.0, "mean_top2_budget_direction_overlap": 1.0, "mean_spearman_rank_corr": 0.8, "mean_budget_efficiency_ratio": 0.935143, "mean_positive_sign_accuracy": 0.5, "dominant_estimated_top_channel": "paid_social"}, {"scenario_id": "seasonal_campaign_weak", "spend_mechanism": "seasonal_campaign", "effect_strength": "weak", "effect_multiplier": 0.5, "noise_pct": 0.18, "model_spec": "controlled_adstock", "replications": 40.0, "top_channel_recovery_rate": 0.975, "mean_top2_budget_direction_overlap": 0.6, "mean_spearman_rank_corr": 0.615, "mean_budget_efficiency_ratio": 0.966616, "mean_positive_sign_accuracy": 0.41875, "dominant_estimated_top_channel": "paid_search"}, {"scenario_id": "seasonal_campaign_weak", "spend_mechanism": "seasonal_campaign", "effect_strength": "weak", "effect_multiplier": 0.5, "noise_pct": 0.18, "model_spec": "controlled_saturation", "replications": 40.0, "top_channel_recovery_rate": 0.65, "mean_top2_budget_direction_overlap": 0.825, "mean_spearman_rank_corr": 0.695, "mean_budget_efficiency_ratio": 0.958993, "mean_positive_sign_accuracy": 0.5, "dominant_estimated_top_channel": "paid_search"}, {"scenario_id": "seasonal_campaign_weak", "spend_mechanism": "seasonal_campaign", "effect_strength": "weak", "effect_multiplier": 0.5, "noise_pct": 0.18, "model_spec": "naive_raw_spend", "replications": 40.0, "top_channel_recovery_rate": 0.0, "mean_top2_budget_direction_overlap": 1.0, "mean_spearman_rank_corr": 0.8, "mean_budget_efficiency_ratio": 0.935126, "mean_positive_sign_accuracy": 0.5, "dominant_estimated_top_channel": "paid_social"}], "sensitivityAverage": {"controlled_adstock": {"top_channel_recovery_rate": 0.5433333333333333, "mean_top2_budget_direction_overlap": 0.5516666666666666, "mean_budget_efficiency_ratio": 0.8966727999999999, "mean_spearman_rank_corr": 0.2806666666666667}, "controlled_saturation": {"top_channel_recovery_rate": 0.5833333333333334, "mean_top2_budget_direction_overlap": 0.6333333333333333, "mean_budget_efficiency_ratio": 0.9250392666666667, "mean_spearman_rank_corr": 0.4653333333333333}, "naive_raw_spend": {"top_channel_recovery_rate": 0.07833333333333334, "mean_top2_budget_direction_overlap": 0.48833333333333334, "mean_budget_efficiency_ratio": 0.8229867333333334, "mean_spearman_rank_corr": -0.04700000000000001}}, "experiments": [{"case_id": "portfolio_value_500k", "route_id": "YKF_YEG", "campaign_budget_cad": 100000.0, "decision_bucket": "scale_defend", "experiment_design": "matched_route_geo_lift", "route_segment": "long_haul", "end_of_period_route_status": "active", "capacity_required_flag": 0.0, "primary_metric": "route_bookings_or_booking_proxy", "secondary_metrics": "route_searches;landing_page_conversions;load_factor;fare_yield", "comparison_route_1": "YHM_YEG", "comparison_route_2": "YHM_YYC", "comparison_route_3": "YHM_YVR", "pre_period_weeks": 12.0, "test_period_weeks": 8.0, "post_period_weeks": 4.0, "baseline_annual_passenger_proxy": 30922.6955, "expected_incremental_passenger_proxy": 917.4795, "expected_incremental_pct_of_baseline_proxy": 0.0297, "planned_mde_pct": 0.0445, "power_readiness": "Low; use guardrail KPIs rather than definitive lift claim", "scale_decision_rule": "Scale if observed incremental lift is >= 100% of base target (917 proxy passengers)", "maintain_decision_rule": "Maintain or retest if observed lift is 60%-100% of base target", "stop_decision_rule": "Stop or redesign if observed lift is < 60% of base target or guardrails fail", "guardrail": "Do not scale if load factor or fare yield deteriorates materially.", "data_confidence_score": 93.9236, "route_sustainability_score_v0": 73.3315, "marketing_support_priority_score_v0": 71.6207, "source_recommendation": "Scale or defend with controlled campaign"}, {"case_id": "portfolio_value_500k", "route_id": "YKF_YYC", "campaign_budget_cad": 100000.0, "decision_bucket": "test_and_learn", "experiment_design": "matched_route_geo_lift", "route_segment": "long_haul", "end_of_period_route_status": "active", "capacity_required_flag": 0.0, "primary_metric": "route_bookings_or_booking_proxy", "secondary_metrics": "route_searches;landing_page_conversions;load_factor;fare_yield", "comparison_route_1": "YHM_YYC", "comparison_route_2": "YHM_YVR", "comparison_route_3": "YHM_YEG", "pre_period_weeks": 12.0, "test_period_weeks": 8.0, "post_period_weeks": 4.0, "baseline_annual_passenger_proxy": 115220.8854, "expected_incremental_passenger_proxy": 2645.9702, "expected_incremental_pct_of_baseline_proxy": 0.023, "planned_mde_pct": 0.035, "power_readiness": "Directional; pool with similar routes or extend test window", "scale_decision_rule": "Scale if observed incremental lift is >= 85% of base target (2,249 proxy passengers)", "maintain_decision_rule": "Maintain or retest if observed lift is 50%-85% of base target", "stop_decision_rule": "Stop or redesign if observed lift is < 50% of base target or guardrails fail", "guardrail": "Do not scale if incremental demand appears to cannibalize nearby supported routes.", "data_confidence_score": 52.0833, "route_sustainability_score_v0": 76.3453, "marketing_support_priority_score_v0": 68.1332, "source_recommendation": "Run test-and-learn marketing"}, {"case_id": "portfolio_value_500k", "route_id": "YKF_YVR", "campaign_budget_cad": 75000.0, "decision_bucket": "relaunch_feasibility", "experiment_design": "two_stage_capacity_gated_test", "route_segment": "long_haul", "end_of_period_route_status": "inactive", "capacity_required_flag": 1.0, "primary_metric": "qualified_demand_signal", "secondary_metrics": "route_waitlist;survey_purchase_intent;search_demand;airline_capacity_commitment", "comparison_route_1": "YXU_YVR", "comparison_route_2": "YHM_YVR", "comparison_route_3": "YHM_YYC", "pre_period_weeks": 8.0, "test_period_weeks": 6.0, "post_period_weeks": 4.0, "baseline_annual_passenger_proxy": 92558.1204, "expected_incremental_passenger_proxy": 1424.463, "expected_incremental_pct_of_baseline_proxy": 0.0154, "planned_mde_pct": 0.08, "power_readiness": "Feasibility only until capacity is committed", "scale_decision_rule": "Advance to airline/capacity negotiation if qualified demand signal reaches 90% of base target and capacity partner interest is confirmed", "maintain_decision_rule": "Continue validation if qualified demand signal reaches 50%-90% of base target", "stop_decision_rule": "Stop relaunch spend if demand signal is below maintain threshold or capacity is unavailable", "guardrail": "Do not interpret demand signals as passenger lift until airline capacity is committed.", "data_confidence_score": 99.4792, "route_sustainability_score_v0": 76.7484, "marketing_support_priority_score_v0": 81.9442, "source_recommendation": "Relaunch feasibility test; verify airline capacity first"}, {"case_id": "portfolio_value_500k", "route_id": "YXU_YYC", "campaign_budget_cad": 75000.0, "decision_bucket": "test_and_learn", "experiment_design": "matched_route_geo_lift", "route_segment": "long_haul", "end_of_period_route_status": "active", "capacity_required_flag": 0.0, "primary_metric": "route_bookings_or_booking_proxy", "secondary_metrics": "route_searches;landing_page_conversions;load_factor;fare_yield", "comparison_route_1": "YHM_YYC", "comparison_route_2": "YHM_YEG", "comparison_route_3": "YHM_YVR", "pre_period_weeks": 12.0, "test_period_weeks": 8.0, "post_period_weeks": 4.0, "baseline_annual_passenger_proxy": 62012.9228, "expected_incremental_passenger_proxy": 1526.9246, "expected_incremental_pct_of_baseline_proxy": 0.0246, "planned_mde_pct": 0.0369, "power_readiness": "Directional; pool with similar routes or extend test window", "scale_decision_rule": "Scale if observed incremental lift is >= 85% of base target (1,298 proxy passengers)", "maintain_decision_rule": "Maintain or retest if observed lift is 50%-85% of base target", "stop_decision_rule": "Stop or redesign if observed lift is < 50% of base target or guardrails fail", "guardrail": "Do not scale if incremental demand appears to cannibalize nearby supported routes.", "data_confidence_score": 100.0, "route_sustainability_score_v0": 80.8266, "marketing_support_priority_score_v0": 63.3966, "source_recommendation": "Run test-and-learn marketing"}, {"case_id": "portfolio_value_500k", "route_id": "YXX_YYC", "campaign_budget_cad": 75000.0, "decision_bucket": "test_and_learn", "experiment_design": "matched_route_geo_lift", "route_segment": "medium_haul", "end_of_period_route_status": "active", "capacity_required_flag": 0.0, "primary_metric": "route_bookings_or_booking_proxy", "secondary_metrics": "route_searches;landing_page_conversions;load_factor;fare_yield", "comparison_route_1": "YLW_YYC", "comparison_route_2": "YKF_YHZ", "comparison_route_3": "YLW_YEG", "pre_period_weeks": 12.0, "test_period_weeks": 8.0, "post_period_weeks": 4.0, "baseline_annual_passenger_proxy": 104806.1537, "expected_incremental_passenger_proxy": 2416.8243, "expected_incremental_pct_of_baseline_proxy": 0.0231, "planned_mde_pct": 0.035, "power_readiness": "Medium; validate with booking or search-conversion data", "scale_decision_rule": "Scale if observed incremental lift is >= 85% of base target (2,054 proxy passengers)", "maintain_decision_rule": "Maintain or retest if observed lift is 50%-85% of base target", "stop_decision_rule": "Stop or redesign if observed lift is < 50% of base target or guardrails fail", "guardrail": "Do not scale if incremental demand appears to cannibalize nearby supported routes.", "data_confidence_score": 93.75, "route_sustainability_score_v0": 77.5137, "marketing_support_priority_score_v0": 65.8572, "source_recommendation": "Run test-and-learn marketing"}, {"case_id": "portfolio_value_500k", "route_id": "YXX_YEG", "campaign_budget_cad": 50000.0, "decision_bucket": "maintain", "experiment_design": "incrementality_guardrail_test", "route_segment": "medium_haul", "end_of_period_route_status": "active", "capacity_required_flag": 0.0, "primary_metric": "route_booking_proxy_or_search_lift", "secondary_metrics": "route_page_conversion;search_share;load_factor", "comparison_route_1": "YLW_YEG", "comparison_route_2": "YKF_YHZ", "comparison_route_3": "YLW_YYC", "pre_period_weeks": 12.0, "test_period_weeks": 6.0, "post_period_weeks": 4.0, "baseline_annual_passenger_proxy": 101468.0834, "expected_incremental_passenger_proxy": 1798.488, "expected_incremental_pct_of_baseline_proxy": 0.0177, "planned_mde_pct": 0.0266, "power_readiness": "Directional; pool with similar routes or extend test window", "scale_decision_rule": "Scale if observed incremental lift is >= 75% of base target (1,349 proxy passengers)", "maintain_decision_rule": "Maintain or retest if observed lift is 40%-75% of base target", "stop_decision_rule": "Stop or redesign if observed lift is < 40% of base target or guardrails fail", "guardrail": "Keep spend capped unless there is clear evidence of leakage recapture or retention value.", "data_confidence_score": 93.75, "route_sustainability_score_v0": 71.5851, "marketing_support_priority_score_v0": 58.7321, "source_recommendation": "Maintain service; monitor capacity and leakage"}, {"case_id": "portfolio_value_500k", "route_id": "YLW_YVR", "campaign_budget_cad": 25000.0, "decision_bucket": "maintain", "experiment_design": "incrementality_guardrail_test", "route_segment": "short_haul", "end_of_period_route_status": "active", "capacity_required_flag": 0.0, "primary_metric": "route_booking_proxy_or_search_lift", "secondary_metrics": "route_page_conversion;search_share;load_factor", "comparison_route_1": "YLW_YYC", "comparison_route_2": "YLW_YEG", "comparison_route_3": "YHM_YVR", "pre_period_weeks": 12.0, "test_period_weeks": 6.0, "post_period_weeks": 4.0, "baseline_annual_passenger_proxy": 630614.5819, "expected_incremental_passenger_proxy": 6205.801, "expected_incremental_pct_of_baseline_proxy": 0.0098, "planned_mde_pct": 0.025, "power_readiness": "Medium; validate with booking or search-conversion data", "scale_decision_rule": "Scale if observed incremental lift is >= 75% of base target (4,654 proxy passengers)", "maintain_decision_rule": "Maintain or retest if observed lift is 40%-75% of base target", "stop_decision_rule": "Stop or redesign if observed lift is < 40% of base target or guardrails fail", "guardrail": "Keep spend capped unless there is clear evidence of leakage recapture or retention value.", "data_confidence_score": 93.75, "route_sustainability_score_v0": 86.3659, "marketing_support_priority_score_v0": 50.5784, "source_recommendation": "Maintain service; monitor capacity and leakage"}], "controls": [{"treatment_route_id": "YKF_YEG", "control_route_id": "YHM_YEG", "match_rank": 1.0, "match_score": 11.2968, "control_model_role": "target", "control_route_segment": "long_haul", "control_end_status": "active", "control_recommendation": "Watchlist; improve evidence first", "match_notes": "same segment; same destination"}, {"treatment_route_id": "YKF_YEG", "control_route_id": "YHM_YYC", "match_rank": 2.0, "match_score": 19.2427, "control_model_role": "target", "control_route_segment": "long_haul", "control_end_status": "active", "control_recommendation": "Needs schedule data before spend decision", "match_notes": "same segment"}, {"treatment_route_id": "YKF_YEG", "control_route_id": "YHM_YVR", "match_rank": 3.0, "match_score": 25.578, "control_model_role": "target", "control_route_segment": "long_haul", "control_end_status": "active", "control_recommendation": "Needs schedule data before spend decision", "match_notes": "same segment"}, {"treatment_route_id": "YKF_YVR", "control_route_id": "YXU_YVR", "match_rank": 1.0, "match_score": 12.7291, "control_model_role": "target", "control_route_segment": "long_haul", "control_end_status": "inactive", "control_recommendation": "Relaunch feasibility test; verify airline capacity first", "match_notes": "same segment; same destination"}, {"treatment_route_id": "YKF_YVR", "control_route_id": "YHM_YVR", "match_rank": 2.0, "match_score": 32.3399, "control_model_role": "target", "control_route_segment": "long_haul", "control_end_status": "active", "control_recommendation": "Needs schedule data before spend decision", "match_notes": "same segment; same destination"}, {"treatment_route_id": "YKF_YVR", "control_route_id": "YHM_YYC", "match_rank": 3.0, "match_score": 42.8368, "control_model_role": "target", "control_route_segment": "long_haul", "control_end_status": "active", "control_recommendation": "Needs schedule data before spend decision", "match_notes": "same segment"}, {"treatment_route_id": "YKF_YYC", "control_route_id": "YHM_YYC", "match_rank": 1.0, "match_score": 8.052, "control_model_role": "target", "control_route_segment": "long_haul", "control_end_status": "active", "control_recommendation": "Needs schedule data before spend decision", "match_notes": "same segment; same destination"}, {"treatment_route_id": "YKF_YYC", "control_route_id": "YHM_YVR", "match_rank": 2.0, "match_score": 18.4015, "control_model_role": "target", "control_route_segment": "long_haul", "control_end_status": "active", "control_recommendation": "Needs schedule data before spend decision", "match_notes": "same segment"}, {"treatment_route_id": "YKF_YYC", "control_route_id": "YHM_YEG", "match_rank": 3.0, "match_score": 18.7294, "control_model_role": "target", "control_route_segment": "long_haul", "control_end_status": "active", "control_recommendation": "Watchlist; improve evidence first", "match_notes": "same segment"}, {"treatment_route_id": "YLW_YVR", "control_route_id": "YLW_YYC", "match_rank": 1.0, "match_score": 41.0416, "control_model_role": "target", "control_route_segment": "medium_haul", "control_end_status": "active", "control_recommendation": "Maintain service; monitor capacity and leakage", "match_notes": "different segment; same origin; monitor spillover"}, {"treatment_route_id": "YLW_YVR", "control_route_id": "YLW_YEG", "match_rank": 2.0, "match_score": 48.4171, "control_model_role": "target", "control_route_segment": "medium_haul", "control_end_status": "active", "control_recommendation": "Low priority for marketing allocation", "match_notes": "different segment; same origin; monitor spillover"}, {"treatment_route_id": "YLW_YVR", "control_route_id": "YHM_YVR", "match_rank": 3.0, "match_score": 49.1206, "control_model_role": "target", "control_route_segment": "long_haul", "control_end_status": "active", "control_recommendation": "Needs schedule data before spend decision", "match_notes": "different segment; same destination"}, {"treatment_route_id": "YXU_YYC", "control_route_id": "YHM_YYC", "match_rank": 1.0, "match_score": 13.3982, "control_model_role": "target", "control_route_segment": "long_haul", "control_end_status": "active", "control_recommendation": "Needs schedule data before spend decision", "match_notes": "same segment; same destination"}, {"treatment_route_id": "YXU_YYC", "control_route_id": "YHM_YEG", "match_rank": 2.0, "match_score": 21.1103, "control_model_role": "target", "control_route_segment": "long_haul", "control_end_status": "active", "control_recommendation": "Watchlist; improve evidence first", "match_notes": "same segment"}, {"treatment_route_id": "YXU_YYC", "control_route_id": "YHM_YVR", "match_rank": 3.0, "match_score": 27.7335, "control_model_role": "target", "control_route_segment": "long_haul", "control_end_status": "active", "control_recommendation": "Needs schedule data before spend decision", "match_notes": "same segment"}, {"treatment_route_id": "YXX_YEG", "control_route_id": "YLW_YEG", "match_rank": 1.0, "match_score": 12.748, "control_model_role": "target", "control_route_segment": "medium_haul", "control_end_status": "active", "control_recommendation": "Low priority for marketing allocation", "match_notes": "same segment; same destination"}, {"treatment_route_id": "YXX_YEG", "control_route_id": "YKF_YHZ", "match_rank": 2.0, "match_score": 17.9947, "control_model_role": "target", "control_route_segment": "medium_haul", "control_end_status": "active", "control_recommendation": "Watchlist; improve evidence first", "match_notes": "same segment"}, {"treatment_route_id": "YXX_YEG", "control_route_id": "YLW_YYC", "match_rank": 3.0, "match_score": 22.0695, "control_model_role": "target", "control_route_segment": "medium_haul", "control_end_status": "active", "control_recommendation": "Maintain service; monitor capacity and leakage", "match_notes": "same segment"}, {"treatment_route_id": "YXX_YYC", "control_route_id": "YLW_YYC", "match_rank": 1.0, "match_score": 10.3216, "control_model_role": "target", "control_route_segment": "medium_haul", "control_end_status": "active", "control_recommendation": "Maintain service; monitor capacity and leakage", "match_notes": "same segment; same destination"}, {"treatment_route_id": "YXX_YYC", "control_route_id": "YKF_YHZ", "match_rank": 2.0, "match_score": 23.1077, "control_model_role": "target", "control_route_segment": "medium_haul", "control_end_status": "active", "control_recommendation": "Watchlist; improve evidence first", "match_notes": "same segment"}, {"treatment_route_id": "YXX_YYC", "control_route_id": "YLW_YEG", "match_rank": 3.0, "match_score": 24.9518, "control_model_role": "target", "control_route_segment": "medium_haul", "control_end_status": "active", "control_recommendation": "Low priority for marketing allocation", "match_notes": "same segment"}], "airportCoords": {"YKF": {"name": "Waterloo Region", "lat": 43.46, "lon": -80.38}, "YHM": {"name": "Hamilton", "lat": 43.17, "lon": -79.93}, "YXU": {"name": "London", "lat": 43.03, "lon": -81.15}, "YXX": {"name": "Abbotsford", "lat": 49.03, "lon": -122.36}, "YLW": {"name": "Kelowna", "lat": 49.96, "lon": -119.38}, "YVR": {"name": "Vancouver", "lat": 49.19, "lon": -123.18}, "YYC": {"name": "Calgary", "lat": 51.12, "lon": -114.01}, "YEG": {"name": "Edmonton", "lat": 53.31, "lon": -113.58}, "YHZ": {"name": "Halifax", "lat": 44.88, "lon": -63.51}, "YYZ": {"name": "Toronto", "lat": 43.68, "lon": -79.63}}, "recommendedCase": {"case_id": "portfolio_value_500k", "scenario": "base", "objective": "portfolio_value", "total_budget_cad": 500000.0, "allocated_budget_cad": 500000.0, "unspent_budget_cad": 0.0, "funded_routes": 7.0, "active_routes_funded": 6.0, "relaunch_routes_funded": 1.0, "relaunch_budget_cad": 75000.0, "incremental_passenger_proxy": 16935.9506, "incremental_route_health_points": 22.2229, "cost_per_incremental_passenger_proxy_cad": 29.523, "objective_value": 23.6681, "notes": "Recommended balanced case combining health lift passenger proxy and strategic priority."}, "recommendedAllocations": [{"case_id": "portfolio_value_500k", "scenario": "base", "objective": "portfolio_value", "route_id": "YKF_YEG", "campaign_budget_cad": 100000.0, "route_segment": "long_haul", "end_of_period_route_status": "active", "capacity_required_flag": 0.0, "decision_bucket": "scale_defend", "incremental_passenger_proxy": 917.4795, "incremental_route_health_points": 4.5489, "cost_per_incremental_passenger_proxy_cad": 108.9943, "marketing_support_priority_score_v0": 71.6207, "route_sustainability_score_v0": 73.3315, "data_confidence_score": 93.9236, "source_recommendation": "Scale or defend with controlled campaign"}, {"case_id": "portfolio_value_500k", "scenario": "base", "objective": "portfolio_value", "route_id": "YKF_YYC", "campaign_budget_cad": 100000.0, "route_segment": "long_haul", "end_of_period_route_status": "active", "capacity_required_flag": 0.0, "decision_bucket": "test_and_learn", "incremental_passenger_proxy": 2645.9702, "incremental_route_health_points": 3.3923, "cost_per_incremental_passenger_proxy_cad": 37.7933, "marketing_support_priority_score_v0": 68.1332, "route_sustainability_score_v0": 76.3453, "data_confidence_score": 52.0833, "source_recommendation": "Run test-and-learn marketing"}, {"case_id": "portfolio_value_500k", "scenario": "base", "objective": "portfolio_value", "route_id": "YKF_YVR", "campaign_budget_cad": 75000.0, "route_segment": "long_haul", "end_of_period_route_status": "inactive", "capacity_required_flag": 1.0, "decision_bucket": "relaunch_feasibility", "incremental_passenger_proxy": 1424.463, "incremental_route_health_points": 3.011, "cost_per_incremental_passenger_proxy_cad": 52.6514, "marketing_support_priority_score_v0": 81.9442, "route_sustainability_score_v0": 76.7484, "data_confidence_score": 99.4792, "source_recommendation": "Relaunch feasibility test; verify airline capacity first"}, {"case_id": "portfolio_value_500k", "scenario": "base", "objective": "portfolio_value", "route_id": "YXU_YYC", "campaign_budget_cad": 75000.0, "route_segment": "long_haul", "end_of_period_route_status": "active", "capacity_required_flag": 0.0, "decision_bucket": "test_and_learn", "incremental_passenger_proxy": 1526.9246, "incremental_route_health_points": 3.4975, "cost_per_incremental_passenger_proxy_cad": 49.1183, "marketing_support_priority_score_v0": 63.3966, "route_sustainability_score_v0": 80.8266, "data_confidence_score": 100.0, "source_recommendation": "Run test-and-learn marketing"}, {"case_id": "portfolio_value_500k", "scenario": "base", "objective": "portfolio_value", "route_id": "YXX_YYC", "campaign_budget_cad": 75000.0, "route_segment": "medium_haul", "end_of_period_route_status": "active", "capacity_required_flag": 0.0, "decision_bucket": "test_and_learn", "incremental_passenger_proxy": 2416.8243, "incremental_route_health_points": 3.5717, "cost_per_incremental_passenger_proxy_cad": 31.0325, "marketing_support_priority_score_v0": 65.8572, "route_sustainability_score_v0": 77.5137, "data_confidence_score": 93.75, "source_recommendation": "Run test-and-learn marketing"}, {"case_id": "portfolio_value_500k", "scenario": "base", "objective": "portfolio_value", "route_id": "YXX_YEG", "campaign_budget_cad": 50000.0, "route_segment": "medium_haul", "end_of_period_route_status": "active", "capacity_required_flag": 0.0, "decision_bucket": "maintain", "incremental_passenger_proxy": 1798.488, "incremental_route_health_points": 2.5984, "cost_per_incremental_passenger_proxy_cad": 27.8011, "marketing_support_priority_score_v0": 58.7321, "route_sustainability_score_v0": 71.5851, "data_confidence_score": 93.75, "source_recommendation": "Maintain service; monitor capacity and leakage"}, {"case_id": "portfolio_value_500k", "scenario": "base", "objective": "portfolio_value", "route_id": "YLW_YVR", "campaign_budget_cad": 25000.0, "route_segment": "short_haul", "end_of_period_route_status": "active", "capacity_required_flag": 0.0, "decision_bucket": "maintain", "incremental_passenger_proxy": 6205.801, "incremental_route_health_points": 1.6031, "cost_per_incremental_passenger_proxy_cad": 4.0285, "marketing_support_priority_score_v0": 50.5784, "route_sustainability_score_v0": 86.3659, "data_confidence_score": 93.75, "source_recommendation": "Maintain service; monitor capacity and leakage"}]};
+
+    const state = {
+      view: 'portfolio',
+      caseId: 'portfolio_value_500k',
+      selectedRoute: null
+    };
+
+    const titles = {
+      portfolio: ['Portfolio Allocation', 'Recommended budget plan, route map, and allocation details.'],
+      sensitivity: ['Marketing Sensitivity', 'Recovery analysis for simulated channel effects and spend mechanisms.'],
+      experiments: ['Experiment Design', 'Treatment, comparison routes, success metrics, and validation readiness.'],
+      method: ['Method And Guardrails', 'Model flow, production path, and interview-safe claims.']
+    };
+
+    const bucketColor = {
+      relaunch_feasibility: '#c47c2c',
+      scale_defend: '#23756b',
+      test_and_learn: '#2f6ea5',
+      maintain: '#755e9a',
+      evidence_first: '#755e9a',
+      low_priority: '#b84a45'
+    };
+
+    function fmtMoney(value) {
+      return 'CAD ' + Number(value || 0).toLocaleString('en-CA', { maximumFractionDigits: 0 });
+    }
+
+    function fmtNum(value, digits = 0) {
+      return Number(value || 0).toLocaleString('en-CA', { maximumFractionDigits: digits, minimumFractionDigits: digits });
+    }
+
+    function fmtPct(value, digits = 0) {
+      return (Number(value || 0) * 100).toFixed(digits) + '%';
+    }
+
+    function caseRows() {
+      return DATA.allocations.filter(row => row.case_id === state.caseId);
+    }
+
+    function caseSummary() {
+      return DATA.cases.find(row => row.case_id === state.caseId) || DATA.recommendedCase;
+    }
+
+    function routeScore(routeId) {
+      return DATA.routes.find(row => row.route_id === routeId) || {};
+    }
+
+    function experimentFor(routeId) {
+      return DATA.experiments.find(row => row.route_id === routeId) || {};
+    }
+
+    function initCaseSelect() {
+      const select = document.getElementById('caseSelect');
+      select.innerHTML = DATA.cases.map(row => `<option value="${row.case_id}">${row.case_id}</option>`).join('');
+      select.value = state.caseId;
+      select.addEventListener('change', event => {
+        state.caseId = event.target.value;
+        state.selectedRoute = null;
+        renderPortfolio();
+      });
+    }
+
+    function initNav() {
+      document.querySelectorAll('.nav button').forEach(button => {
+        button.addEventListener('click', () => {
+          state.view = button.dataset.view;
+          document.querySelectorAll('.nav button').forEach(item => item.classList.toggle('active', item === button));
+          document.querySelectorAll('.view').forEach(view => view.classList.toggle('active', view.id === state.view));
+          document.getElementById('viewTitle').textContent = titles[state.view][0];
+          document.getElementById('viewSubtitle').textContent = titles[state.view][1];
+          if (state.view === 'portfolio') drawMap();
+        });
+      });
+    }
+
+    function renderKpis() {
+      const summary = caseSummary();
+      const sensitivity = DATA.sensitivityAverage.controlled_saturation;
+      const kpis = [
+        ['Allocated Budget', fmtMoney(summary.allocated_budget_cad), summary.case_id],
+        ['Funded Routes', fmtNum(summary.funded_routes), `${fmtNum(summary.active_routes_funded)} active / ${fmtNum(summary.relaunch_routes_funded)} relaunch`],
+        ['Passenger Proxy', fmtNum(summary.incremental_passenger_proxy), `${fmtMoney(summary.cost_per_incremental_passenger_proxy_cad)} per proxy passenger`],
+        ['Route Health Lift', fmtNum(summary.incremental_route_health_points, 1), 'points across funded routes'],
+        ['Sensitivity Efficiency', fmtPct(sensitivity.mean_budget_efficiency_ratio), 'controlled saturation average']
+      ];
+      document.getElementById('kpiGrid').innerHTML = kpis.map(kpi => `
+        <article class="kpi">
+          <div class="label">${kpi[0]}</div>
+          <div class="value">${kpi[1]}</div>
+          <div class="hint">${kpi[2]}</div>
+        </article>
+      `).join('');
+    }
+
+    function renderRoutes() {
+      const rows = caseRows().sort((a, b) => Number(b.campaign_budget_cad) - Number(a.campaign_budget_cad) || a.route_id.localeCompare(b.route_id));
+      if (!state.selectedRoute && rows.length) state.selectedRoute = rows[0].route_id;
+      document.getElementById('routeCount').textContent = `${rows.length} routes`;
+      document.getElementById('routeList').innerHTML = rows.map(row => {
+        const active = row.route_id === state.selectedRoute ? 'active' : '';
+        return `
+          <button class="route-row ${active}" type="button" data-route="${row.route_id}">
+            <div>
+              <div class="route-code">${row.route_id}</div>
+              <div class="route-meta">${routeScore(row.route_id).route_segment || row.route_segment}</div>
+            </div>
+            <div>
+              <span class="pill ${row.decision_bucket}">${row.decision_bucket.replaceAll('_', ' ')}</span>
+              <div class="route-meta">${row.source_recommendation}</div>
+            </div>
+            <div class="route-budget">${fmtMoney(row.campaign_budget_cad)}</div>
+          </button>
+        `;
+      }).join('');
+      document.querySelectorAll('.route-row').forEach(row => {
+        row.addEventListener('click', () => {
+          state.selectedRoute = row.dataset.route;
+          renderPortfolio();
+        });
+      });
+    }
+
+    function renderRouteDetails() {
+      const allocation = caseRows().find(row => row.route_id === state.selectedRoute) || caseRows()[0];
+      if (!allocation) {
+        document.getElementById('routeDetails').innerHTML = '<p class="empty">No route selected.</p>';
+        return;
+      }
+      const route = routeScore(allocation.route_id);
+      const experiment = experimentFor(allocation.route_id);
+      document.getElementById('selectedRouteTitle').textContent = allocation.route_id;
+      document.getElementById('selectedRouteStatus').textContent = route.recommendation || allocation.source_recommendation;
+      const details = [
+        [fmtMoney(allocation.campaign_budget_cad), 'Campaign budget'],
+        [fmtNum(allocation.incremental_passenger_proxy), 'Incremental passenger proxy'],
+        [fmtNum(allocation.incremental_route_health_points, 1), 'Route-health lift points'],
+        [fmtNum(route.marketing_support_priority_score_v0, 1), 'Marketing priority score'],
+        [fmtNum(route.route_sustainability_score_v0, 1), 'Sustainability score'],
+        [experiment.experiment_design || 'n/a', 'Validation design']
+      ];
+      document.getElementById('routeDetails').innerHTML = details.map(item => `
+        <div class="metric"><strong>${item[0]}</strong><span>${item[1]}</span></div>
+      `).join('');
+    }
+
+    function renderCaseTable() {
+      const rows = DATA.cases;
+      document.getElementById('caseTable').innerHTML = `
+        <thead><tr>
+          <th>Case</th><th>Objective</th><th class="num">Budget</th><th class="num">Routes</th><th class="num">Passenger proxy</th><th class="num">Health lift</th>
+        </tr></thead>
+        <tbody>
+          ${rows.map(row => `
+            <tr>
+              <td>${row.case_id}</td>
+              <td>${row.objective}</td>
+              <td class="num">${fmtMoney(row.allocated_budget_cad)}</td>
+              <td class="num">${fmtNum(row.funded_routes)}</td>
+              <td class="num">${fmtNum(row.incremental_passenger_proxy)}</td>
+              <td class="num">${fmtNum(row.incremental_route_health_points, 1)}</td>
+            </tr>
+          `).join('')}
+        </tbody>
+      `;
+    }
+
+    function lonLatToXY(coord, canvas) {
+      const bounds = { minLon: -126, maxLon: -62, minLat: 41, maxLat: 55 };
+      const pad = 36;
+      const x = pad + ((coord.lon - bounds.minLon) / (bounds.maxLon - bounds.minLon)) * (canvas.width - pad * 2);
+      const y = canvas.height - pad - ((coord.lat - bounds.minLat) / (bounds.maxLat - bounds.minLat)) * (canvas.height - pad * 2);
+      return { x, y };
+    }
+
+    function drawMap() {
+      const canvas = document.getElementById('routeMap');
+      const ctx = canvas.getContext('2d');
+      const dpr = window.devicePixelRatio || 1;
+      const rect = canvas.getBoundingClientRect();
+      canvas.width = Math.round(rect.width * dpr);
+      canvas.height = Math.round(420 * dpr);
+      ctx.scale(dpr, dpr);
+      const width = rect.width;
+      const height = 420;
+
+      ctx.clearRect(0, 0, width, height);
+      ctx.fillStyle = '#edf2ef';
+      ctx.fillRect(0, 0, width, height);
+
+      ctx.strokeStyle = '#d4ddd9';
+      ctx.lineWidth = 1;
+      for (let i = 0; i < 5; i++) {
+        const y = 42 + i * 75;
+        ctx.beginPath();
+        ctx.moveTo(30, y);
+        ctx.lineTo(width - 30, y);
+        ctx.stroke();
+      }
+
+      const rows = caseRows();
+      const selected = state.selectedRoute;
+      rows.forEach(row => {
+        const [origin, dest] = row.route_id.split('_');
+        const a = lonLatToXY(DATA.airportCoords[origin], { width, height });
+        const b = lonLatToXY(DATA.airportCoords[dest], { width, height });
+        const midX = (a.x + b.x) / 2;
+        const midY = Math.min(a.y, b.y) - Math.max(24, Math.abs(a.x - b.x) * 0.12);
+        const isSelected = row.route_id === selected;
+        ctx.beginPath();
+        ctx.moveTo(a.x, a.y);
+        ctx.quadraticCurveTo(midX, midY, b.x, b.y);
+        ctx.strokeStyle = bucketColor[row.decision_bucket] || '#23756b';
+        ctx.globalAlpha = isSelected ? 0.95 : 0.34;
+        ctx.lineWidth = isSelected ? 4 : 2;
+        ctx.stroke();
+        ctx.globalAlpha = 1;
+      });
+
+      const airportCodes = new Set();
+      rows.forEach(row => {
+        const [origin, dest] = row.route_id.split('_');
+        airportCodes.add(origin);
+        airportCodes.add(dest);
+      });
+      airportCodes.forEach(code => {
+        const point = lonLatToXY(DATA.airportCoords[code], { width, height });
+        const isSelected = selected && selected.split('_').includes(code);
+        ctx.beginPath();
+        ctx.arc(point.x, point.y, isSelected ? 6 : 4, 0, Math.PI * 2);
+        ctx.fillStyle = isSelected ? '#20272a' : '#596663';
+        ctx.fill();
+        ctx.font = '12px Inter, system-ui, sans-serif';
+        ctx.fillStyle = '#2b3033';
+        ctx.fillText(code, point.x + 8, point.y - 8);
+      });
+
+      ctx.fillStyle = '#66706d';
+      ctx.font = '12px Inter, system-ui, sans-serif';
+      ctx.fillText('Schematic route map, not geographic scale-perfect', 16, height - 16);
+    }
+
+    function renderSensitivity() {
+      const avgRows = [
+        ['controlled_saturation', DATA.sensitivityAverage.controlled_saturation],
+        ['controlled_adstock', DATA.sensitivityAverage.controlled_adstock],
+        ['naive_raw_spend', DATA.sensitivityAverage.naive_raw_spend]
+      ];
+      document.getElementById('sensitivityBars').innerHTML = avgRows.map(([name, row], index) => {
+        const cls = index === 0 ? '' : index === 1 ? 'blue' : 'red';
+        return `
+          <div class="bar-row">
+            <div>${name}</div>
+            <div class="bar-track"><div class="bar-fill ${cls}" style="width:${Math.round(row.mean_budget_efficiency_ratio * 100)}%"></div></div>
+            <div>${fmtPct(row.mean_budget_efficiency_ratio)}</div>
+          </div>
+        `;
+      }).join('');
+
+      const mechanismRows = DATA.sensitivity
+        .filter(row => row.model_spec === 'controlled_saturation')
+        .reduce((acc, row) => {
+          acc[row.spend_mechanism] = acc[row.spend_mechanism] || { n: 0, top: 0, efficiency: 0 };
+          acc[row.spend_mechanism].n += 1;
+          acc[row.spend_mechanism].top += Number(row.top_channel_recovery_rate);
+          acc[row.spend_mechanism].efficiency += Number(row.mean_budget_efficiency_ratio);
+          return acc;
+        }, {});
+      document.getElementById('mechanismBars').innerHTML = Object.entries(mechanismRows).map(([name, row]) => {
+        const value = row.top / row.n;
+        return `
+          <div class="bar-row">
+            <div>${name}</div>
+            <div class="bar-track"><div class="bar-fill amber" style="width:${Math.round(value * 100)}%"></div></div>
+            <div>${fmtPct(value)}</div>
+          </div>
+        `;
+      }).join('');
+
+      document.getElementById('sensitivityTable').innerHTML = `
+        <thead><tr>
+          <th>Mechanism</th><th>Effect</th><th>Model</th><th class="num">Top recovery</th><th class="num">Top-2 overlap</th><th class="num">Budget efficiency</th>
+        </tr></thead>
+        <tbody>
+          ${DATA.sensitivity.map(row => `
+            <tr>
+              <td>${row.spend_mechanism}</td>
+              <td>${row.effect_strength}</td>
+              <td>${row.model_spec}</td>
+              <td class="num">${fmtPct(row.top_channel_recovery_rate)}</td>
+              <td class="num">${fmtPct(row.mean_top2_budget_direction_overlap)}</td>
+              <td class="num">${fmtPct(row.mean_budget_efficiency_ratio)}</td>
+            </tr>
+          `).join('')}
+        </tbody>
+      `;
+    }
+
+    function renderExperiments() {
+      document.getElementById('experimentTable').innerHTML = `
+        <thead><tr>
+          <th>Route</th><th>Budget</th><th>Design</th><th>Primary metric</th><th>Comparisons</th><th>MDE</th><th>Power</th>
+        </tr></thead>
+        <tbody>
+          ${DATA.experiments.map(row => {
+            const controls = [row.comparison_route_1, row.comparison_route_2, row.comparison_route_3].filter(Boolean).join(', ');
+            return `
+              <tr>
+                <td>${row.route_id}</td>
+                <td class="num">${fmtMoney(row.campaign_budget_cad)}</td>
+                <td>${row.experiment_design}</td>
+                <td>${row.primary_metric}</td>
+                <td>${controls}</td>
+                <td class="num">${fmtPct(row.planned_mde_pct, 1)}</td>
+                <td>${row.power_readiness}</td>
+              </tr>
+            `;
+          }).join('')}
+        </tbody>
+      `;
+
+      document.getElementById('controlTable').innerHTML = `
+        <thead><tr>
+          <th>Treatment</th><th>Control</th><th class="num">Rank</th><th class="num">Match score</th><th>Notes</th>
+        </tr></thead>
+        <tbody>
+          ${DATA.controls.map(row => `
+            <tr>
+              <td>${row.treatment_route_id}</td>
+              <td>${row.control_route_id}</td>
+              <td class="num">${fmtNum(row.match_rank)}</td>
+              <td class="num">${fmtNum(row.match_score, 1)}</td>
+              <td>${row.match_notes}</td>
+            </tr>
+          `).join('')}
+        </tbody>
+      `;
+    }
+
+    function renderPortfolio() {
+      renderKpis();
+      renderRoutes();
+      renderRouteDetails();
+      renderCaseTable();
+      drawMap();
+    }
+
+    function renderAll() {
+      initCaseSelect();
+      initNav();
+      renderPortfolio();
+      renderSensitivity();
+      renderExperiments();
+      window.addEventListener('resize', () => {
+        if (state.view === 'portfolio') drawMap();
+      });
+    }
+
+    renderAll();
+  </script>
+</body>
+</html>

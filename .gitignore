@@ -1,0 +1,21 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+work/
+
+# Raw or large downloaded files should be reproducible from scripts or source notes.
+data/raw/*
+!data/raw/.gitkeep
+
+# Processed data and outputs can be regenerated.
+data/processed/*
+!data/processed/.gitkeep
+outputs/*
+!outputs/.gitkeep
+
+# Keep reports and docs versioned.
+reports/*.html
+reports/*.pdf

@@ -1,0 +1,20 @@
+route_id,origin_iata,destination_iata,route_group,strategic_role,status_assumption,notes
+YKF_YVR,YKF,YVR,personal_anchor,long_haul_regional,historical_to_validate,Waterloo-Vancouver is the motivating discontinued route.
+YKF_YYC,YKF,YYC,regional_to_hub,western_access,to_validate,Useful comparison for western Canada demand from Waterloo.
+YKF_YEG,YKF,YEG,regional_to_hub,western_access,to_validate,Useful comparison for western Canada demand from Waterloo.
+YKF_YHZ,YKF,YHZ,regional_to_hub,eastern_access,to_validate,Tests whether regional airport support differs for eastern routes.
+YHM_YVR,YHM,YVR,regional_to_hub,hub_substitution,to_validate,Hamilton as Southern Ontario alternative to YYZ.
+YHM_YYC,YHM,YYC,regional_to_hub,western_access,to_validate,Hamilton-Calgary comparison route.
+YHM_YEG,YHM,YEG,regional_to_hub,western_access,to_validate,Hamilton-Edmonton comparison route.
+YXU_YVR,YXU,YVR,regional_to_hub,long_haul_regional,to_validate,London-Vancouver as another Southwestern Ontario route candidate.
+YXU_YYC,YXU,YYC,regional_to_hub,western_access,to_validate,London-Calgary route candidate.
+YXX_YYC,YXX,YYC,regional_to_hub,western_access,to_validate,Abbotsford-Calgary regional route comparison.
+YXX_YEG,YXX,YEG,regional_to_hub,western_access,to_validate,Abbotsford-Edmonton regional route comparison.
+YXX_YVR,YXX,YVR,intra_region,local_competition,negative_control_candidate,Very short regional substitute; likely not a true commercial air route.
+YLW_YVR,YLW,YVR,regional_to_hub,bc_connectivity,to_validate,Kelowna-Vancouver established connectivity benchmark candidate.
+YLW_YYC,YLW,YYC,regional_to_hub,western_access,to_validate,Kelowna-Calgary comparison route.
+YLW_YEG,YLW,YEG,regional_to_hub,western_access,to_validate,Kelowna-Edmonton comparison route.
+YYZ_YVR,YYZ,YVR,hub_to_hub,hub_benchmark,benchmark,High-volume benchmark for demand context, not a regional support target.
+YYZ_YYC,YYZ,YYC,hub_to_hub,hub_benchmark,benchmark,Hub benchmark for western Canada travel demand.
+YVR_YYC,YVR,YYC,hub_to_hub,hub_benchmark,benchmark,Western hub benchmark route.
+

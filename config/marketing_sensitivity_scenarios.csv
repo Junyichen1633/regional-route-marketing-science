@@ -1,0 +1,16 @@
+scenario_id,spend_mechanism,effect_strength,effect_multiplier,noise_pct,replications,notes
+randomized_weak,randomized,weak,0.50,0.18,40,Marketing spend is mostly exogenous; true effects are weak.
+randomized_base,randomized,base,1.00,0.14,40,Marketing spend is mostly exogenous; true effects are base case.
+randomized_strong,randomized,strong,1.60,0.12,40,Marketing spend is mostly exogenous; true effects are strong.
+demand_following_weak,demand_following,weak,0.50,0.18,40,Spend follows high-demand routes and peak months; true effects are weak.
+demand_following_base,demand_following,base,1.00,0.14,40,Spend follows high-demand routes and peak months; true effects are base case.
+demand_following_strong,demand_following,strong,1.60,0.12,40,Spend follows high-demand routes and peak months; true effects are strong.
+risk_targeting_weak,risk_targeting,weak,0.50,0.18,40,Spend targets weaker routes or soft months; true effects are weak.
+risk_targeting_base,risk_targeting,base,1.00,0.14,40,Spend targets weaker routes or soft months; true effects are base case.
+risk_targeting_strong,risk_targeting,strong,1.60,0.12,40,Spend targets weaker routes or soft months; true effects are strong.
+seasonal_campaign_weak,seasonal_campaign,weak,0.50,0.18,40,Spend is concentrated in seasonal campaign windows; true effects are weak.
+seasonal_campaign_base,seasonal_campaign,base,1.00,0.14,40,Spend is concentrated in seasonal campaign windows; true effects are base case.
+seasonal_campaign_strong,seasonal_campaign,strong,1.60,0.12,40,Spend is concentrated in seasonal campaign windows; true effects are strong.
+channel_bundle_weak,channel_bundle,weak,0.50,0.18,40,Channels are highly correlated because campaigns launch as bundles; true effects are weak.
+channel_bundle_base,channel_bundle,base,1.00,0.14,40,Channels are highly correlated because campaigns launch as bundles; true effects are base case.
+channel_bundle_strong,channel_bundle,strong,1.60,0.12,40,Channels are highly correlated because campaigns launch as bundles; true effects are strong.

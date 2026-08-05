@@ -1,0 +1,12 @@
+iata,statcan_geo,table_ids,coverage_note
+YEG,"Edmonton International, Alberta","23100253;23100312",Covered in annual airport traffic and monthly screened traffic.
+YHZ,"Halifax/Robert L Stanfield International, Nova Scotia","23100253;23100312",Covered in annual airport traffic and monthly screened traffic.
+YVR,"Vancouver International, British Columbia","23100253;23100312",Covered in annual airport traffic and monthly screened traffic.
+YYC,"Calgary International, Alberta","23100253;23100312",Covered in annual airport traffic and monthly screened traffic.
+YYZ,"Toronto/Lester B Pearson International, Ontario","23100253;23100312",Covered in annual airport traffic and monthly screened traffic.
+YHM,"","",Not found in current StatsCan full-table airport traffic coverage.
+YKF,"","",Not found in current StatsCan full-table airport traffic coverage.
+YLW,"","",Not found in current StatsCan full-table airport traffic coverage.
+YXU,"","",Not found in current StatsCan full-table airport traffic coverage.
+YXX,"","",Not found in current StatsCan full-table airport traffic coverage.
+
