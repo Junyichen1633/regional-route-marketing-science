@@ -30,7 +30,7 @@ The recommended v0 case is `portfolio_value_500k`.
 
 ## Why This Is Useful
 
-The optimizer makes the tradeoff explicit: a passenger-maximizing objective, a health-lift objective, and a balanced portfolio objective can recommend different allocations. This is the kind of business-facing modeling decision a product data scientist should be able to explain.
+The optimizer makes the tradeoff explicit: a passenger-maximizing objective, a health-lift objective, and a balanced portfolio objective can recommend different allocations. This is the kind of business-facing modeling decision the project is designed to make transparent.
 
 ## Guardrails
 

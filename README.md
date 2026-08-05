@@ -1,4 +1,3 @@
-
 # Regional Air Route Marketing Science
 
 ## Personal Motivation
@@ -77,10 +76,22 @@ Current implemented layers:
 - Marketing sensitivity and recovery analysis for simulated channel effects.
 - Constrained budget optimization across route-budget pairs.
 - Experiment design layer for validating the recommended allocation.
-- Final portfolio case study and Chinese interview talk track.
+- Final portfolio case study.
 - Standalone interactive portfolio dashboard.
-- Interview-ready case study PowerPoint deck.
+- Case study PowerPoint deck.
 - Meridian and Vertex AI positioning note clarifying what is future production path versus current prototype.
+
+## Dashboard Preview
+
+![Dashboard preview](dashboard/dashboard_preview.png)
+
+GitHub displays HTML files as source code by default. To view the interactive dashboard, use the rendered preview link:
+
+[Open interactive dashboard](https://raw.githack.com/Junyichen1633/regional-route-marketing-science/main/dashboard/route_marketing_portfolio_dashboard.html)
+
+Fallback:
+
+[Open via htmlpreview.github.io](https://htmlpreview.github.io/?https://github.com/Junyichen1633/regional-route-marketing-science/blob/main/dashboard/route_marketing_portfolio_dashboard.html)
 
 Latest project memo:
 
@@ -91,7 +102,6 @@ reports/phase4b_marketing_sensitivity_memo.md
 reports/phase5_budget_optimization_memo.md
 reports/phase6_experiment_design_memo.md
 reports/final_portfolio_case_study.md
-reports/interview_talk_track_cn.md
 docs/18_meridian_vertex_positioning.md
 presentations/regional_route_marketing_science_case_study.pptx
 ```
@@ -100,6 +110,6 @@ Reviewer starting point:
 
 ```text
 reports/final_portfolio_case_study.md
-dashboard/route_marketing_portfolio_dashboard.html
+dashboard/README.md
 presentations/regional_route_marketing_science_case_study.pptx
 ```

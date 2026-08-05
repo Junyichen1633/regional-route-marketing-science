@@ -2,7 +2,7 @@
 
 ## Objective
 
-Create an interview-ready PowerPoint deck that explains the project as an L4 product data science case study.
+Create a PowerPoint deck that explains the project as a route marketing science case study.
 
 The deck is designed to answer:
 

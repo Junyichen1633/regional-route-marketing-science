@@ -5,16 +5,13 @@ __pycache__/
 .venv/
 venv/
 work/
+*.inspect.ndjson
 
 # Raw or large downloaded files should be reproducible from scripts or source notes.
 data/raw/*
 !data/raw/.gitkeep
 
-# Processed data and outputs can be regenerated.
-data/processed/*
-!data/processed/.gitkeep
-outputs/*
-!outputs/.gitkeep
+# Keep processed data and summary outputs versioned for portfolio review.
 
 # Keep reports and docs versioned.
 reports/*.html

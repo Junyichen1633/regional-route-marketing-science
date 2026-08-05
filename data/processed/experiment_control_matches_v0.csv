@@ -1,0 +1,22 @@
+treatment_route_id,control_route_id,match_rank,match_score,control_model_role,control_route_segment,control_end_status,control_recommendation,match_notes
+YKF_YEG,YHM_YEG,1,11.2968,target,long_haul,active,Watchlist; improve evidence first,same segment; same destination
+YKF_YEG,YHM_YYC,2,19.2427,target,long_haul,active,Needs schedule data before spend decision,same segment
+YKF_YEG,YHM_YVR,3,25.5780,target,long_haul,active,Needs schedule data before spend decision,same segment
+YKF_YVR,YXU_YVR,1,12.7291,target,long_haul,inactive,Relaunch feasibility test; verify airline capacity first,same segment; same destination
+YKF_YVR,YHM_YVR,2,32.3399,target,long_haul,active,Needs schedule data before spend decision,same segment; same destination
+YKF_YVR,YHM_YYC,3,42.8368,target,long_haul,active,Needs schedule data before spend decision,same segment
+YKF_YYC,YHM_YYC,1,8.0520,target,long_haul,active,Needs schedule data before spend decision,same segment; same destination
+YKF_YYC,YHM_YVR,2,18.4015,target,long_haul,active,Needs schedule data before spend decision,same segment
+YKF_YYC,YHM_YEG,3,18.7294,target,long_haul,active,Watchlist; improve evidence first,same segment
+YLW_YVR,YLW_YYC,1,41.0416,target,medium_haul,active,Maintain service; monitor capacity and leakage,different segment; same origin; monitor spillover
+YLW_YVR,YLW_YEG,2,48.4171,target,medium_haul,active,Low priority for marketing allocation,different segment; same origin; monitor spillover
+YLW_YVR,YHM_YVR,3,49.1206,target,long_haul,active,Needs schedule data before spend decision,different segment; same destination
+YXU_YYC,YHM_YYC,1,13.3982,target,long_haul,active,Needs schedule data before spend decision,same segment; same destination
+YXU_YYC,YHM_YEG,2,21.1103,target,long_haul,active,Watchlist; improve evidence first,same segment
+YXU_YYC,YHM_YVR,3,27.7335,target,long_haul,active,Needs schedule data before spend decision,same segment
+YXX_YEG,YLW_YEG,1,12.7480,target,medium_haul,active,Low priority for marketing allocation,same segment; same destination
+YXX_YEG,YKF_YHZ,2,17.9947,target,medium_haul,active,Watchlist; improve evidence first,same segment
+YXX_YEG,YLW_YYC,3,22.0695,target,medium_haul,active,Maintain service; monitor capacity and leakage,same segment
+YXX_YYC,YLW_YYC,1,10.3216,target,medium_haul,active,Maintain service; monitor capacity and leakage,same segment; same destination
+YXX_YYC,YKF_YHZ,2,23.1077,target,medium_haul,active,Watchlist; improve evidence first,same segment
+YXX_YYC,YLW_YEG,3,24.9518,target,medium_haul,active,Low priority for marketing allocation,same segment

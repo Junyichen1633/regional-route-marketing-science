@@ -4,7 +4,7 @@
 
 The ideal project dataset would contain route-month passengers, route-level flight frequency, fare/yield, and observed marketing spend. Public data does not appear to fully support that ideal structure for Canadian domestic regional routes.
 
-The project is still feasible as a strong L4 Product Data Scientist portfolio project if it is framed correctly:
+The project is feasible as a route marketing science case study if it is framed correctly:
 
 > Build a route investment decision system using public airport activity data, route structure, hub competition, and scenario-based marketing response.
 
@@ -95,4 +95,3 @@ Once `route_active` exists, the project can build:
 2. Marketing response simulator
 3. Budget optimization layer
 4. Experiment design recommendation
-

@@ -200,7 +200,7 @@ Do not claim precise channel ranking from simulated marketing data. Use the sens
 
 - Built `src/build_portfolio_artifacts.py`.
 - Generated `reports/final_portfolio_case_study.md`.
-- Generated `reports/interview_talk_track_cn.md`.
+- Generated a Chinese project walkthrough draft.
 - Generated `outputs/final_portfolio_snapshot.md`.
 - Added a final narrative that frames MMM as one component in a broader route marketing science decision system.
 
@@ -246,7 +246,7 @@ Quick Look previews the static shell but does not execute embedded JavaScript. O
 
 ### Current Readout
 
-- The deck frames the project as an L4 product data science case study.
+- The deck frames the project as a route marketing science case study.
 - It explicitly says Google Meridian was not run in the current public-data prototype.
 - Meridian is positioned as the future MMM component after real route-level spend and outcome data exist.
 - Vertex AI is positioned as the future platform path for pipelines, experiment tracking, model comparison, and scheduled scoring.

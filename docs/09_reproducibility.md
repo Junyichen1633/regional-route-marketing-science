@@ -115,7 +115,6 @@ Key generated reports:
 - `reports/phase5_budget_optimization_memo.md`
 - `reports/phase6_experiment_design_memo.md`
 - `reports/final_portfolio_case_study.md`
-- `reports/interview_talk_track_cn.md`
 
 Key generated dashboards:
 

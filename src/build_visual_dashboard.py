@@ -830,7 +830,7 @@ HTML_TEMPLATE = """<!doctype html>
               </div>
             </section>
             <section class="panel">
-              <div class="panel-head"><h3>Claims And Guardrails</h3><span>Interview-safe framing</span></div>
+              <div class="panel-head"><h3>Claims And Guardrails</h3><span>Decision-safe framing</span></div>
               <div class="panel-body">
                 <div class="callout">
                   The project supports route-level portfolio direction and experiment prioritization under public-data constraints. It does not claim observed causal channel ROI.
@@ -840,7 +840,7 @@ HTML_TEMPLATE = """<!doctype html>
                   <tbody>
                     <tr><th>Future production path</th><td>BigQuery for route-month data, Vertex AI Pipelines for reproducible scoring, Meridian when real marketing spend and outcomes exist.</td></tr>
                     <tr><th>Primary missing data</th><td>Route-level bookings, campaign spend, conversion events, load factor, and fare/yield guardrails.</td></tr>
-                    <tr><th>Best interview point</th><td>Budget direction is more stable than exact channel ranking, so the recommendation must flow into experiments before scaling.</td></tr>
+                    <tr><th>Planning point</th><td>Budget direction is more stable than exact channel ranking, so the recommendation must flow into experiments before scaling.</td></tr>
                   </tbody>
                 </table>
               </div>
@@ -864,7 +864,7 @@ HTML_TEMPLATE = """<!doctype html>
       portfolio: ['Portfolio Allocation', 'Recommended budget plan, route map, and allocation details.'],
       sensitivity: ['Marketing Sensitivity', 'Recovery analysis for simulated channel effects and spend mechanisms.'],
       experiments: ['Experiment Design', 'Treatment, comparison routes, success metrics, and validation readiness.'],
-      method: ['Method And Guardrails', 'Model flow, production path, and interview-safe claims.']
+      method: ['Method And Guardrails', 'Model flow, production path, and decision-safe claims.']
     };
 
     const bucketColor = {

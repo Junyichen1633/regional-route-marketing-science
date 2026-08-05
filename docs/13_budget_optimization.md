@@ -120,7 +120,7 @@ Recommended allocation:
 
 This phase is useful because it makes tradeoffs explicit.
 
-A passenger-maximizing plan can over-allocate to already-healthy high-volume routes. A route-health objective can overemphasize routes where marketing is not the primary bottleneck. The balanced portfolio objective is a cleaner interview narrative because it connects the model to the business decision.
+A passenger-maximizing plan can over-allocate to already-healthy high-volume routes. A route-health objective can overemphasize routes where marketing is not the primary bottleneck. The balanced portfolio objective is a cleaner executive narrative because it connects the model to the business decision.
 
 ## Limitations
 

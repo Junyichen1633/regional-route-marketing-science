@@ -58,7 +58,7 @@ route-month panel with real spend and outcomes
 -> experiment design and refresh loop
 ```
 
-## Interview Framing
+## Recommended Framing
 
 The right phrasing is:
 

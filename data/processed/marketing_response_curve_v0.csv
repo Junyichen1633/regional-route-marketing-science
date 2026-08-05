@@ -1,0 +1,337 @@
+route_id,scenario,campaign_budget_cad,route_segment,end_of_period_route_status,capacity_required_flag,baseline_annual_passenger_proxy,max_lift_pct_adjusted,half_saturation_spend_cad_adjusted,response_share,incremental_passenger_proxy,incremental_pct_of_baseline_proxy,cost_per_incremental_passenger_proxy_cad,incremental_route_health_points,marketing_support_priority_score_v0,route_sustainability_score_v0,data_confidence_score,source_recommendation
+YKF_YVR,conservative,0,long_haul,inactive,1,92558.1204,0.0203,175500.0000,0.0000,0.0000,0.0000,,0.0000,81.9442,76.7484,99.4792,Relaunch feasibility test; verify airline capacity first
+YKF_YVR,conservative,25000,long_haul,inactive,1,92558.1204,0.0203,175500.0000,0.1247,210.4724,0.0023,118.7804,0.8102,81.9442,76.7484,99.4792,Relaunch feasibility test; verify airline capacity first
+YKF_YVR,conservative,50000,long_haul,inactive,1,92558.1204,0.0203,175500.0000,0.2217,374.2769,0.0040,133.5909,1.4407,81.9442,76.7484,99.4792,Relaunch feasibility test; verify airline capacity first
+YKF_YVR,conservative,75000,long_haul,inactive,1,92558.1204,0.0203,175500.0000,0.2994,505.3858,0.0055,148.4015,1.9454,81.9442,76.7484,99.4792,Relaunch feasibility test; verify airline capacity first
+YKF_YVR,conservative,100000,long_haul,inactive,1,92558.1204,0.0203,175500.0000,0.3630,612.7001,0.0066,163.2120,2.3585,81.9442,76.7484,99.4792,Relaunch feasibility test; verify airline capacity first
+YKF_YVR,conservative,150000,long_haul,inactive,1,92558.1204,0.0203,175500.0000,0.4608,777.8750,0.0084,192.8330,2.9943,81.9442,76.7484,99.4792,Relaunch feasibility test; verify airline capacity first
+YKF_YVR,conservative,250000,long_haul,inactive,1,92558.1204,0.0203,175500.0000,0.5875,991.7677,0.0107,252.0751,3.8177,81.9442,76.7484,99.4792,Relaunch feasibility test; verify airline capacity first
+YKF_YVR,conservative,400000,long_haul,inactive,1,92558.1204,0.0203,175500.0000,0.6950,1173.2328,0.0127,340.9383,4.5162,81.9442,76.7484,99.4792,Relaunch feasibility test; verify airline capacity first
+YKF_YVR,base,0,long_haul,inactive,1,92558.1204,0.0486,162000.0000,0.0000,0.0000,0.0000,,0.0000,81.9442,76.7484,99.4792,Relaunch feasibility test; verify airline capacity first
+YKF_YVR,base,25000,long_haul,inactive,1,92558.1204,0.0486,162000.0000,0.1337,601.7785,0.0065,41.5435,1.2720,81.9442,76.7484,99.4792,Relaunch feasibility test; verify airline capacity first
+YKF_YVR,base,50000,long_haul,inactive,1,92558.1204,0.0486,162000.0000,0.2358,1061.6281,0.0115,47.0975,2.2440,81.9442,76.7484,99.4792,Relaunch feasibility test; verify airline capacity first
+YKF_YVR,base,75000,long_haul,inactive,1,92558.1204,0.0486,162000.0000,0.3165,1424.4630,0.0154,52.6514,3.0110,81.9442,76.7484,99.4792,Relaunch feasibility test; verify airline capacity first
+YKF_YVR,base,100000,long_haul,inactive,1,92558.1204,0.0486,162000.0000,0.3817,1718.0547,0.0186,58.2054,3.6315,81.9442,76.7484,99.4792,Relaunch feasibility test; verify airline capacity first
+YKF_YVR,base,150000,long_haul,inactive,1,92558.1204,0.0486,162000.0000,0.4808,2164.0881,0.0234,69.3133,4.5743,81.9442,76.7484,99.4792,Relaunch feasibility test; verify airline capacity first
+YKF_YVR,base,250000,long_haul,inactive,1,92558.1204,0.0486,162000.0000,0.6068,2731.3733,0.0295,91.5290,5.7734,81.9442,76.7484,99.4792,Relaunch feasibility test; verify airline capacity first
+YKF_YVR,base,400000,long_haul,inactive,1,92558.1204,0.0486,162000.0000,0.7117,3203.7745,0.0346,124.8527,6.7720,81.9442,76.7484,99.4792,Relaunch feasibility test; verify airline capacity first
+YKF_YVR,optimistic,0,long_haul,inactive,1,92558.1204,0.0892,135000.0000,0.0000,0.0000,0.0000,,0.0000,81.9442,76.7484,99.4792,Relaunch feasibility test; verify airline capacity first
+YKF_YVR,optimistic,25000,long_haul,inactive,1,92558.1204,0.0892,135000.0000,0.1562,1444.1681,0.0156,17.3110,2.0720,81.9442,76.7484,99.4792,Relaunch feasibility test; verify airline capacity first
+YKF_YVR,optimistic,50000,long_haul,inactive,1,92558.1204,0.0892,135000.0000,0.2703,2498.0205,0.0270,20.0158,3.5840,81.9442,76.7484,99.4792,Relaunch feasibility test; verify airline capacity first
+YKF_YVR,optimistic,75000,long_haul,inactive,1,92558.1204,0.0892,135000.0000,0.3571,3300.9557,0.0357,22.7207,4.7359,81.9442,76.7484,99.4792,Relaunch feasibility test; verify airline capacity first
+YKF_YVR,optimistic,100000,long_haul,inactive,1,92558.1204,0.0892,135000.0000,0.4255,3933.0536,0.0425,25.4255,5.6428,81.9442,76.7484,99.4792,Relaunch feasibility test; verify airline capacity first
+YKF_YVR,optimistic,150000,long_haul,inactive,1,92558.1204,0.0892,135000.0000,0.5263,4864.5663,0.0526,30.8352,6.9793,81.9442,76.7484,99.4792,Relaunch feasibility test; verify airline capacity first
+YKF_YVR,optimistic,250000,long_haul,inactive,1,92558.1204,0.0892,135000.0000,0.6494,6001.7376,0.0648,41.6546,8.6108,81.9442,76.7484,99.4792,Relaunch feasibility test; verify airline capacity first
+YKF_YVR,optimistic,400000,long_haul,inactive,1,92558.1204,0.0892,135000.0000,0.7477,6910.4119,0.0747,57.8837,9.9145,81.9442,76.7484,99.4792,Relaunch feasibility test; verify airline capacity first
+YKF_YEG,conservative,0,long_haul,active,0,30922.6955,0.0272,130000.0000,0.0000,0.0000,0.0000,,0.0000,71.6207,73.3315,93.9236,Scale or defend with controlled campaign
+YKF_YEG,conservative,25000,long_haul,active,0,30922.6955,0.0272,130000.0000,0.1613,122.0840,0.0039,204.7771,1.0724,71.6207,73.3315,93.9236,Scale or defend with controlled campaign
+YKF_YEG,conservative,50000,long_haul,active,0,30922.6955,0.0272,130000.0000,0.2778,210.2557,0.0068,237.8057,1.8469,71.6207,73.3315,93.9236,Scale or defend with controlled campaign
+YKF_YEG,conservative,75000,long_haul,active,0,30922.6955,0.0272,130000.0000,0.3659,276.9222,0.0090,270.8342,2.4325,71.6207,73.3315,93.9236,Scale or defend with controlled campaign
+YKF_YEG,conservative,100000,long_haul,active,0,30922.6955,0.0272,130000.0000,0.4348,329.0959,0.0106,303.8628,2.8908,71.6207,73.3315,93.9236,Scale or defend with controlled campaign
+YKF_YEG,conservative,150000,long_haul,active,0,30922.6955,0.0272,130000.0000,0.5357,405.4932,0.0131,369.9199,3.5619,71.6207,73.3315,93.9236,Scale or defend with controlled campaign
+YKF_YEG,conservative,250000,long_haul,active,0,30922.6955,0.0272,130000.0000,0.6579,497.9740,0.0161,502.0342,4.3743,71.6207,73.3315,93.9236,Scale or defend with controlled campaign
+YKF_YEG,conservative,400000,long_haul,active,0,30922.6955,0.0272,130000.0000,0.7547,571.2608,0.0185,700.2056,5.0181,71.6207,73.3315,93.9236,Scale or defend with controlled campaign
+YKF_YEG,base,0,long_haul,active,0,30922.6955,0.0653,120000.0000,0.0000,0.0000,0.0000,,0.0000,71.6207,73.3315,93.9236,Scale or defend with controlled campaign
+YKF_YEG,base,25000,long_haul,active,0,30922.6955,0.0653,120000.0000,0.1724,348.0095,0.0113,71.8371,1.7254,71.6207,73.3315,93.9236,Scale or defend with controlled campaign
+YKF_YEG,base,50000,long_haul,active,0,30922.6955,0.0653,120000.0000,0.2941,593.6632,0.0192,84.2228,2.9434,71.6207,73.3315,93.9236,Scale or defend with controlled campaign
+YKF_YEG,base,75000,long_haul,active,0,30922.6955,0.0653,120000.0000,0.3846,776.3288,0.0251,96.6086,3.8490,71.6207,73.3315,93.9236,Scale or defend with controlled campaign
+YKF_YEG,base,100000,long_haul,active,0,30922.6955,0.0653,120000.0000,0.4545,917.4795,0.0297,108.9943,4.5489,71.6207,73.3315,93.9236,Scale or defend with controlled campaign
+YKF_YEG,base,150000,long_haul,active,0,30922.6955,0.0653,120000.0000,0.5556,1121.3638,0.0363,133.7657,5.5597,71.6207,73.3315,93.9236,Scale or defend with controlled campaign
+YKF_YEG,base,250000,long_haul,active,0,30922.6955,0.0653,120000.0000,0.6757,1363.8208,0.0441,183.3085,6.7618,71.6207,73.3315,93.9236,Scale or defend with controlled campaign
+YKF_YEG,base,400000,long_haul,active,0,30922.6955,0.0653,120000.0000,0.7692,1552.6575,0.0502,257.6228,7.6981,71.6207,73.3315,93.9236,Scale or defend with controlled campaign
+YKF_YEG,optimistic,0,long_haul,active,0,30922.6955,0.1197,100000.0000,0.0000,0.0000,0.0000,,0.0000,71.6207,73.3315,93.9236,Scale or defend with controlled campaign
+YKF_YEG,optimistic,25000,long_haul,active,0,30922.6955,0.1197,100000.0000,0.2000,828.9121,0.0268,30.1600,2.8689,71.6207,73.3315,93.9236,Scale or defend with controlled campaign
+YKF_YEG,optimistic,50000,long_haul,active,0,30922.6955,0.1197,100000.0000,0.3333,1381.5202,0.0447,36.1920,4.7816,71.6207,73.3315,93.9236,Scale or defend with controlled campaign
+YKF_YEG,optimistic,75000,long_haul,active,0,30922.6955,0.1197,100000.0000,0.4286,1776.2402,0.0574,42.2240,6.1477,71.6207,73.3315,93.9236,Scale or defend with controlled campaign
+YKF_YEG,optimistic,100000,long_haul,active,0,30922.6955,0.1197,100000.0000,0.5000,2072.2803,0.0670,48.2560,7.1724,71.6207,73.3315,93.9236,Scale or defend with controlled campaign
+YKF_YEG,optimistic,150000,long_haul,active,0,30922.6955,0.1197,100000.0000,0.6000,2486.7363,0.0804,60.3200,8.6068,71.6207,73.3315,93.9236,Scale or defend with controlled campaign
+YKF_YEG,optimistic,250000,long_haul,active,0,30922.6955,0.1197,100000.0000,0.7143,2960.4004,0.0957,84.4480,10.2462,71.6207,73.3315,93.9236,Scale or defend with controlled campaign
+YKF_YEG,optimistic,400000,long_haul,active,0,30922.6955,0.1197,100000.0000,0.8000,3315.6484,0.1072,120.6401,11.4758,71.6207,73.3315,93.9236,Scale or defend with controlled campaign
+YKF_YYC,conservative,0,long_haul,active,0,115220.8854,0.0233,156000.0000,0.0000,0.0000,0.0000,,0.0000,68.1332,76.3453,52.0833,Run test-and-learn marketing
+YKF_YYC,conservative,25000,long_haul,active,0,115220.8854,0.0233,156000.0000,0.1381,334.4009,0.0029,74.7606,0.7559,68.1332,76.3453,52.0833,Run test-and-learn marketing
+YKF_YYC,conservative,50000,long_haul,active,0,115220.8854,0.0233,156000.0000,0.2427,587.6366,0.0051,85.0866,1.3283,68.1332,76.3453,52.0833,Run test-and-learn marketing
+YKF_YYC,conservative,75000,long_haul,active,0,115220.8854,0.0233,156000.0000,0.3247,786.0593,0.0068,95.4126,1.7768,68.1332,76.3453,52.0833,Run test-and-learn marketing
+YKF_YYC,conservative,100000,long_haul,active,0,115220.8854,0.0233,156000.0000,0.3906,945.7276,0.0082,105.7387,2.1377,68.1332,76.3453,52.0833,Run test-and-learn marketing
+YKF_YYC,conservative,150000,long_haul,active,0,115220.8854,0.0233,156000.0000,0.4902,1186.7954,0.0103,126.3908,2.6826,68.1332,76.3453,52.0833,Run test-and-learn marketing
+YKF_YYC,conservative,250000,long_haul,active,0,115220.8854,0.0233,156000.0000,0.6158,1490.8021,0.0129,167.6950,3.3697,68.1332,76.3453,52.0833,Run test-and-learn marketing
+YKF_YYC,conservative,400000,long_haul,active,0,115220.8854,0.0233,156000.0000,0.7194,1741.7717,0.0151,229.6512,3.9370,68.1332,76.3453,52.0833,Run test-and-learn marketing
+YKF_YYC,base,0,long_haul,active,0,115220.8854,0.0560,144000.0000,0.0000,0.0000,0.0000,,0.0000,68.1332,76.3453,52.0833,Run test-and-learn marketing
+YKF_YYC,base,25000,long_haul,active,0,115220.8854,0.0560,144000.0000,0.1479,955.0543,0.0083,26.1765,1.2244,68.1332,76.3453,52.0833,Run test-and-learn marketing
+YKF_YYC,base,50000,long_haul,active,0,115220.8854,0.0560,144000.0000,0.2577,1663.9606,0.0144,30.0488,2.1333,68.1332,76.3453,52.0833,Run test-and-learn marketing
+YKF_YYC,base,75000,long_haul,active,0,115220.8854,0.0560,144000.0000,0.3425,2211.0162,0.0192,33.9211,2.8346,68.1332,76.3453,52.0833,Run test-and-learn marketing
+YKF_YYC,base,100000,long_haul,active,0,115220.8854,0.0560,144000.0000,0.4098,2645.9702,0.0230,37.7933,3.3923,68.1332,76.3453,52.0833,Run test-and-learn marketing
+YKF_YYC,base,150000,long_haul,active,0,115220.8854,0.0560,144000.0000,0.5102,3293.9628,0.0286,45.5379,4.2230,68.1332,76.3453,52.0833,Run test-and-learn marketing
+YKF_YYC,base,250000,long_haul,active,0,115220.8854,0.0560,144000.0000,0.6345,4096.5528,0.0356,61.0269,5.2520,68.1332,76.3453,52.0833,Run test-and-learn marketing
+YKF_YYC,base,400000,long_haul,active,0,115220.8854,0.0560,144000.0000,0.7353,4747.1817,0.0412,84.2605,6.0861,68.1332,76.3453,52.0833,Run test-and-learn marketing
+YKF_YYC,optimistic,0,long_haul,active,0,115220.8854,0.1027,120000.0000,0.0000,0.0000,0.0000,,0.0000,68.1332,76.3453,52.0833,Run test-and-learn marketing
+YKF_YYC,optimistic,25000,long_haul,active,0,115220.8854,0.1027,120000.0000,0.1724,2285.6316,0.0198,10.9379,2.0555,68.1332,76.3453,52.0833,Run test-and-learn marketing
+YKF_YYC,optimistic,50000,long_haul,active,0,115220.8854,0.1027,120000.0000,0.2941,3899.0186,0.0338,12.8237,3.5064,68.1332,76.3453,52.0833,Run test-and-learn marketing
+YKF_YYC,optimistic,75000,long_haul,active,0,115220.8854,0.1027,120000.0000,0.3846,5098.7166,0.0443,14.7096,4.5853,68.1332,76.3453,52.0833,Run test-and-learn marketing
+YKF_YYC,optimistic,100000,long_haul,active,0,115220.8854,0.1027,120000.0000,0.4545,6025.7560,0.0523,16.5954,5.4190,68.1332,76.3453,52.0833,Run test-and-learn marketing
+YKF_YYC,optimistic,150000,long_haul,active,0,115220.8854,0.1027,120000.0000,0.5556,7364.8129,0.0639,20.3671,6.6233,68.1332,76.3453,52.0833,Run test-and-learn marketing
+YKF_YYC,optimistic,250000,long_haul,active,0,115220.8854,0.1027,120000.0000,0.6757,8957.2049,0.0777,27.9105,8.0553,68.1332,76.3453,52.0833,Run test-and-learn marketing
+YKF_YYC,optimistic,400000,long_haul,active,0,115220.8854,0.1027,120000.0000,0.7692,10197.4333,0.0885,39.2256,9.1707,68.1332,76.3453,52.0833,Run test-and-learn marketing
+YXU_YVR,conservative,0,long_haul,inactive,1,34036.8387,0.0180,175500.0000,0.0000,0.0000,0.0000,,0.0000,67.3961,68.8231,81.4236,Relaunch feasibility test; verify airline capacity first
+YXU_YVR,conservative,25000,long_haul,inactive,1,34036.8387,0.0180,175500.0000,0.1247,68.6078,0.0020,364.3899,0.7399,67.3961,68.8231,81.4236,Relaunch feasibility test; verify airline capacity first
+YXU_YVR,conservative,50000,long_haul,inactive,1,34036.8387,0.0180,175500.0000,0.2217,122.0033,0.0036,409.8250,1.3158,67.3961,68.8231,81.4236,Relaunch feasibility test; verify airline capacity first
+YXU_YVR,conservative,75000,long_haul,inactive,1,34036.8387,0.0180,175500.0000,0.2994,164.7410,0.0048,455.2602,1.7767,67.3961,68.8231,81.4236,Relaunch feasibility test; verify airline capacity first
+YXU_YVR,conservative,100000,long_haul,inactive,1,34036.8387,0.0180,175500.0000,0.3630,199.7223,0.0059,500.6953,2.1540,67.3961,68.8231,81.4236,Relaunch feasibility test; verify airline capacity first
+YXU_YVR,conservative,150000,long_haul,inactive,1,34036.8387,0.0180,175500.0000,0.4608,253.5644,0.0074,591.5656,2.7346,67.3961,68.8231,81.4236,Relaunch feasibility test; verify airline capacity first
+YXU_YVR,conservative,250000,long_haul,inactive,1,34036.8387,0.0180,175500.0000,0.5875,323.2872,0.0095,773.3062,3.4866,67.3961,68.8231,81.4236,Relaunch feasibility test; verify airline capacity first
+YXU_YVR,conservative,400000,long_haul,inactive,1,34036.8387,0.0180,175500.0000,0.6950,382.4395,0.0112,1045.9170,4.1245,67.3961,68.8231,81.4236,Relaunch feasibility test; verify airline capacity first
+YXU_YVR,base,0,long_haul,inactive,1,34036.8387,0.0431,162000.0000,0.0000,0.0000,0.0000,,0.0000,67.3961,68.8231,81.4236,Relaunch feasibility test; verify airline capacity first
+YXU_YVR,base,25000,long_haul,inactive,1,34036.8387,0.0431,162000.0000,0.1337,196.1622,0.0058,127.4456,1.1586,67.3961,68.8231,81.4236,Relaunch feasibility test; verify airline capacity first
+YXU_YVR,base,50000,long_haul,inactive,1,34036.8387,0.0431,162000.0000,0.2358,346.0596,0.0102,144.4838,2.0440,67.3961,68.8231,81.4236,Relaunch feasibility test; verify airline capacity first
+YXU_YVR,base,75000,long_haul,inactive,1,34036.8387,0.0431,162000.0000,0.3165,464.3332,0.0136,161.5219,2.7426,67.3961,68.8231,81.4236,Relaunch feasibility test; verify airline capacity first
+YXU_YVR,base,100000,long_haul,inactive,1,34036.8387,0.0431,162000.0000,0.3817,560.0355,0.0165,178.5601,3.3079,67.3961,68.8231,81.4236,Relaunch feasibility test; verify airline capacity first
+YXU_YVR,base,150000,long_haul,inactive,1,34036.8387,0.0431,162000.0000,0.4808,705.4293,0.0207,212.6365,4.1667,67.3961,68.8231,81.4236,Relaunch feasibility test; verify airline capacity first
+YXU_YVR,base,250000,long_haul,inactive,1,34036.8387,0.0431,162000.0000,0.6068,890.3476,0.0262,280.7892,5.2589,67.3961,68.8231,81.4236,Relaunch feasibility test; verify airline capacity first
+YXU_YVR,base,400000,long_haul,inactive,1,34036.8387,0.0431,162000.0000,0.7117,1044.3366,0.0307,383.0183,6.1684,67.3961,68.8231,81.4236,Relaunch feasibility test; verify airline capacity first
+YXU_YVR,optimistic,0,long_haul,inactive,1,34036.8387,0.0790,135000.0000,0.0000,0.0000,0.0000,,0.0000,67.3961,68.8231,81.4236,Relaunch feasibility test; verify airline capacity first
+YXU_YVR,optimistic,25000,long_haul,inactive,1,34036.8387,0.0790,135000.0000,0.1562,470.7565,0.0138,53.1060,1.8821,67.3961,68.8231,81.4236,Relaunch feasibility test; verify airline capacity first
+YXU_YVR,optimistic,50000,long_haul,inactive,1,34036.8387,0.0790,135000.0000,0.2703,814.2815,0.0239,61.4038,3.2555,67.3961,68.8231,81.4236,Relaunch feasibility test; verify airline capacity first
+YXU_YVR,optimistic,75000,long_haul,inactive,1,34036.8387,0.0790,135000.0000,0.3571,1076.0148,0.0316,69.7016,4.3019,67.3961,68.8231,81.4236,Relaunch feasibility test; verify airline capacity first
+YXU_YVR,optimistic,100000,long_haul,inactive,1,34036.8387,0.0790,135000.0000,0.4255,1282.0602,0.0377,77.9995,5.1257,67.3961,68.8231,81.4236,Relaunch feasibility test; verify airline capacity first
+YXU_YVR,optimistic,150000,long_haul,inactive,1,34036.8387,0.0790,135000.0000,0.5263,1585.7060,0.0466,94.5951,6.3397,67.3961,68.8231,81.4236,Relaunch feasibility test; verify airline capacity first
+YXU_YVR,optimistic,250000,long_haul,inactive,1,34036.8387,0.0790,135000.0000,0.6494,1956.3906,0.0575,127.7863,7.8217,67.3961,68.8231,81.4236,Relaunch feasibility test; verify airline capacity first
+YXU_YVR,optimistic,400000,long_haul,inactive,1,34036.8387,0.0790,135000.0000,0.7477,2252.5917,0.0662,177.5732,9.0059,67.3961,68.8231,81.4236,Relaunch feasibility test; verify airline capacity first
+YXX_YYC,conservative,0,medium_haul,active,0,104806.1537,0.0212,90000.0000,0.0000,0.0000,0.0000,,0.0000,65.8572,77.5137,93.7500,Run test-and-learn marketing
+YXX_YYC,conservative,25000,medium_haul,active,0,104806.1537,0.0212,90000.0000,0.2174,434.3278,0.0041,57.5602,1.0766,65.8572,77.5137,93.7500,Run test-and-learn marketing
+YXX_YYC,conservative,50000,medium_haul,active,0,104806.1537,0.0212,90000.0000,0.3571,713.5386,0.0068,70.0733,1.7687,65.8572,77.5137,93.7500,Run test-and-learn marketing
+YXX_YYC,conservative,75000,medium_haul,active,0,104806.1537,0.0212,90000.0000,0.4545,908.1400,0.0087,82.5864,2.2511,65.8572,77.5137,93.7500,Run test-and-learn marketing
+YXX_YYC,conservative,100000,medium_haul,active,0,104806.1537,0.0212,90000.0000,0.5263,1051.5306,0.0100,95.0995,2.6065,65.8572,77.5137,93.7500,Run test-and-learn marketing
+YXX_YYC,conservative,150000,medium_haul,active,0,104806.1537,0.0212,90000.0000,0.6250,1248.6925,0.0119,120.1256,3.0952,65.8572,77.5137,93.7500,Run test-and-learn marketing
+YXX_YYC,conservative,250000,medium_haul,active,0,104806.1537,0.0212,90000.0000,0.7353,1469.0501,0.0140,170.1780,3.6415,65.8572,77.5137,93.7500,Run test-and-learn marketing
+YXX_YYC,conservative,400000,medium_haul,active,0,104806.1537,0.0212,90000.0000,0.8163,1630.9454,0.0156,245.2565,4.0428,65.8572,77.5137,93.7500,Run test-and-learn marketing
+YXX_YYC,base,0,medium_haul,active,0,104806.1537,0.0477,80000.0000,0.0000,0.0000,0.0000,,0.0000,65.8572,77.5137,93.7500,Run test-and-learn marketing
+YXX_YYC,base,25000,medium_haul,active,0,104806.1537,0.0477,80000.0000,0.2381,1189.2310,0.0113,21.0220,1.7575,65.8572,77.5137,93.7500,Run test-and-learn marketing
+YXX_YYC,base,50000,medium_haul,active,0,104806.1537,0.0477,80000.0000,0.3846,1921.0655,0.0183,26.0272,2.8391,65.8572,77.5137,93.7500,Run test-and-learn marketing
+YXX_YYC,base,75000,medium_haul,active,0,104806.1537,0.0477,80000.0000,0.4839,2416.8243,0.0231,31.0325,3.5717,65.8572,77.5137,93.7500,Run test-and-learn marketing
+YXX_YYC,base,100000,medium_haul,active,0,104806.1537,0.0477,80000.0000,0.5556,2774.8723,0.0265,36.0377,4.1009,65.8572,77.5137,93.7500,Run test-and-learn marketing
+YXX_YYC,base,150000,medium_haul,active,0,104806.1537,0.0477,80000.0000,0.6522,3257.4588,0.0311,46.0482,4.8141,65.8572,77.5137,93.7500,Run test-and-learn marketing
+YXX_YYC,base,250000,medium_haul,active,0,104806.1537,0.0477,80000.0000,0.7576,3783.9168,0.0361,66.0691,5.5921,65.8572,77.5137,93.7500,Run test-and-learn marketing
+YXX_YYC,base,400000,medium_haul,active,0,104806.1537,0.0477,80000.0000,0.8333,4162.3085,0.0397,96.1005,6.1513,65.8572,77.5137,93.7500,Run test-and-learn marketing
+YXX_YYC,optimistic,0,medium_haul,active,0,104806.1537,0.0847,70000.0000,0.0000,0.0000,0.0000,,0.0000,65.8572,77.5137,93.7500,Run test-and-learn marketing
+YXX_YYC,optimistic,25000,medium_haul,active,0,104806.1537,0.0847,70000.0000,0.2632,2617.1427,0.0250,9.5524,2.7535,65.8572,77.5137,93.7500,Run test-and-learn marketing
+YXX_YYC,optimistic,50000,medium_haul,active,0,104806.1537,0.0847,70000.0000,0.4167,4143.8093,0.0395,12.0662,4.3596,65.8572,77.5137,93.7500,Run test-and-learn marketing
+YXX_YYC,optimistic,75000,medium_haul,active,0,104806.1537,0.0847,70000.0000,0.5172,5144.0392,0.0491,14.5800,5.4120,65.8572,77.5137,93.7500,Run test-and-learn marketing
+YXX_YYC,optimistic,100000,medium_haul,active,0,104806.1537,0.0847,70000.0000,0.5882,5850.0838,0.0558,17.0938,6.1548,65.8572,77.5137,93.7500,Run test-and-learn marketing
+YXX_YYC,optimistic,150000,medium_haul,active,0,104806.1537,0.0847,70000.0000,0.6818,6780.7789,0.0647,22.1214,7.1340,65.8572,77.5137,93.7500,Run test-and-learn marketing
+YXX_YYC,optimistic,250000,medium_haul,active,0,104806.1537,0.0847,70000.0000,0.7812,7769.6425,0.0741,32.1765,8.1743,65.8572,77.5137,93.7500,Run test-and-learn marketing
+YXX_YYC,optimistic,400000,medium_haul,active,0,104806.1537,0.0847,70000.0000,0.8511,8463.9510,0.0808,47.2593,8.9048,65.8572,77.5137,93.7500,Run test-and-learn marketing
+YXU_YYC,conservative,0,long_haul,active,0,62012.9228,0.0267,130000.0000,0.0000,0.0000,0.0000,,0.0000,63.3966,80.8266,100.0000,Run test-and-learn marketing
+YXU_YYC,conservative,25000,long_haul,active,0,62012.9228,0.0267,130000.0000,0.1613,240.1212,0.0039,104.1141,0.9645,63.3966,80.8266,100.0000,Run test-and-learn marketing
+YXU_YYC,conservative,50000,long_haul,active,0,62012.9228,0.0267,130000.0000,0.2778,413.5421,0.0067,120.9067,1.6611,63.3966,80.8266,100.0000,Run test-and-learn marketing
+YXU_YYC,conservative,75000,long_haul,active,0,62012.9228,0.0267,130000.0000,0.3659,544.6652,0.0088,137.6993,2.1878,63.3966,80.8266,100.0000,Run test-and-learn marketing
+YXU_YYC,conservative,100000,long_haul,active,0,62012.9228,0.0267,130000.0000,0.4348,647.2833,0.0104,154.4919,2.6000,63.3966,80.8266,100.0000,Run test-and-learn marketing
+YXU_YYC,conservative,150000,long_haul,active,0,62012.9228,0.0267,130000.0000,0.5357,797.5455,0.0129,188.0771,3.2035,63.3966,80.8266,100.0000,Run test-and-learn marketing
+YXU_YYC,conservative,250000,long_haul,active,0,62012.9228,0.0267,130000.0000,0.6579,979.4418,0.0158,255.2474,3.9341,63.3966,80.8266,100.0000,Run test-and-learn marketing
+YXU_YYC,conservative,400000,long_haul,active,0,62012.9228,0.0267,130000.0000,0.7547,1123.5861,0.0181,356.0030,4.5131,63.3966,80.8266,100.0000,Run test-and-learn marketing
+YXU_YYC,base,0,long_haul,active,0,62012.9228,0.0640,120000.0000,0.0000,0.0000,0.0000,,0.0000,63.3966,80.8266,100.0000,Run test-and-learn marketing
+YXU_YYC,base,25000,long_haul,active,0,62012.9228,0.0640,120000.0000,0.1724,684.4835,0.0110,36.5239,1.5678,63.3966,80.8266,100.0000,Run test-and-learn marketing
+YXU_YYC,base,50000,long_haul,active,0,62012.9228,0.0640,120000.0000,0.2941,1167.6483,0.0188,42.8211,2.6746,63.3966,80.8266,100.0000,Run test-and-learn marketing
+YXU_YYC,base,75000,long_haul,active,0,62012.9228,0.0640,120000.0000,0.3846,1526.9246,0.0246,49.1183,3.4975,63.3966,80.8266,100.0000,Run test-and-learn marketing
+YXU_YYC,base,100000,long_haul,active,0,62012.9228,0.0640,120000.0000,0.4545,1804.5473,0.0291,55.4156,4.1334,63.3966,80.8266,100.0000,Run test-and-learn marketing
+YXU_YYC,base,150000,long_haul,active,0,62012.9228,0.0640,120000.0000,0.5556,2205.5578,0.0356,68.0100,5.0520,63.3966,80.8266,100.0000,Run test-and-learn marketing
+YXU_YYC,base,250000,long_haul,active,0,62012.9228,0.0640,120000.0000,0.6757,2682.4352,0.0433,93.1989,6.1443,63.3966,80.8266,100.0000,Run test-and-learn marketing
+YXU_YYC,base,400000,long_haul,active,0,62012.9228,0.0640,120000.0000,0.7692,3053.8493,0.0492,130.9822,6.9950,63.3966,80.8266,100.0000,Run test-and-learn marketing
+YXU_YYC,optimistic,0,long_haul,active,0,62012.9228,0.1174,100000.0000,0.0000,0.0000,0.0000,,0.0000,63.3966,80.8266,100.0000,Run test-and-learn marketing
+YXU_YYC,optimistic,25000,long_haul,active,0,62012.9228,0.1174,100000.0000,0.2000,1630.3483,0.0263,15.3341,2.6334,63.3966,80.8266,100.0000,Run test-and-learn marketing
+YXU_YYC,optimistic,50000,long_haul,active,0,62012.9228,0.1174,100000.0000,0.3333,2717.2472,0.0438,18.4010,4.3890,63.3966,80.8266,100.0000,Run test-and-learn marketing
+YXU_YYC,optimistic,75000,long_haul,active,0,62012.9228,0.1174,100000.0000,0.4286,3493.6036,0.0563,21.4678,5.6430,63.3966,80.8266,100.0000,Run test-and-learn marketing
+YXU_YYC,optimistic,100000,long_haul,active,0,62012.9228,0.1174,100000.0000,0.5000,4075.8708,0.0657,24.5346,6.5834,63.3966,80.8266,100.0000,Run test-and-learn marketing
+YXU_YYC,optimistic,150000,long_haul,active,0,62012.9228,0.1174,100000.0000,0.6000,4891.0450,0.0789,30.6683,7.9001,63.3966,80.8266,100.0000,Run test-and-learn marketing
+YXU_YYC,optimistic,250000,long_haul,active,0,62012.9228,0.1174,100000.0000,0.7143,5822.6726,0.0939,42.9356,9.4049,63.3966,80.8266,100.0000,Run test-and-learn marketing
+YXU_YYC,optimistic,400000,long_haul,active,0,62012.9228,0.1174,100000.0000,0.8000,6521.3933,0.1052,61.3366,10.5335,63.3966,80.8266,100.0000,Run test-and-learn marketing
+YKF_YHZ,conservative,0,medium_haul,active,0,37173.4059,0.0209,90000.0000,0.0000,0.0000,0.0000,,0.0000,59.4606,67.9848,100.0000,Watchlist; improve evidence first
+YKF_YHZ,conservative,25000,medium_haul,active,0,37173.4059,0.0209,90000.0000,0.2174,152.3419,0.0041,164.1046,1.2319,59.4606,67.9848,100.0000,Watchlist; improve evidence first
+YKF_YHZ,conservative,50000,medium_haul,active,0,37173.4059,0.0209,90000.0000,0.3571,250.2760,0.0067,199.7795,2.0238,59.4606,67.9848,100.0000,Watchlist; improve evidence first
+YKF_YHZ,conservative,75000,medium_haul,active,0,37173.4059,0.0209,90000.0000,0.4545,318.5331,0.0086,235.4544,2.5757,59.4606,67.9848,100.0000,Watchlist; improve evidence first
+YKF_YHZ,conservative,100000,medium_haul,active,0,37173.4059,0.0209,90000.0000,0.5263,368.8278,0.0099,271.1293,2.9824,59.4606,67.9848,100.0000,Watchlist; improve evidence first
+YKF_YHZ,conservative,150000,medium_haul,active,0,37173.4059,0.0209,90000.0000,0.6250,437.9830,0.0118,342.4791,3.5416,59.4606,67.9848,100.0000,Watchlist; improve evidence first
+YKF_YHZ,conservative,250000,medium_haul,active,0,37173.4059,0.0209,90000.0000,0.7353,515.2741,0.0139,485.1787,4.1666,59.4606,67.9848,100.0000,Watchlist; improve evidence first
+YKF_YHZ,conservative,400000,medium_haul,active,0,37173.4059,0.0209,90000.0000,0.8163,572.0594,0.0154,699.2281,4.6258,59.4606,67.9848,100.0000,Watchlist; improve evidence first
+YKF_YHZ,base,0,medium_haul,active,0,37173.4059,0.0471,80000.0000,0.0000,0.0000,0.0000,,0.0000,59.4606,67.9848,100.0000,Watchlist; improve evidence first
+YKF_YHZ,base,25000,medium_haul,active,0,37173.4059,0.0471,80000.0000,0.2381,417.1266,0.0112,59.9338,1.9822,59.4606,67.9848,100.0000,Watchlist; improve evidence first
+YKF_YHZ,base,50000,medium_haul,active,0,37173.4059,0.0471,80000.0000,0.3846,673.8200,0.0181,74.2038,3.2020,59.4606,67.9848,100.0000,Watchlist; improve evidence first
+YKF_YHZ,base,75000,medium_haul,active,0,37173.4059,0.0471,80000.0000,0.4839,847.7090,0.0228,88.4738,4.0283,59.4606,67.9848,100.0000,Watchlist; improve evidence first
+YKF_YHZ,base,100000,medium_haul,active,0,37173.4059,0.0471,80000.0000,0.5556,973.2955,0.0262,102.7437,4.6251,59.4606,67.9848,100.0000,Watchlist; improve evidence first
+YKF_YHZ,base,150000,medium_haul,active,0,37173.4059,0.0471,80000.0000,0.6522,1142.5643,0.0307,131.2836,5.4295,59.4606,67.9848,100.0000,Watchlist; improve evidence first
+YKF_YHZ,base,250000,medium_haul,active,0,37173.4059,0.0471,80000.0000,0.7576,1327.2211,0.0357,188.3635,6.3070,59.4606,67.9848,100.0000,Watchlist; improve evidence first
+YKF_YHZ,base,400000,medium_haul,active,0,37173.4059,0.0471,80000.0000,0.8333,1459.9432,0.0393,273.9833,6.9377,59.4606,67.9848,100.0000,Watchlist; improve evidence first
+YKF_YHZ,optimistic,0,medium_haul,active,0,37173.4059,0.0838,70000.0000,0.0000,0.0000,0.0000,,0.0000,59.4606,67.9848,100.0000,Watchlist; improve evidence first
+YKF_YHZ,optimistic,25000,medium_haul,active,0,37173.4059,0.0838,70000.0000,0.2632,917.9713,0.0247,27.2340,3.0603,59.4606,67.9848,100.0000,Watchlist; improve evidence first
+YKF_YHZ,optimistic,50000,medium_haul,active,0,37173.4059,0.0838,70000.0000,0.4167,1453.4546,0.0391,34.4008,4.8454,59.4606,67.9848,100.0000,Watchlist; improve evidence first
+YKF_YHZ,optimistic,75000,medium_haul,active,0,37173.4059,0.0838,70000.0000,0.5172,1804.2885,0.0485,41.5676,6.0150,59.4606,67.9848,100.0000,Watchlist; improve evidence first
+YKF_YHZ,optimistic,100000,medium_haul,active,0,37173.4059,0.0838,70000.0000,0.5882,2051.9359,0.0552,48.7345,6.8406,59.4606,67.9848,100.0000,Watchlist; improve evidence first
+YKF_YHZ,optimistic,150000,medium_haul,active,0,37173.4059,0.0838,70000.0000,0.6818,2378.3802,0.0640,63.0681,7.9289,59.4606,67.9848,100.0000,Watchlist; improve evidence first
+YKF_YHZ,optimistic,250000,medium_haul,active,0,37173.4059,0.0838,70000.0000,0.7812,2725.2274,0.0733,91.7355,9.0852,59.4606,67.9848,100.0000,Watchlist; improve evidence first
+YKF_YHZ,optimistic,400000,medium_haul,active,0,37173.4059,0.0838,70000.0000,0.8511,2968.7583,0.0799,134.7365,9.8970,59.4606,67.9848,100.0000,Watchlist; improve evidence first
+YXX_YEG,conservative,0,medium_haul,active,0,101468.0834,0.0205,90000.0000,0.0000,0.0000,0.0000,,0.0000,58.7321,71.5851,93.7500,Maintain service; monitor capacity and leakage
+YXX_YEG,conservative,25000,medium_haul,active,0,101468.0834,0.0205,90000.0000,0.2174,406.6147,0.0040,61.4833,0.9788,58.7321,71.5851,93.7500,Maintain service; monitor capacity and leakage
+YXX_YEG,conservative,50000,medium_haul,active,0,101468.0834,0.0205,90000.0000,0.3571,668.0098,0.0066,74.8492,1.6080,58.7321,71.5851,93.7500,Maintain service; monitor capacity and leakage
+YXX_YEG,conservative,75000,medium_haul,active,0,101468.0834,0.0205,90000.0000,0.4545,850.1943,0.0084,88.2151,2.0465,58.7321,71.5851,93.7500,Maintain service; monitor capacity and leakage
+YXX_YEG,conservative,100000,medium_haul,active,0,101468.0834,0.0205,90000.0000,0.5263,984.4355,0.0097,101.5811,2.3697,58.7321,71.5851,93.7500,Maintain service; monitor capacity and leakage
+YXX_YEG,conservative,150000,medium_haul,active,0,101468.0834,0.0205,90000.0000,0.6250,1169.0172,0.0115,128.3129,2.8140,58.7321,71.5851,93.7500,Maintain service; monitor capacity and leakage
+YXX_YEG,conservative,250000,medium_haul,active,0,101468.0834,0.0205,90000.0000,0.7353,1375.3143,0.0136,181.7766,3.3106,58.7321,71.5851,93.7500,Maintain service; monitor capacity and leakage
+YXX_YEG,conservative,400000,medium_haul,active,0,101468.0834,0.0205,90000.0000,0.8163,1526.8796,0.0150,261.9722,3.6754,58.7321,71.5851,93.7500,Maintain service; monitor capacity and leakage
+YXX_YEG,base,0,medium_haul,active,0,101468.0834,0.0461,80000.0000,0.0000,0.0000,0.0000,,0.0000,58.7321,71.5851,93.7500,Maintain service; monitor capacity and leakage
+YXX_YEG,base,25000,medium_haul,active,0,101468.0834,0.0461,80000.0000,0.2381,1113.3497,0.0110,22.4548,1.6085,58.7321,71.5851,93.7500,Maintain service; monitor capacity and leakage
+YXX_YEG,base,50000,medium_haul,active,0,101468.0834,0.0461,80000.0000,0.3846,1798.4880,0.0177,27.8011,2.5984,58.7321,71.5851,93.7500,Maintain service; monitor capacity and leakage
+YXX_YEG,base,75000,medium_haul,active,0,101468.0834,0.0461,80000.0000,0.4839,2262.6139,0.0223,33.1475,3.2690,58.7321,71.5851,93.7500,Maintain service; monitor capacity and leakage
+YXX_YEG,base,100000,medium_haul,active,0,101468.0834,0.0461,80000.0000,0.5556,2597.8160,0.0256,38.4939,3.7533,58.7321,71.5851,93.7500,Maintain service; monitor capacity and leakage
+YXX_YEG,base,150000,medium_haul,active,0,101468.0834,0.0461,80000.0000,0.6522,3049.6101,0.0301,49.1866,4.4060,58.7321,71.5851,93.7500,Maintain service; monitor capacity and leakage
+YXX_YEG,base,250000,medium_haul,active,0,101468.0834,0.0461,80000.0000,0.7576,3542.4763,0.0349,70.5721,5.1181,58.7321,71.5851,93.7500,Maintain service; monitor capacity and leakage
+YXX_YEG,base,400000,medium_haul,active,0,101468.0834,0.0461,80000.0000,0.8333,3896.7240,0.0384,102.6503,5.6299,58.7321,71.5851,93.7500,Maintain service; monitor capacity and leakage
+YXX_YEG,optimistic,0,medium_haul,active,0,101468.0834,0.0819,70000.0000,0.0000,0.0000,0.0000,,0.0000,58.7321,71.5851,93.7500,Maintain service; monitor capacity and leakage
+YXX_YEG,optimistic,25000,medium_haul,active,0,101468.0834,0.0819,70000.0000,0.2632,2450.1506,0.0241,10.2035,2.5369,58.7321,71.5851,93.7500,Maintain service; monitor capacity and leakage
+YXX_YEG,optimistic,50000,medium_haul,active,0,101468.0834,0.0819,70000.0000,0.4167,3879.4052,0.0382,12.8886,4.0168,58.7321,71.5851,93.7500,Maintain service; monitor capacity and leakage
+YXX_YEG,optimistic,75000,medium_haul,active,0,101468.0834,0.0819,70000.0000,0.5172,4815.8133,0.0475,15.5737,4.9863,58.7321,71.5851,93.7500,Maintain service; monitor capacity and leakage
+YXX_YEG,optimistic,100000,medium_haul,active,0,101468.0834,0.0819,70000.0000,0.5882,5476.8073,0.0540,18.2588,5.6707,58.7321,71.5851,93.7500,Maintain service; monitor capacity and leakage
+YXX_YEG,optimistic,150000,medium_haul,active,0,101468.0834,0.0819,70000.0000,0.6818,6348.1176,0.0626,23.6291,6.5729,58.7321,71.5851,93.7500,Maintain service; monitor capacity and leakage
+YXX_YEG,optimistic,250000,medium_haul,active,0,101468.0834,0.0819,70000.0000,0.7812,7273.8847,0.0717,34.3695,7.5314,58.7321,71.5851,93.7500,Maintain service; monitor capacity and leakage
+YXX_YEG,optimistic,400000,medium_haul,active,0,101468.0834,0.0819,70000.0000,0.8511,7923.8914,0.0781,50.4802,8.2045,58.7321,71.5851,93.7500,Maintain service; monitor capacity and leakage
+YHM_YEG,conservative,0,long_haul,active,0,76834.1360,0.0219,156000.0000,0.0000,0.0000,0.0000,,0.0000,58.3503,63.8230,47.2222,Watchlist; improve evidence first
+YHM_YEG,conservative,25000,long_haul,active,0,76834.1360,0.0219,156000.0000,0.1381,209.3642,0.0027,119.4092,0.7299,58.3503,63.8230,47.2222,Watchlist; improve evidence first
+YHM_YEG,conservative,50000,long_haul,active,0,76834.1360,0.0219,156000.0000,0.2427,367.9118,0.0048,135.9021,1.2827,58.3503,63.8230,47.2222,Watchlist; improve evidence first
+YHM_YEG,conservative,75000,long_haul,active,0,76834.1360,0.0219,156000.0000,0.3247,492.1418,0.0064,152.3951,1.7158,58.3503,63.8230,47.2222,Watchlist; improve evidence first
+YHM_YEG,conservative,100000,long_haul,active,0,76834.1360,0.0219,156000.0000,0.3906,592.1081,0.0077,168.8881,2.0644,58.3503,63.8230,47.2222,Watchlist; improve evidence first
+YHM_YEG,conservative,150000,long_haul,active,0,76834.1360,0.0219,156000.0000,0.4902,743.0376,0.0097,201.8740,2.5906,58.3503,63.8230,47.2222,Watchlist; improve evidence first
+YHM_YEG,conservative,250000,long_haul,active,0,76834.1360,0.0219,156000.0000,0.6158,933.3724,0.0121,267.8459,3.2542,58.3503,63.8230,47.2222,Watchlist; improve evidence first
+YHM_YEG,conservative,400000,long_haul,active,0,76834.1360,0.0219,156000.0000,0.7194,1090.5012,0.0142,366.8038,3.8020,58.3503,63.8230,47.2222,Watchlist; improve evidence first
+YHM_YEG,base,0,long_haul,active,0,76834.1360,0.0526,144000.0000,0.0000,0.0000,0.0000,,0.0000,58.3503,63.8230,47.2222,Watchlist; improve evidence first
+YHM_YEG,base,25000,long_haul,active,0,76834.1360,0.0526,144000.0000,0.1479,597.9474,0.0078,41.8097,1.1786,58.3503,63.8230,47.2222,Watchlist; improve evidence first
+YHM_YEG,base,50000,long_haul,active,0,76834.1360,0.0526,144000.0000,0.2577,1041.7847,0.0136,47.9946,2.0534,58.3503,63.8230,47.2222,Watchlist; improve evidence first
+YHM_YEG,base,75000,long_haul,active,0,76834.1360,0.0526,144000.0000,0.3425,1384.2892,0.0180,54.1794,2.7284,58.3503,63.8230,47.2222,Watchlist; improve evidence first
+YHM_YEG,base,100000,long_haul,active,0,76834.1360,0.0526,144000.0000,0.4098,1656.6084,0.0216,60.3643,3.2652,58.3503,63.8230,47.2222,Watchlist; improve evidence first
+YHM_YEG,base,150000,long_haul,active,0,76834.1360,0.0526,144000.0000,0.5102,2062.3084,0.0268,72.7340,4.0648,58.3503,63.8230,47.2222,Watchlist; improve evidence first
+YHM_YEG,base,250000,long_haul,active,0,76834.1360,0.0526,144000.0000,0.6345,2564.7998,0.0334,97.4735,5.0552,58.3503,63.8230,47.2222,Watchlist; improve evidence first
+YHM_YEG,base,400000,long_haul,active,0,76834.1360,0.0526,144000.0000,0.7353,2972.1504,0.0387,134.5827,5.8581,58.3503,63.8230,47.2222,Watchlist; improve evidence first
+YHM_YEG,optimistic,0,long_haul,active,0,76834.1360,0.0964,120000.0000,0.0000,0.0000,0.0000,,0.0000,58.3503,63.8230,47.2222,Watchlist; improve evidence first
+YHM_YEG,optimistic,25000,long_haul,active,0,76834.1360,0.0964,120000.0000,0.1724,1431.0050,0.0186,17.4702,1.9721,58.3503,63.8230,47.2222,Watchlist; improve evidence first
+YHM_YEG,optimistic,50000,long_haul,active,0,76834.1360,0.0964,120000.0000,0.2941,2441.1262,0.0318,20.4823,3.3641,58.3503,63.8230,47.2222,Watchlist; improve evidence first
+YHM_YEG,optimistic,75000,long_haul,active,0,76834.1360,0.0964,120000.0000,0.3846,3192.2419,0.0415,23.4945,4.3992,58.3503,63.8230,47.2222,Watchlist; improve evidence first
+YHM_YEG,optimistic,100000,long_haul,active,0,76834.1360,0.0964,120000.0000,0.4545,3772.6496,0.0491,26.5066,5.1991,58.3503,63.8230,47.2222,Watchlist; improve evidence first
+YHM_YEG,optimistic,150000,long_haul,active,0,76834.1360,0.0964,120000.0000,0.5556,4611.0161,0.0600,32.5308,6.3544,58.3503,63.8230,47.2222,Watchlist; improve evidence first
+YHM_YEG,optimistic,250000,long_haul,active,0,76834.1360,0.0964,120000.0000,0.6757,5607.9926,0.0730,44.5792,7.7284,58.3503,63.8230,47.2222,Watchlist; improve evidence first
+YHM_YEG,optimistic,400000,long_haul,active,0,76834.1360,0.0964,120000.0000,0.7692,6384.4839,0.0831,62.6519,8.7985,58.3503,63.8230,47.2222,Watchlist; improve evidence first
+YLW_YYC,conservative,0,medium_haul,active,0,57222.4940,0.0203,90000.0000,0.0000,0.0000,0.0000,,0.0000,56.8998,81.4194,93.7500,Maintain service; monitor capacity and leakage
+YLW_YYC,conservative,25000,medium_haul,active,0,57222.4940,0.0203,90000.0000,0.2174,227.2957,0.0040,109.9889,1.1679,56.8998,81.4194,93.7500,Maintain service; monitor capacity and leakage
+YLW_YYC,conservative,50000,medium_haul,active,0,57222.4940,0.0203,90000.0000,0.3571,373.4143,0.0065,133.8995,1.9187,56.8998,81.4194,93.7500,Maintain service; monitor capacity and leakage
+YLW_YYC,conservative,75000,medium_haul,active,0,57222.4940,0.0203,90000.0000,0.4545,475.2546,0.0083,157.8101,2.4420,56.8998,81.4194,93.7500,Maintain service; monitor capacity and leakage
+YLW_YYC,conservative,100000,medium_haul,active,0,57222.4940,0.0203,90000.0000,0.5263,550.2948,0.0096,181.7208,2.8276,56.8998,81.4194,93.7500,Maintain service; monitor capacity and leakage
+YLW_YYC,conservative,150000,medium_haul,active,0,57222.4940,0.0203,90000.0000,0.6250,653.4751,0.0114,229.5420,3.3577,56.8998,81.4194,93.7500,Maintain service; monitor capacity and leakage
+YLW_YYC,conservative,250000,medium_haul,active,0,57222.4940,0.0203,90000.0000,0.7353,768.7942,0.0134,325.1845,3.9503,56.8998,81.4194,93.7500,Maintain service; monitor capacity and leakage
+YLW_YYC,conservative,400000,medium_haul,active,0,57222.4940,0.0203,90000.0000,0.8163,853.5185,0.0149,468.6483,4.3856,56.8998,81.4194,93.7500,Maintain service; monitor capacity and leakage
+YLW_YYC,base,0,medium_haul,active,0,57222.4940,0.0457,80000.0000,0.0000,0.0000,0.0000,,0.0000,56.8998,81.4194,93.7500,Maintain service; monitor capacity and leakage
+YLW_YYC,base,25000,medium_haul,active,0,57222.4940,0.0457,80000.0000,0.2381,622.3572,0.0109,40.1699,1.8832,56.8998,81.4194,93.7500,Maintain service; monitor capacity and leakage
+YLW_YYC,base,50000,medium_haul,active,0,57222.4940,0.0457,80000.0000,0.3846,1005.3463,0.0176,49.7341,3.0420,56.8998,81.4194,93.7500,Maintain service; monitor capacity and leakage
+YLW_YYC,base,75000,medium_haul,active,0,57222.4940,0.0457,80000.0000,0.4839,1264.7905,0.0221,59.2984,3.8271,56.8998,81.4194,93.7500,Maintain service; monitor capacity and leakage
+YLW_YYC,base,100000,medium_haul,active,0,57222.4940,0.0457,80000.0000,0.5556,1452.1669,0.0254,68.8626,4.3940,56.8998,81.4194,93.7500,Maintain service; monitor capacity and leakage
+YLW_YYC,base,150000,medium_haul,active,0,57222.4940,0.0457,80000.0000,0.6522,1704.7177,0.0298,87.9911,5.1582,56.8998,81.4194,93.7500,Maintain service; monitor capacity and leakage
+YLW_YYC,base,250000,medium_haul,active,0,57222.4940,0.0457,80000.0000,0.7576,1980.2276,0.0346,126.2481,5.9919,56.8998,81.4194,93.7500,Maintain service; monitor capacity and leakage
+YLW_YYC,base,400000,medium_haul,active,0,57222.4940,0.0457,80000.0000,0.8333,2178.2504,0.0381,183.6336,6.5911,56.8998,81.4194,93.7500,Maintain service; monitor capacity and leakage
+YLW_YYC,optimistic,0,medium_haul,active,0,57222.4940,0.0812,70000.0000,0.0000,0.0000,0.0000,,0.0000,56.8998,81.4194,93.7500,Maintain service; monitor capacity and leakage
+YLW_YYC,optimistic,25000,medium_haul,active,0,57222.4940,0.0812,70000.0000,0.2632,1369.6227,0.0239,18.2532,2.9135,56.8998,81.4194,93.7500,Maintain service; monitor capacity and leakage
+YLW_YYC,optimistic,50000,medium_haul,active,0,57222.4940,0.0812,70000.0000,0.4167,2168.5693,0.0379,23.0567,4.6131,56.8998,81.4194,93.7500,Maintain service; monitor capacity and leakage
+YLW_YYC,optimistic,75000,medium_haul,active,0,57222.4940,0.0812,70000.0000,0.5172,2692.0170,0.0470,27.8602,5.7266,56.8998,81.4194,93.7500,Maintain service; monitor capacity and leakage
+YLW_YYC,optimistic,100000,medium_haul,active,0,57222.4940,0.0812,70000.0000,0.5882,3061.5095,0.0535,32.6636,6.5126,56.8998,81.4194,93.7500,Maintain service; monitor capacity and leakage
+YLW_YYC,optimistic,150000,medium_haul,active,0,57222.4940,0.0812,70000.0000,0.6818,3548.5679,0.0620,42.2706,7.5487,56.8998,81.4194,93.7500,Maintain service; monitor capacity and leakage
+YLW_YYC,optimistic,250000,medium_haul,active,0,57222.4940,0.0812,70000.0000,0.7812,4066.0673,0.0711,61.4845,8.6496,56.8998,81.4194,93.7500,Maintain service; monitor capacity and leakage
+YLW_YYC,optimistic,400000,medium_haul,active,0,57222.4940,0.0812,70000.0000,0.8511,4429.4180,0.0774,90.3053,9.4225,56.8998,81.4194,93.7500,Maintain service; monitor capacity and leakage
+YLW_YVR,conservative,0,short_haul,active,0,630614.5819,0.0148,60000.0000,0.0000,0.0000,0.0000,,0.0000,50.5784,86.3659,93.7500,Maintain service; monitor capacity and leakage
+YLW_YVR,conservative,25000,short_haul,active,0,630614.5819,0.0148,60000.0000,0.2941,2464.0680,0.0039,10.1458,0.9697,50.5784,86.3659,93.7500,Maintain service; monitor capacity and leakage
+YLW_YVR,conservative,50000,short_haul,active,0,630614.5819,0.0148,60000.0000,0.4545,3808.1052,0.0060,13.1299,1.4986,50.5784,86.3659,93.7500,Maintain service; monitor capacity and leakage
+YLW_YVR,conservative,75000,short_haul,active,0,630614.5819,0.0148,60000.0000,0.5556,4654.3508,0.0074,16.1140,1.8317,50.5784,86.3659,93.7500,Maintain service; monitor capacity and leakage
+YLW_YVR,conservative,100000,short_haul,active,0,630614.5819,0.0148,60000.0000,0.6250,5236.1446,0.0083,19.0980,2.0606,50.5784,86.3659,93.7500,Maintain service; monitor capacity and leakage
+YLW_YVR,conservative,150000,short_haul,active,0,630614.5819,0.0148,60000.0000,0.7143,5984.1653,0.0095,25.0662,2.3550,50.5784,86.3659,93.7500,Maintain service; monitor capacity and leakage
+YLW_YVR,conservative,250000,short_haul,active,0,630614.5819,0.0148,60000.0000,0.8065,6756.3156,0.0107,37.0024,2.6589,50.5784,86.3659,93.7500,Maintain service; monitor capacity and leakage
+YLW_YVR,conservative,400000,short_haul,active,0,630614.5819,0.0148,60000.0000,0.8696,7285.0707,0.0116,54.9068,2.8670,50.5784,86.3659,93.7500,Maintain service; monitor capacity and leakage
+YLW_YVR,base,0,short_haul,active,0,630614.5819,0.0295,50000.0000,0.0000,0.0000,0.0000,,0.0000,50.5784,86.3659,93.7500,Maintain service; monitor capacity and leakage
+YLW_YVR,base,25000,short_haul,active,0,630614.5819,0.0295,50000.0000,0.3333,6205.8010,0.0098,4.0285,1.6031,50.5784,86.3659,93.7500,Maintain service; monitor capacity and leakage
+YLW_YVR,base,50000,short_haul,active,0,630614.5819,0.0295,50000.0000,0.5000,9308.7015,0.0148,5.3713,2.4047,50.5784,86.3659,93.7500,Maintain service; monitor capacity and leakage
+YLW_YVR,base,75000,short_haul,active,0,630614.5819,0.0295,50000.0000,0.6000,11170.4418,0.0177,6.7141,2.8856,50.5784,86.3659,93.7500,Maintain service; monitor capacity and leakage
+YLW_YVR,base,100000,short_haul,active,0,630614.5819,0.0295,50000.0000,0.6667,12411.6020,0.0197,8.0570,3.2062,50.5784,86.3659,93.7500,Maintain service; monitor capacity and leakage
+YLW_YVR,base,150000,short_haul,active,0,630614.5819,0.0295,50000.0000,0.7500,13963.0523,0.0221,10.7426,3.6070,50.5784,86.3659,93.7500,Maintain service; monitor capacity and leakage
+YLW_YVR,base,250000,short_haul,active,0,630614.5819,0.0295,50000.0000,0.8333,15514.5025,0.0246,16.1140,4.0078,50.5784,86.3659,93.7500,Maintain service; monitor capacity and leakage
+YLW_YVR,base,400000,short_haul,active,0,630614.5819,0.0295,50000.0000,0.8889,16548.8027,0.0262,24.1709,4.2750,50.5784,86.3659,93.7500,Maintain service; monitor capacity and leakage
+YLW_YVR,optimistic,0,short_haul,active,0,630614.5819,0.0541,45000.0000,0.0000,0.0000,0.0000,,0.0000,50.5784,86.3659,93.7500,Maintain service; monitor capacity and leakage
+YLW_YVR,optimistic,25000,short_haul,active,0,630614.5819,0.0541,45000.0000,0.3571,13652.7622,0.0216,1.8311,2.4435,50.5784,86.3659,93.7500,Maintain service; monitor capacity and leakage
+YLW_YVR,optimistic,50000,short_haul,active,0,630614.5819,0.0541,45000.0000,0.5263,20119.8601,0.0319,2.4851,3.6009,50.5784,86.3659,93.7500,Maintain service; monitor capacity and leakage
+YLW_YVR,optimistic,75000,short_haul,active,0,630614.5819,0.0541,45000.0000,0.6250,23892.3339,0.0379,3.1391,4.2761,50.5784,86.3659,93.7500,Maintain service; monitor capacity and leakage
+YLW_YVR,optimistic,100000,short_haul,active,0,630614.5819,0.0541,45000.0000,0.6897,26363.9546,0.0418,3.7931,4.7184,50.5784,86.3659,93.7500,Maintain service; monitor capacity and leakage
+YLW_YVR,optimistic,150000,short_haul,active,0,630614.5819,0.0541,45000.0000,0.7692,29405.9494,0.0466,5.1010,5.2629,50.5784,86.3659,93.7500,Maintain service; monitor capacity and leakage
+YLW_YVR,optimistic,250000,short_haul,active,0,630614.5819,0.0541,45000.0000,0.8475,32396.3849,0.0514,7.7169,5.7981,50.5784,86.3659,93.7500,Maintain service; monitor capacity and leakage
+YLW_YVR,optimistic,400000,short_haul,active,0,630614.5819,0.0541,45000.0000,0.8989,34362.0083,0.0545,11.6408,6.1499,50.5784,86.3659,93.7500,Maintain service; monitor capacity and leakage
+YHM_YYC,conservative,0,long_haul,active,0,101330.9987,0.0198,156000.0000,0.0000,0.0000,0.0000,,0.0000,46.5879,68.0399,35.0694,Needs schedule data before spend decision
+YHM_YYC,conservative,25000,long_haul,active,0,101330.9987,0.0198,156000.0000,0.1381,249.2420,0.0025,100.3041,0.6399,46.5879,68.0399,35.0694,Needs schedule data before spend decision
+YHM_YYC,conservative,50000,long_haul,active,0,101330.9987,0.0198,156000.0000,0.2427,437.9884,0.0043,114.1583,1.1245,46.5879,68.0399,35.0694,Needs schedule data before spend decision
+YHM_YYC,conservative,75000,long_haul,active,0,101330.9987,0.0198,156000.0000,0.3247,585.8806,0.0058,128.0124,1.5043,46.5879,68.0399,35.0694,Needs schedule data before spend decision
+YHM_YYC,conservative,100000,long_haul,active,0,101330.9987,0.0198,156000.0000,0.3906,704.8876,0.0070,141.8666,1.8098,46.5879,68.0399,35.0694,Needs schedule data before spend decision
+YHM_YYC,conservative,150000,long_haul,active,0,101330.9987,0.0198,156000.0000,0.4902,884.5648,0.0087,169.5749,2.2711,46.5879,68.0399,35.0694,Needs schedule data before spend decision
+YHM_YYC,conservative,250000,long_haul,active,0,101330.9987,0.0198,156000.0000,0.6158,1111.1528,0.0110,224.9916,2.8529,46.5879,68.0399,35.0694,Needs schedule data before spend decision
+YHM_YYC,conservative,400000,long_haul,active,0,101330.9987,0.0198,156000.0000,0.7194,1298.2102,0.0128,308.1165,3.3332,46.5879,68.0399,35.0694,Needs schedule data before spend decision
+YHM_YYC,base,0,long_haul,active,0,101330.9987,0.0475,144000.0000,0.0000,0.0000,0.0000,,0.0000,46.5879,68.0399,35.0694,Needs schedule data before spend decision
+YHM_YYC,base,25000,long_haul,active,0,101330.9987,0.0475,144000.0000,0.1479,711.8391,0.0070,35.1203,1.0368,46.5879,68.0399,35.0694,Needs schedule data before spend decision
+YHM_YYC,base,50000,long_haul,active,0,101330.9987,0.0475,144000.0000,0.2577,1240.2146,0.0122,40.3156,1.8063,46.5879,68.0399,35.0694,Needs schedule data before spend decision
+YHM_YYC,base,75000,long_haul,active,0,101330.9987,0.0475,144000.0000,0.3425,1647.9563,0.0163,45.5109,2.4002,46.5879,68.0399,35.0694,Needs schedule data before spend decision
+YHM_YYC,base,100000,long_haul,active,0,101330.9987,0.0475,144000.0000,0.4098,1972.1445,0.0195,50.7062,2.8724,46.5879,68.0399,35.0694,Needs schedule data before spend decision
+YHM_YYC,base,150000,long_haul,active,0,101330.9987,0.0475,144000.0000,0.5102,2455.1186,0.0242,61.0968,3.5758,46.5879,68.0399,35.0694,Needs schedule data before spend decision
+YHM_YYC,base,250000,long_haul,active,0,101330.9987,0.0475,144000.0000,0.6345,3053.3201,0.0301,81.8781,4.4470,46.5879,68.0399,35.0694,Needs schedule data before spend decision
+YHM_YYC,base,400000,long_haul,active,0,101330.9987,0.0475,144000.0000,0.7353,3538.2592,0.0349,113.0499,5.1533,46.5879,68.0399,35.0694,Needs schedule data before spend decision
+YHM_YYC,optimistic,0,long_haul,active,0,101330.9987,0.0871,120000.0000,0.0000,0.0000,0.0000,,0.0000,46.5879,68.0399,35.0694,Needs schedule data before spend decision
+YHM_YYC,optimistic,25000,long_haul,active,0,101330.9987,0.0871,120000.0000,0.1724,1703.5701,0.0168,14.6751,1.7407,46.5879,68.0399,35.0694,Needs schedule data before spend decision
+YHM_YYC,optimistic,50000,long_haul,active,0,101330.9987,0.0871,120000.0000,0.2941,2906.0902,0.0287,17.2052,2.9694,46.5879,68.0399,35.0694,Needs schedule data before spend decision
+YHM_YYC,optimistic,75000,long_haul,active,0,101330.9987,0.0871,120000.0000,0.3846,3800.2718,0.0375,19.7354,3.8830,46.5879,68.0399,35.0694,Needs schedule data before spend decision
+YHM_YYC,optimistic,100000,long_haul,active,0,101330.9987,0.0871,120000.0000,0.4545,4491.2303,0.0443,22.2656,4.5890,46.5879,68.0399,35.0694,Needs schedule data before spend decision
+YHM_YYC,optimistic,150000,long_haul,active,0,101330.9987,0.0871,120000.0000,0.5556,5489.2815,0.0542,27.3260,5.6088,46.5879,68.0399,35.0694,Needs schedule data before spend decision
+YHM_YYC,optimistic,250000,long_haul,active,0,101330.9987,0.0871,120000.0000,0.6757,6676.1532,0.0659,37.4467,6.8215,46.5879,68.0399,35.0694,Needs schedule data before spend decision
+YHM_YYC,optimistic,400000,long_haul,active,0,101330.9987,0.0871,120000.0000,0.7692,7600.5436,0.0750,52.6278,7.7661,46.5879,68.0399,35.0694,Needs schedule data before spend decision
+YLW_YEG,conservative,0,medium_haul,active,0,65230.6149,0.0167,108000.0000,0.0000,0.0000,0.0000,,0.0000,44.5366,68.3102,52.0833,Low priority for marketing allocation
+YLW_YEG,conservative,25000,medium_haul,active,0,65230.6149,0.0167,108000.0000,0.1880,183.8164,0.0028,136.0053,0.8393,44.5366,68.3102,52.0833,Low priority for marketing allocation
+YLW_YEG,conservative,50000,medium_haul,active,0,65230.6149,0.0167,108000.0000,0.3165,309.4630,0.0047,161.5702,1.4131,44.5366,68.3102,52.0833,Low priority for marketing allocation
+YLW_YEG,conservative,75000,medium_haul,active,0,65230.6149,0.0167,108000.0000,0.4098,400.7800,0.0061,187.1351,1.8300,44.5366,68.3102,52.0833,Low priority for marketing allocation
+YLW_YEG,conservative,100000,medium_haul,active,0,65230.6149,0.0167,108000.0000,0.4808,470.1457,0.0072,212.7000,2.1468,44.5366,68.3102,52.0833,Low priority for marketing allocation
+YLW_YEG,conservative,150000,medium_haul,active,0,65230.6149,0.0167,108000.0000,0.5814,568.5483,0.0087,263.8298,2.5961,44.5366,68.3102,52.0833,Low priority for marketing allocation
+YLW_YEG,conservative,250000,medium_haul,active,0,65230.6149,0.0167,108000.0000,0.6983,682.8932,0.0105,366.0894,3.1182,44.5366,68.3102,52.0833,Low priority for marketing allocation
+YLW_YEG,conservative,400000,medium_haul,active,0,65230.6149,0.0167,108000.0000,0.7874,770.0025,0.0118,519.4789,3.5160,44.5366,68.3102,52.0833,Low priority for marketing allocation
+YLW_YEG,base,0,medium_haul,active,0,65230.6149,0.0375,96000.0000,0.0000,0.0000,0.0000,,0.0000,44.5366,68.3102,52.0833,Low priority for marketing allocation
+YLW_YEG,base,25000,medium_haul,active,0,65230.6149,0.0375,96000.0000,0.2066,505.1153,0.0077,49.4937,1.3566,44.5366,68.3102,52.0833,Low priority for marketing allocation
+YLW_YEG,base,50000,medium_haul,active,0,65230.6149,0.0375,96000.0000,0.3425,837.2458,0.0128,59.7196,2.2486,44.5366,68.3102,52.0833,Low priority for marketing allocation
+YLW_YEG,base,75000,medium_haul,active,0,65230.6149,0.0375,96000.0000,0.4386,1072.2622,0.0164,69.9456,2.8798,44.5366,68.3102,52.0833,Low priority for marketing allocation
+YLW_YEG,base,100000,medium_haul,active,0,65230.6149,0.0375,96000.0000,0.5102,1247.3254,0.0191,80.1715,3.3499,44.5366,68.3102,52.0833,Low priority for marketing allocation
+YLW_YEG,base,150000,medium_haul,active,0,65230.6149,0.0375,96000.0000,0.6098,1490.7060,0.0229,100.6235,4.0036,44.5366,68.3102,52.0833,Low priority for marketing allocation
+YLW_YEG,base,250000,medium_haul,active,0,65230.6149,0.0375,96000.0000,0.7225,1766.4435,0.0271,141.5273,4.7441,44.5366,68.3102,52.0833,Low priority for marketing allocation
+YLW_YEG,base,400000,medium_haul,active,0,65230.6149,0.0375,96000.0000,0.8065,1971.5789,0.0302,202.8831,5.2951,44.5366,68.3102,52.0833,Low priority for marketing allocation
+YLW_YEG,optimistic,0,medium_haul,active,0,65230.6149,0.0666,84000.0000,0.0000,0.0000,0.0000,,0.0000,44.5366,68.3102,52.0833,Low priority for marketing allocation
+YLW_YEG,optimistic,25000,medium_haul,active,0,65230.6149,0.0666,84000.0000,0.2294,1116.4643,0.0171,22.3921,2.1054,44.5366,68.3102,52.0833,Low priority for marketing allocation
+YLW_YEG,optimistic,50000,medium_haul,active,0,65230.6149,0.0666,84000.0000,0.3731,1816.3375,0.0278,27.5279,3.4252,44.5366,68.3102,52.0833,Low priority for marketing allocation
+YLW_YEG,optimistic,75000,medium_haul,active,0,65230.6149,0.0666,84000.0000,0.4717,2296.1248,0.0352,32.6637,4.3300,44.5366,68.3102,52.0833,Low priority for marketing allocation
+YLW_YEG,optimistic,100000,medium_haul,active,0,65230.6149,0.0666,84000.0000,0.5435,2645.5350,0.0406,37.7995,4.9889,44.5366,68.3102,52.0833,Low priority for marketing allocation
+YLW_YEG,optimistic,150000,medium_haul,active,0,65230.6149,0.0666,84000.0000,0.6410,3120.3747,0.0478,48.0712,5.8843,44.5366,68.3102,52.0833,Low priority for marketing allocation
+YLW_YEG,optimistic,250000,medium_haul,active,0,65230.6149,0.0666,84000.0000,0.7485,3643.5513,0.0559,68.6144,6.8709,44.5366,68.3102,52.0833,Low priority for marketing allocation
+YLW_YEG,optimistic,400000,medium_haul,active,0,65230.6149,0.0666,84000.0000,0.8264,4022.9624,0.0617,99.4292,7.5864,44.5366,68.3102,52.0833,Low priority for marketing allocation
+YHM_YVR,conservative,0,long_haul,active,0,105896.3025,0.0184,156000.0000,0.0000,0.0000,0.0000,,0.0000,44.1572,64.4343,19.4444,Needs schedule data before spend decision
+YHM_YVR,conservative,25000,long_haul,active,0,105896.3025,0.0184,156000.0000,0.1381,242.2748,0.0023,103.1886,0.6226,44.1572,64.4343,19.4444,Needs schedule data before spend decision
+YHM_YVR,conservative,50000,long_haul,active,0,105896.3025,0.0184,156000.0000,0.2427,425.7451,0.0040,117.4412,1.0941,44.1572,64.4343,19.4444,Needs schedule data before spend decision
+YHM_YVR,conservative,75000,long_haul,active,0,105896.3025,0.0184,156000.0000,0.3247,569.5032,0.0054,131.6937,1.4635,44.1572,64.4343,19.4444,Needs schedule data before spend decision
+YHM_YVR,conservative,100000,long_haul,active,0,105896.3025,0.0184,156000.0000,0.3906,685.1835,0.0065,145.9463,1.7608,44.1572,64.4343,19.4444,Needs schedule data before spend decision
+YHM_YVR,conservative,150000,long_haul,active,0,105896.3025,0.0184,156000.0000,0.4902,859.8382,0.0081,174.4514,2.2096,44.1572,64.4343,19.4444,Needs schedule data before spend decision
+YHM_YVR,conservative,250000,long_haul,active,0,105896.3025,0.0184,156000.0000,0.6158,1080.0923,0.0102,231.4617,2.7756,44.1572,64.4343,19.4444,Needs schedule data before spend decision
+YHM_YVR,conservative,400000,long_haul,active,0,105896.3025,0.0184,156000.0000,0.7194,1261.9208,0.0119,316.9771,3.2428,44.1572,64.4343,19.4444,Needs schedule data before spend decision
+YHM_YVR,base,0,long_haul,active,0,105896.3025,0.0442,144000.0000,0.0000,0.0000,0.0000,,0.0000,44.1572,64.4343,19.4444,Needs schedule data before spend decision
+YHM_YVR,base,25000,long_haul,active,0,105896.3025,0.0442,144000.0000,0.1479,691.9408,0.0065,36.1303,1.0034,44.1572,64.4343,19.4444,Needs schedule data before spend decision
+YHM_YVR,base,50000,long_haul,active,0,105896.3025,0.0442,144000.0000,0.2577,1205.5463,0.0114,41.4750,1.7482,44.1572,64.4343,19.4444,Needs schedule data before spend decision
+YHM_YVR,base,75000,long_haul,active,0,105896.3025,0.0442,144000.0000,0.3425,1601.8903,0.0151,46.8197,2.3230,44.1572,64.4343,19.4444,Needs schedule data before spend decision
+YHM_YVR,base,100000,long_haul,active,0,105896.3025,0.0442,144000.0000,0.4098,1917.0163,0.0181,52.1644,2.7799,44.1572,64.4343,19.4444,Needs schedule data before spend decision
+YHM_YVR,base,150000,long_haul,active,0,105896.3025,0.0442,144000.0000,0.5102,2386.4896,0.0225,62.8538,3.4607,44.1572,64.4343,19.4444,Needs schedule data before spend decision
+YHM_YVR,base,250000,long_haul,active,0,105896.3025,0.0442,144000.0000,0.6345,2967.9693,0.0280,84.2327,4.3040,44.1572,64.4343,19.4444,Needs schedule data before spend decision
+YHM_YVR,base,400000,long_haul,active,0,105896.3025,0.0442,144000.0000,0.7353,3439.3527,0.0325,116.3010,4.9875,44.1572,64.4343,19.4444,Needs schedule data before spend decision
+YHM_YVR,optimistic,0,long_haul,active,0,105896.3025,0.0810,120000.0000,0.0000,0.0000,0.0000,,0.0000,44.1572,64.4343,19.4444,Needs schedule data before spend decision
+YHM_YVR,optimistic,25000,long_haul,active,0,105896.3025,0.0810,120000.0000,0.1724,1655.9495,0.0156,15.0971,1.6760,44.1572,64.4343,19.4444,Needs schedule data before spend decision
+YHM_YVR,optimistic,50000,long_haul,active,0,105896.3025,0.0810,120000.0000,0.2941,2824.8550,0.0267,17.7000,2.8590,44.1572,64.4343,19.4444,Needs schedule data before spend decision
+YHM_YVR,optimistic,75000,long_haul,active,0,105896.3025,0.0810,120000.0000,0.3846,3694.0412,0.0349,20.3030,3.7387,44.1572,64.4343,19.4444,Needs schedule data before spend decision
+YHM_YVR,optimistic,100000,long_haul,active,0,105896.3025,0.0810,120000.0000,0.4545,4365.6850,0.0412,22.9059,4.4185,44.1572,64.4343,19.4444,Needs schedule data before spend decision
+YHM_YVR,optimistic,150000,long_haul,active,0,105896.3025,0.0810,120000.0000,0.5556,5335.8372,0.0504,28.1118,5.4004,44.1572,64.4343,19.4444,Needs schedule data before spend decision
+YHM_YVR,optimistic,250000,long_haul,active,0,105896.3025,0.0810,120000.0000,0.6757,6489.5318,0.0613,38.5236,6.5681,44.1572,64.4343,19.4444,Needs schedule data before spend decision
+YHM_YVR,optimistic,400000,long_haul,active,0,105896.3025,0.0810,120000.0000,0.7692,7388.0823,0.0698,54.1412,7.4775,44.1572,64.4343,19.4444,Needs schedule data before spend decision

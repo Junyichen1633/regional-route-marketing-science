@@ -14,7 +14,7 @@ Deliverables:
 
 Exit criteria:
 
-- We can explain the project in two minutes to a product data science interviewer.
+- We can explain the project in two minutes to a business or technical reviewer.
 
 ## Phase 1: Data Inventory and Feasibility
 
@@ -184,4 +184,3 @@ Deliverables:
 Exit criteria:
 
 - A reviewer can understand the business value, technical choices, assumptions, and limitations without reading every line of code.
-

@@ -1,0 +1,31 @@
+iata,year,statcan_geo,metric,value,source_table
+YEG,2020,"Edmonton International, Alberta",total_passengers_enplaned_deplaned,2461545,23100253
+YEG,2021,"Edmonton International, Alberta",total_passengers_enplaned_deplaned,2588521,23100253
+YEG,2022,"Edmonton International, Alberta",total_passengers_enplaned_deplaned,5696538,23100253
+YEG,2023,"Edmonton International, Alberta",total_passengers_enplaned_deplaned,7223025,23100253
+YEG,2024,"Edmonton International, Alberta",total_passengers_enplaned_deplaned,7555381,23100253
+YEG,2025,"Edmonton International, Alberta",total_passengers_enplaned_deplaned,7658691,23100253
+YHZ,2020,"Halifax/Robert L Stanfield International, Nova Scotia",total_passengers_enplaned_deplaned,975018,23100253
+YHZ,2021,"Halifax/Robert L Stanfield International, Nova Scotia",total_passengers_enplaned_deplaned,1049286,23100253
+YHZ,2022,"Halifax/Robert L Stanfield International, Nova Scotia",total_passengers_enplaned_deplaned,3066979,23100253
+YHZ,2023,"Halifax/Robert L Stanfield International, Nova Scotia",total_passengers_enplaned_deplaned,3493778,23100253
+YHZ,2024,"Halifax/Robert L Stanfield International, Nova Scotia",total_passengers_enplaned_deplaned,3851498,23100253
+YHZ,2025,"Halifax/Robert L Stanfield International, Nova Scotia",total_passengers_enplaned_deplaned,4020914,23100253
+YVR,2020,"Vancouver International, British Columbia",total_passengers_enplaned_deplaned,7199495,23100253
+YVR,2021,"Vancouver International, British Columbia",total_passengers_enplaned_deplaned,7000547,23100253
+YVR,2022,"Vancouver International, British Columbia",total_passengers_enplaned_deplaned,18613367,23100253
+YVR,2023,"Vancouver International, British Columbia",total_passengers_enplaned_deplaned,24371059,23100253
+YVR,2024,"Vancouver International, British Columbia",total_passengers_enplaned_deplaned,25341381,23100253
+YVR,2025,"Vancouver International, British Columbia",total_passengers_enplaned_deplaned,26013167,23100253
+YYC,2020,"Calgary International, Alberta",total_passengers_enplaned_deplaned,5321886,23100253
+YYC,2021,"Calgary International, Alberta",total_passengers_enplaned_deplaned,5897116,23100253
+YYC,2022,"Calgary International, Alberta",total_passengers_enplaned_deplaned,14055697,23100253
+YYC,2023,"Calgary International, Alberta",total_passengers_enplaned_deplaned,18034090,23100253
+YYC,2024,"Calgary International, Alberta",total_passengers_enplaned_deplaned,18438576,23100253
+YYC,2025,"Calgary International, Alberta",total_passengers_enplaned_deplaned,18803183,23100253
+YYZ,2020,"Toronto/Lester B Pearson International, Ontario",total_passengers_enplaned_deplaned,12996101,23100253
+YYZ,2021,"Toronto/Lester B Pearson International, Ontario",total_passengers_enplaned_deplaned,12367942,23100253
+YYZ,2022,"Toronto/Lester B Pearson International, Ontario",total_passengers_enplaned_deplaned,35028484,23100253
+YYZ,2023,"Toronto/Lester B Pearson International, Ontario",total_passengers_enplaned_deplaned,43830389,23100253
+YYZ,2024,"Toronto/Lester B Pearson International, Ontario",total_passengers_enplaned_deplaned,45825353,23100253
+YYZ,2025,"Toronto/Lester B Pearson International, Ontario",total_passengers_enplaned_deplaned,45998881,23100253

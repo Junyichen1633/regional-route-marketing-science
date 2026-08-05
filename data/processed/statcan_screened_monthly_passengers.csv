@@ -1,0 +1,361 @@
+iata,month,statcan_geo,metric,value,source_table
+YEG,2020-01-01,"Edmonton International, Alberta",total_screened_passengers,273108,23100312
+YEG,2020-02-01,"Edmonton International, Alberta",total_screened_passengers,256229,23100312
+YEG,2020-03-01,"Edmonton International, Alberta",total_screened_passengers,127715,23100312
+YEG,2020-04-01,"Edmonton International, Alberta",total_screened_passengers,9685,23100312
+YEG,2020-05-01,"Edmonton International, Alberta",total_screened_passengers,13110,23100312
+YEG,2020-06-01,"Edmonton International, Alberta",total_screened_passengers,27461,23100312
+YEG,2020-07-01,"Edmonton International, Alberta",total_screened_passengers,55037,23100312
+YEG,2020-08-01,"Edmonton International, Alberta",total_screened_passengers,65461,23100312
+YEG,2020-09-01,"Edmonton International, Alberta",total_screened_passengers,56238,23100312
+YEG,2020-10-01,"Edmonton International, Alberta",total_screened_passengers,57057,23100312
+YEG,2020-11-01,"Edmonton International, Alberta",total_screened_passengers,50907,23100312
+YEG,2020-12-01,"Edmonton International, Alberta",total_screened_passengers,49877,23100312
+YEG,2021-01-01,"Edmonton International, Alberta",total_screened_passengers,39613,23100312
+YEG,2021-02-01,"Edmonton International, Alberta",total_screened_passengers,30883,23100312
+YEG,2021-03-01,"Edmonton International, Alberta",total_screened_passengers,38971,23100312
+YEG,2021-04-01,"Edmonton International, Alberta",total_screened_passengers,36991,23100312
+YEG,2021-05-01,"Edmonton International, Alberta",total_screened_passengers,36129,23100312
+YEG,2021-06-01,"Edmonton International, Alberta",total_screened_passengers,60428,23100312
+YEG,2021-07-01,"Edmonton International, Alberta",total_screened_passengers,133608,23100312
+YEG,2021-08-01,"Edmonton International, Alberta",total_screened_passengers,172666,23100312
+YEG,2021-09-01,"Edmonton International, Alberta",total_screened_passengers,144456,23100312
+YEG,2021-10-01,"Edmonton International, Alberta",total_screened_passengers,140266,23100312
+YEG,2021-11-01,"Edmonton International, Alberta",total_screened_passengers,143508,23100312
+YEG,2021-12-01,"Edmonton International, Alberta",total_screened_passengers,168631,23100312
+YEG,2022-01-01,"Edmonton International, Alberta",total_screened_passengers,113502,23100312
+YEG,2022-02-01,"Edmonton International, Alberta",total_screened_passengers,118978,23100312
+YEG,2022-03-01,"Edmonton International, Alberta",total_screened_passengers,168854,23100312
+YEG,2022-04-01,"Edmonton International, Alberta",total_screened_passengers,191406,23100312
+YEG,2022-05-01,"Edmonton International, Alberta",total_screened_passengers,221028,23100312
+YEG,2022-06-01,"Edmonton International, Alberta",total_screened_passengers,240766,23100312
+YEG,2022-07-01,"Edmonton International, Alberta",total_screened_passengers,275405,23100312
+YEG,2022-08-01,"Edmonton International, Alberta",total_screened_passengers,272277,23100312
+YEG,2022-09-01,"Edmonton International, Alberta",total_screened_passengers,240045,23100312
+YEG,2022-10-01,"Edmonton International, Alberta",total_screened_passengers,245724,23100312
+YEG,2022-11-01,"Edmonton International, Alberta",total_screened_passengers,245727,23100312
+YEG,2022-12-01,"Edmonton International, Alberta",total_screened_passengers,257597,23100312
+YEG,2023-01-01,"Edmonton International, Alberta",total_screened_passengers,241477,23100312
+YEG,2023-02-01,"Edmonton International, Alberta",total_screened_passengers,228589,23100312
+YEG,2023-03-01,"Edmonton International, Alberta",total_screened_passengers,264757,23100312
+YEG,2023-04-01,"Edmonton International, Alberta",total_screened_passengers,248488,23100312
+YEG,2023-05-01,"Edmonton International, Alberta",total_screened_passengers,265284,23100312
+YEG,2023-06-01,"Edmonton International, Alberta",total_screened_passengers,282374,23100312
+YEG,2023-07-01,"Edmonton International, Alberta",total_screened_passengers,337124,23100312
+YEG,2023-08-01,"Edmonton International, Alberta",total_screened_passengers,338603,23100312
+YEG,2023-09-01,"Edmonton International, Alberta",total_screened_passengers,277735,23100312
+YEG,2023-10-01,"Edmonton International, Alberta",total_screened_passengers,277480,23100312
+YEG,2023-11-01,"Edmonton International, Alberta",total_screened_passengers,248218,23100312
+YEG,2023-12-01,"Edmonton International, Alberta",total_screened_passengers,252881,23100312
+YEG,2024-01-01,"Edmonton International, Alberta",total_screened_passengers,249522,23100312
+YEG,2024-02-01,"Edmonton International, Alberta",total_screened_passengers,238510,23100312
+YEG,2024-03-01,"Edmonton International, Alberta",total_screened_passengers,252924,23100312
+YEG,2024-04-01,"Edmonton International, Alberta",total_screened_passengers,253018,23100312
+YEG,2024-05-01,"Edmonton International, Alberta",total_screened_passengers,281364,23100312
+YEG,2024-06-01,"Edmonton International, Alberta",total_screened_passengers,286965,23100312
+YEG,2024-07-01,"Edmonton International, Alberta",total_screened_passengers,340233,23100312
+YEG,2024-08-01,"Edmonton International, Alberta",total_screened_passengers,342701,23100312
+YEG,2024-09-01,"Edmonton International, Alberta",total_screened_passengers,280863,23100312
+YEG,2024-10-01,"Edmonton International, Alberta",total_screened_passengers,292821,23100312
+YEG,2024-11-01,"Edmonton International, Alberta",total_screened_passengers,282263,23100312
+YEG,2024-12-01,"Edmonton International, Alberta",total_screened_passengers,289422,23100312
+YEG,2025-01-01,"Edmonton International, Alberta",total_screened_passengers,267449,23100312
+YEG,2025-02-01,"Edmonton International, Alberta",total_screened_passengers,248392,23100312
+YEG,2025-03-01,"Edmonton International, Alberta",total_screened_passengers,269497,23100312
+YEG,2025-04-01,"Edmonton International, Alberta",total_screened_passengers,262533,23100312
+YEG,2025-05-01,"Edmonton International, Alberta",total_screened_passengers,287086,23100312
+YEG,2025-06-01,"Edmonton International, Alberta",total_screened_passengers,299673,23100312
+YEG,2025-07-01,"Edmonton International, Alberta",total_screened_passengers,344780,23100312
+YEG,2025-08-01,"Edmonton International, Alberta",total_screened_passengers,353557,23100312
+YEG,2025-09-01,"Edmonton International, Alberta",total_screened_passengers,296857,23100312
+YEG,2025-10-01,"Edmonton International, Alberta",total_screened_passengers,304936,23100312
+YEG,2025-11-01,"Edmonton International, Alberta",total_screened_passengers,276582,23100312
+YEG,2025-12-01,"Edmonton International, Alberta",total_screened_passengers,285069,23100312
+YHZ,2020-01-01,"Halifax/Robert L Stanfield International, Nova Scotia",total_screened_passengers,103051,23100312
+YHZ,2020-02-01,"Halifax/Robert L Stanfield International, Nova Scotia",total_screened_passengers,116294,23100312
+YHZ,2020-03-01,"Halifax/Robert L Stanfield International, Nova Scotia",total_screened_passengers,70288,23100312
+YHZ,2020-04-01,"Halifax/Robert L Stanfield International, Nova Scotia",total_screened_passengers,3908,23100312
+YHZ,2020-05-01,"Halifax/Robert L Stanfield International, Nova Scotia",total_screened_passengers,5443,23100312
+YHZ,2020-06-01,"Halifax/Robert L Stanfield International, Nova Scotia",total_screened_passengers,9114,23100312
+YHZ,2020-07-01,"Halifax/Robert L Stanfield International, Nova Scotia",total_screened_passengers,17922,23100312
+YHZ,2020-08-01,"Halifax/Robert L Stanfield International, Nova Scotia",total_screened_passengers,24855,23100312
+YHZ,2020-09-01,"Halifax/Robert L Stanfield International, Nova Scotia",total_screened_passengers,19556,23100312
+YHZ,2020-10-01,"Halifax/Robert L Stanfield International, Nova Scotia",total_screened_passengers,17618,23100312
+YHZ,2020-11-01,"Halifax/Robert L Stanfield International, Nova Scotia",total_screened_passengers,15256,23100312
+YHZ,2020-12-01,"Halifax/Robert L Stanfield International, Nova Scotia",total_screened_passengers,14768,23100312
+YHZ,2021-01-01,"Halifax/Robert L Stanfield International, Nova Scotia",total_screened_passengers,11231,23100312
+YHZ,2021-02-01,"Halifax/Robert L Stanfield International, Nova Scotia",total_screened_passengers,6802,23100312
+YHZ,2021-03-01,"Halifax/Robert L Stanfield International, Nova Scotia",total_screened_passengers,7880,23100312
+YHZ,2021-04-01,"Halifax/Robert L Stanfield International, Nova Scotia",total_screened_passengers,9165,23100312
+YHZ,2021-05-01,"Halifax/Robert L Stanfield International, Nova Scotia",total_screened_passengers,7918,23100312
+YHZ,2021-06-01,"Halifax/Robert L Stanfield International, Nova Scotia",total_screened_passengers,9214,23100312
+YHZ,2021-07-01,"Halifax/Robert L Stanfield International, Nova Scotia",total_screened_passengers,32858,23100312
+YHZ,2021-08-01,"Halifax/Robert L Stanfield International, Nova Scotia",total_screened_passengers,88245,23100312
+YHZ,2021-09-01,"Halifax/Robert L Stanfield International, Nova Scotia",total_screened_passengers,85582,23100312
+YHZ,2021-10-01,"Halifax/Robert L Stanfield International, Nova Scotia",total_screened_passengers,86651,23100312
+YHZ,2021-11-01,"Halifax/Robert L Stanfield International, Nova Scotia",total_screened_passengers,61556,23100312
+YHZ,2021-12-01,"Halifax/Robert L Stanfield International, Nova Scotia",total_screened_passengers,71880,23100312
+YHZ,2022-01-01,"Halifax/Robert L Stanfield International, Nova Scotia",total_screened_passengers,37824,23100312
+YHZ,2022-02-01,"Halifax/Robert L Stanfield International, Nova Scotia",total_screened_passengers,41335,23100312
+YHZ,2022-03-01,"Halifax/Robert L Stanfield International, Nova Scotia",total_screened_passengers,74649,23100312
+YHZ,2022-04-01,"Halifax/Robert L Stanfield International, Nova Scotia",total_screened_passengers,91323,23100312
+YHZ,2022-05-01,"Halifax/Robert L Stanfield International, Nova Scotia",total_screened_passengers,121249,23100312
+YHZ,2022-06-01,"Halifax/Robert L Stanfield International, Nova Scotia",total_screened_passengers,143766,23100312
+YHZ,2022-07-01,"Halifax/Robert L Stanfield International, Nova Scotia",total_screened_passengers,167057,23100312
+YHZ,2022-08-01,"Halifax/Robert L Stanfield International, Nova Scotia",total_screened_passengers,194795,23100312
+YHZ,2022-09-01,"Halifax/Robert L Stanfield International, Nova Scotia",total_screened_passengers,159378,23100312
+YHZ,2022-10-01,"Halifax/Robert L Stanfield International, Nova Scotia",total_screened_passengers,152185,23100312
+YHZ,2022-11-01,"Halifax/Robert L Stanfield International, Nova Scotia",total_screened_passengers,111226,23100312
+YHZ,2022-12-01,"Halifax/Robert L Stanfield International, Nova Scotia",total_screened_passengers,121056,23100312
+YHZ,2023-01-01,"Halifax/Robert L Stanfield International, Nova Scotia",total_screened_passengers,102638,23100312
+YHZ,2023-02-01,"Halifax/Robert L Stanfield International, Nova Scotia",total_screened_passengers,107065,23100312
+YHZ,2023-03-01,"Halifax/Robert L Stanfield International, Nova Scotia",total_screened_passengers,134250,23100312
+YHZ,2023-04-01,"Halifax/Robert L Stanfield International, Nova Scotia",total_screened_passengers,143306,23100312
+YHZ,2023-05-01,"Halifax/Robert L Stanfield International, Nova Scotia",total_screened_passengers,137735,23100312
+YHZ,2023-06-01,"Halifax/Robert L Stanfield International, Nova Scotia",total_screened_passengers,163115,23100312
+YHZ,2023-07-01,"Halifax/Robert L Stanfield International, Nova Scotia",total_screened_passengers,183871,23100312
+YHZ,2023-08-01,"Halifax/Robert L Stanfield International, Nova Scotia",total_screened_passengers,199340,23100312
+YHZ,2023-09-01,"Halifax/Robert L Stanfield International, Nova Scotia",total_screened_passengers,158884,23100312
+YHZ,2023-10-01,"Halifax/Robert L Stanfield International, Nova Scotia",total_screened_passengers,155583,23100312
+YHZ,2023-11-01,"Halifax/Robert L Stanfield International, Nova Scotia",total_screened_passengers,108972,23100312
+YHZ,2023-12-01,"Halifax/Robert L Stanfield International, Nova Scotia",total_screened_passengers,119674,23100312
+YHZ,2024-01-01,"Halifax/Robert L Stanfield International, Nova Scotia",total_screened_passengers,105210,23100312
+YHZ,2024-02-01,"Halifax/Robert L Stanfield International, Nova Scotia",total_screened_passengers,112751,23100312
+YHZ,2024-03-01,"Halifax/Robert L Stanfield International, Nova Scotia",total_screened_passengers,137279,23100312
+YHZ,2024-04-01,"Halifax/Robert L Stanfield International, Nova Scotia",total_screened_passengers,147486,23100312
+YHZ,2024-05-01,"Halifax/Robert L Stanfield International, Nova Scotia",total_screened_passengers,157666,23100312
+YHZ,2024-06-01,"Halifax/Robert L Stanfield International, Nova Scotia",total_screened_passengers,176347,23100312
+YHZ,2024-07-01,"Halifax/Robert L Stanfield International, Nova Scotia",total_screened_passengers,204436,23100312
+YHZ,2024-08-01,"Halifax/Robert L Stanfield International, Nova Scotia",total_screened_passengers,239057,23100312
+YHZ,2024-09-01,"Halifax/Robert L Stanfield International, Nova Scotia",total_screened_passengers,178513,23100312
+YHZ,2024-10-01,"Halifax/Robert L Stanfield International, Nova Scotia",total_screened_passengers,167516,23100312
+YHZ,2024-11-01,"Halifax/Robert L Stanfield International, Nova Scotia",total_screened_passengers,124933,23100312
+YHZ,2024-12-01,"Halifax/Robert L Stanfield International, Nova Scotia",total_screened_passengers,133450,23100312
+YHZ,2025-01-01,"Halifax/Robert L Stanfield International, Nova Scotia",total_screened_passengers,109205,23100312
+YHZ,2025-02-01,"Halifax/Robert L Stanfield International, Nova Scotia",total_screened_passengers,118483,23100312
+YHZ,2025-03-01,"Halifax/Robert L Stanfield International, Nova Scotia",total_screened_passengers,145637,23100312
+YHZ,2025-04-01,"Halifax/Robert L Stanfield International, Nova Scotia",total_screened_passengers,154070,23100312
+YHZ,2025-05-01,"Halifax/Robert L Stanfield International, Nova Scotia",total_screened_passengers,153730,23100312
+YHZ,2025-06-01,"Halifax/Robert L Stanfield International, Nova Scotia",total_screened_passengers,174415,23100312
+YHZ,2025-07-01,"Halifax/Robert L Stanfield International, Nova Scotia",total_screened_passengers,208821,23100312
+YHZ,2025-08-01,"Halifax/Robert L Stanfield International, Nova Scotia",total_screened_passengers,232482,23100312
+YHZ,2025-09-01,"Halifax/Robert L Stanfield International, Nova Scotia",total_screened_passengers,190632,23100312
+YHZ,2025-10-01,"Halifax/Robert L Stanfield International, Nova Scotia",total_screened_passengers,181841,23100312
+YHZ,2025-11-01,"Halifax/Robert L Stanfield International, Nova Scotia",total_screened_passengers,131821,23100312
+YHZ,2025-12-01,"Halifax/Robert L Stanfield International, Nova Scotia",total_screened_passengers,141786,23100312
+YVR,2020-01-01,"Vancouver International, British Columbia",total_screened_passengers,800430,23100312
+YVR,2020-02-01,"Vancouver International, British Columbia",total_screened_passengers,707380,23100312
+YVR,2020-03-01,"Vancouver International, British Columbia",total_screened_passengers,404264,23100312
+YVR,2020-04-01,"Vancouver International, British Columbia",total_screened_passengers,27814,23100312
+YVR,2020-05-01,"Vancouver International, British Columbia",total_screened_passengers,35050,23100312
+YVR,2020-06-01,"Vancouver International, British Columbia",total_screened_passengers,71558,23100312
+YVR,2020-07-01,"Vancouver International, British Columbia",total_screened_passengers,115251,23100312
+YVR,2020-08-01,"Vancouver International, British Columbia",total_screened_passengers,156207,23100312
+YVR,2020-09-01,"Vancouver International, British Columbia",total_screened_passengers,136046,23100312
+YVR,2020-10-01,"Vancouver International, British Columbia",total_screened_passengers,123240,23100312
+YVR,2020-11-01,"Vancouver International, British Columbia",total_screened_passengers,104938,23100312
+YVR,2020-12-01,"Vancouver International, British Columbia",total_screened_passengers,113106,23100312
+YVR,2021-01-01,"Vancouver International, British Columbia",total_screened_passengers,96468,23100312
+YVR,2021-02-01,"Vancouver International, British Columbia",total_screened_passengers,65596,23100312
+YVR,2021-03-01,"Vancouver International, British Columbia",total_screened_passengers,75618,23100312
+YVR,2021-04-01,"Vancouver International, British Columbia",total_screened_passengers,69623,23100312
+YVR,2021-05-01,"Vancouver International, British Columbia",total_screened_passengers,74788,23100312
+YVR,2021-06-01,"Vancouver International, British Columbia",total_screened_passengers,117418,23100312
+YVR,2021-07-01,"Vancouver International, British Columbia",total_screened_passengers,274932,23100312
+YVR,2021-08-01,"Vancouver International, British Columbia",total_screened_passengers,430983,23100312
+YVR,2021-09-01,"Vancouver International, British Columbia",total_screened_passengers,373334,23100312
+YVR,2021-10-01,"Vancouver International, British Columbia",total_screened_passengers,389939,23100312
+YVR,2021-11-01,"Vancouver International, British Columbia",total_screened_passengers,364077,23100312
+YVR,2021-12-01,"Vancouver International, British Columbia",total_screened_passengers,435297,23100312
+YVR,2022-01-01,"Vancouver International, British Columbia",total_screened_passengers,289704,23100312
+YVR,2022-02-01,"Vancouver International, British Columbia",total_screened_passengers,312014,23100312
+YVR,2022-03-01,"Vancouver International, British Columbia",total_screened_passengers,467349,23100312
+YVR,2022-04-01,"Vancouver International, British Columbia",total_screened_passengers,531421,23100312
+YVR,2022-05-01,"Vancouver International, British Columbia",total_screened_passengers,613094,23100312
+YVR,2022-06-01,"Vancouver International, British Columbia",total_screened_passengers,733101,23100312
+YVR,2022-07-01,"Vancouver International, British Columbia",total_screened_passengers,832219,23100312
+YVR,2022-08-01,"Vancouver International, British Columbia",total_screened_passengers,869941,23100312
+YVR,2022-09-01,"Vancouver International, British Columbia",total_screened_passengers,768861,23100312
+YVR,2022-10-01,"Vancouver International, British Columbia",total_screened_passengers,730765,23100312
+YVR,2022-11-01,"Vancouver International, British Columbia",total_screened_passengers,664665,23100312
+YVR,2022-12-01,"Vancouver International, British Columbia",total_screened_passengers,738724,23100312
+YVR,2023-01-01,"Vancouver International, British Columbia",total_screened_passengers,711257,23100312
+YVR,2023-02-01,"Vancouver International, British Columbia",total_screened_passengers,681571,23100312
+YVR,2023-03-01,"Vancouver International, British Columbia",total_screened_passengers,801583,23100312
+YVR,2023-04-01,"Vancouver International, British Columbia",total_screened_passengers,767067,23100312
+YVR,2023-05-01,"Vancouver International, British Columbia",total_screened_passengers,834448,23100312
+YVR,2023-06-01,"Vancouver International, British Columbia",total_screened_passengers,911940,23100312
+YVR,2023-07-01,"Vancouver International, British Columbia",total_screened_passengers,1022138,23100312
+YVR,2023-08-01,"Vancouver International, British Columbia",total_screened_passengers,1073277,23100312
+YVR,2023-09-01,"Vancouver International, British Columbia",total_screened_passengers,929134,23100312
+YVR,2023-10-01,"Vancouver International, British Columbia",total_screened_passengers,859892,23100312
+YVR,2023-11-01,"Vancouver International, British Columbia",total_screened_passengers,768621,23100312
+YVR,2023-12-01,"Vancouver International, British Columbia",total_screened_passengers,807222,23100312
+YVR,2024-01-01,"Vancouver International, British Columbia",total_screened_passengers,788286,23100312
+YVR,2024-02-01,"Vancouver International, British Columbia",total_screened_passengers,763740,23100312
+YVR,2024-03-01,"Vancouver International, British Columbia",total_screened_passengers,856075,23100312
+YVR,2024-04-01,"Vancouver International, British Columbia",total_screened_passengers,808445,23100312
+YVR,2024-05-01,"Vancouver International, British Columbia",total_screened_passengers,901203,23100312
+YVR,2024-06-01,"Vancouver International, British Columbia",total_screened_passengers,941308,23100312
+YVR,2024-07-01,"Vancouver International, British Columbia",total_screened_passengers,1062506,23100312
+YVR,2024-08-01,"Vancouver International, British Columbia",total_screened_passengers,1124411,23100312
+YVR,2024-09-01,"Vancouver International, British Columbia",total_screened_passengers,947835,23100312
+YVR,2024-10-01,"Vancouver International, British Columbia",total_screened_passengers,878580,23100312
+YVR,2024-11-01,"Vancouver International, British Columbia",total_screened_passengers,800653,23100312
+YVR,2024-12-01,"Vancouver International, British Columbia",total_screened_passengers,912733,23100312
+YVR,2025-01-01,"Vancouver International, British Columbia",total_screened_passengers,797343,23100312
+YVR,2025-02-01,"Vancouver International, British Columbia",total_screened_passengers,775814,23100312
+YVR,2025-03-01,"Vancouver International, British Columbia",total_screened_passengers,881364,23100312
+YVR,2025-04-01,"Vancouver International, British Columbia",total_screened_passengers,822131,23100312
+YVR,2025-05-01,"Vancouver International, British Columbia",total_screened_passengers,929591,23100312
+YVR,2025-06-01,"Vancouver International, British Columbia",total_screened_passengers,996623,23100312
+YVR,2025-07-01,"Vancouver International, British Columbia",total_screened_passengers,1120208,23100312
+YVR,2025-08-01,"Vancouver International, British Columbia",total_screened_passengers,1155465,23100312
+YVR,2025-09-01,"Vancouver International, British Columbia",total_screened_passengers,999722,23100312
+YVR,2025-10-01,"Vancouver International, British Columbia",total_screened_passengers,936380,23100312
+YVR,2025-11-01,"Vancouver International, British Columbia",total_screened_passengers,815875,23100312
+YVR,2025-12-01,"Vancouver International, British Columbia",total_screened_passengers,894299,23100312
+YYC,2020-01-01,"Calgary International, Alberta",total_screened_passengers,487454,23100312
+YYC,2020-02-01,"Calgary International, Alberta",total_screened_passengers,470783,23100312
+YYC,2020-03-01,"Calgary International, Alberta",total_screened_passengers,248446,23100312
+YYC,2020-04-01,"Calgary International, Alberta",total_screened_passengers,15268,23100312
+YYC,2020-05-01,"Calgary International, Alberta",total_screened_passengers,20141,23100312
+YYC,2020-06-01,"Calgary International, Alberta",total_screened_passengers,43165,23100312
+YYC,2020-07-01,"Calgary International, Alberta",total_screened_passengers,88190,23100312
+YYC,2020-08-01,"Calgary International, Alberta",total_screened_passengers,116530,23100312
+YYC,2020-09-01,"Calgary International, Alberta",total_screened_passengers,103455,23100312
+YYC,2020-10-01,"Calgary International, Alberta",total_screened_passengers,102782,23100312
+YYC,2020-11-01,"Calgary International, Alberta",total_screened_passengers,87023,23100312
+YYC,2020-12-01,"Calgary International, Alberta",total_screened_passengers,93109,23100312
+YYC,2021-01-01,"Calgary International, Alberta",total_screened_passengers,82007,23100312
+YYC,2021-02-01,"Calgary International, Alberta",total_screened_passengers,54312,23100312
+YYC,2021-03-01,"Calgary International, Alberta",total_screened_passengers,64535,23100312
+YYC,2021-04-01,"Calgary International, Alberta",total_screened_passengers,58939,23100312
+YYC,2021-05-01,"Calgary International, Alberta",total_screened_passengers,59344,23100312
+YYC,2021-06-01,"Calgary International, Alberta",total_screened_passengers,100339,23100312
+YYC,2021-07-01,"Calgary International, Alberta",total_screened_passengers,236450,23100312
+YYC,2021-08-01,"Calgary International, Alberta",total_screened_passengers,349117,23100312
+YYC,2021-09-01,"Calgary International, Alberta",total_screened_passengers,290848,23100312
+YYC,2021-10-01,"Calgary International, Alberta",total_screened_passengers,284709,23100312
+YYC,2021-11-01,"Calgary International, Alberta",total_screened_passengers,273213,23100312
+YYC,2021-12-01,"Calgary International, Alberta",total_screened_passengers,321634,23100312
+YYC,2022-01-01,"Calgary International, Alberta",total_screened_passengers,230833,23100312
+YYC,2022-02-01,"Calgary International, Alberta",total_screened_passengers,253223,23100312
+YYC,2022-03-01,"Calgary International, Alberta",total_screened_passengers,341437,23100312
+YYC,2022-04-01,"Calgary International, Alberta",total_screened_passengers,385183,23100312
+YYC,2022-05-01,"Calgary International, Alberta",total_screened_passengers,436488,23100312
+YYC,2022-06-01,"Calgary International, Alberta",total_screened_passengers,494798,23100312
+YYC,2022-07-01,"Calgary International, Alberta",total_screened_passengers,570152,23100312
+YYC,2022-08-01,"Calgary International, Alberta",total_screened_passengers,546488,23100312
+YYC,2022-09-01,"Calgary International, Alberta",total_screened_passengers,505768,23100312
+YYC,2022-10-01,"Calgary International, Alberta",total_screened_passengers,496383,23100312
+YYC,2022-11-01,"Calgary International, Alberta",total_screened_passengers,448582,23100312
+YYC,2022-12-01,"Calgary International, Alberta",total_screened_passengers,481960,23100312
+YYC,2023-01-01,"Calgary International, Alberta",total_screened_passengers,461108,23100312
+YYC,2023-02-01,"Calgary International, Alberta",total_screened_passengers,451037,23100312
+YYC,2023-03-01,"Calgary International, Alberta",total_screened_passengers,520355,23100312
+YYC,2023-04-01,"Calgary International, Alberta",total_screened_passengers,497740,23100312
+YYC,2023-05-01,"Calgary International, Alberta",total_screened_passengers,540083,23100312
+YYC,2023-06-01,"Calgary International, Alberta",total_screened_passengers,613136,23100312
+YYC,2023-07-01,"Calgary International, Alberta",total_screened_passengers,741194,23100312
+YYC,2023-08-01,"Calgary International, Alberta",total_screened_passengers,726120,23100312
+YYC,2023-09-01,"Calgary International, Alberta",total_screened_passengers,632015,23100312
+YYC,2023-10-01,"Calgary International, Alberta",total_screened_passengers,599954,23100312
+YYC,2023-11-01,"Calgary International, Alberta",total_screened_passengers,498933,23100312
+YYC,2023-12-01,"Calgary International, Alberta",total_screened_passengers,507243,23100312
+YYC,2024-01-01,"Calgary International, Alberta",total_screened_passengers,507019,23100312
+YYC,2024-02-01,"Calgary International, Alberta",total_screened_passengers,498253,23100312
+YYC,2024-03-01,"Calgary International, Alberta",total_screened_passengers,538349,23100312
+YYC,2024-04-01,"Calgary International, Alberta",total_screened_passengers,496301,23100312
+YYC,2024-05-01,"Calgary International, Alberta",total_screened_passengers,548552,23100312
+YYC,2024-06-01,"Calgary International, Alberta",total_screened_passengers,618898,23100312
+YYC,2024-07-01,"Calgary International, Alberta",total_screened_passengers,760297,23100312
+YYC,2024-08-01,"Calgary International, Alberta",total_screened_passengers,731746,23100312
+YYC,2024-09-01,"Calgary International, Alberta",total_screened_passengers,637796,23100312
+YYC,2024-10-01,"Calgary International, Alberta",total_screened_passengers,608207,23100312
+YYC,2024-11-01,"Calgary International, Alberta",total_screened_passengers,525484,23100312
+YYC,2024-12-01,"Calgary International, Alberta",total_screened_passengers,558278,23100312
+YYC,2025-01-01,"Calgary International, Alberta",total_screened_passengers,509976,23100312
+YYC,2025-02-01,"Calgary International, Alberta",total_screened_passengers,500845,23100312
+YYC,2025-03-01,"Calgary International, Alberta",total_screened_passengers,544408,23100312
+YYC,2025-04-01,"Calgary International, Alberta",total_screened_passengers,527958,23100312
+YYC,2025-05-01,"Calgary International, Alberta",total_screened_passengers,577784,23100312
+YYC,2025-06-01,"Calgary International, Alberta",total_screened_passengers,667731,23100312
+YYC,2025-07-01,"Calgary International, Alberta",total_screened_passengers,793534,23100312
+YYC,2025-08-01,"Calgary International, Alberta",total_screened_passengers,779735,23100312
+YYC,2025-09-01,"Calgary International, Alberta",total_screened_passengers,657889,23100312
+YYC,2025-10-01,"Calgary International, Alberta",total_screened_passengers,639566,23100312
+YYC,2025-11-01,"Calgary International, Alberta",total_screened_passengers,521837,23100312
+YYC,2025-12-01,"Calgary International, Alberta",total_screened_passengers,554224,23100312
+YYZ,2020-01-01,"Toronto/Lester B Pearson International, Ontario",total_screened_passengers,1623784,23100312
+YYZ,2020-02-01,"Toronto/Lester B Pearson International, Ontario",total_screened_passengers,1545080,23100312
+YYZ,2020-03-01,"Toronto/Lester B Pearson International, Ontario",total_screened_passengers,811942,23100312
+YYZ,2020-04-01,"Toronto/Lester B Pearson International, Ontario",total_screened_passengers,37137,23100312
+YYZ,2020-05-01,"Toronto/Lester B Pearson International, Ontario",total_screened_passengers,50839,23100312
+YYZ,2020-06-01,"Toronto/Lester B Pearson International, Ontario",total_screened_passengers,100758,23100312
+YYZ,2020-07-01,"Toronto/Lester B Pearson International, Ontario",total_screened_passengers,175271,23100312
+YYZ,2020-08-01,"Toronto/Lester B Pearson International, Ontario",total_screened_passengers,232347,23100312
+YYZ,2020-09-01,"Toronto/Lester B Pearson International, Ontario",total_screened_passengers,200416,23100312
+YYZ,2020-10-01,"Toronto/Lester B Pearson International, Ontario",total_screened_passengers,193642,23100312
+YYZ,2020-11-01,"Toronto/Lester B Pearson International, Ontario",total_screened_passengers,192903,23100312
+YYZ,2020-12-01,"Toronto/Lester B Pearson International, Ontario",total_screened_passengers,253155,23100312
+YYZ,2021-01-01,"Toronto/Lester B Pearson International, Ontario",total_screened_passengers,192863,23100312
+YYZ,2021-02-01,"Toronto/Lester B Pearson International, Ontario",total_screened_passengers,101525,23100312
+YYZ,2021-03-01,"Toronto/Lester B Pearson International, Ontario",total_screened_passengers,114577,23100312
+YYZ,2021-04-01,"Toronto/Lester B Pearson International, Ontario",total_screened_passengers,116349,23100312
+YYZ,2021-05-01,"Toronto/Lester B Pearson International, Ontario",total_screened_passengers,129500,23100312
+YYZ,2021-06-01,"Toronto/Lester B Pearson International, Ontario",total_screened_passengers,207031,23100312
+YYZ,2021-07-01,"Toronto/Lester B Pearson International, Ontario",total_screened_passengers,483360,23100312
+YYZ,2021-08-01,"Toronto/Lester B Pearson International, Ontario",total_screened_passengers,761748,23100312
+YYZ,2021-09-01,"Toronto/Lester B Pearson International, Ontario",total_screened_passengers,680955,23100312
+YYZ,2021-10-01,"Toronto/Lester B Pearson International, Ontario",total_screened_passengers,758901,23100312
+YYZ,2021-11-01,"Toronto/Lester B Pearson International, Ontario",total_screened_passengers,759434,23100312
+YYZ,2021-12-01,"Toronto/Lester B Pearson International, Ontario",total_screened_passengers,878895,23100312
+YYZ,2022-01-01,"Toronto/Lester B Pearson International, Ontario",total_screened_passengers,570608,23100312
+YYZ,2022-02-01,"Toronto/Lester B Pearson International, Ontario",total_screened_passengers,629011,23100312
+YYZ,2022-03-01,"Toronto/Lester B Pearson International, Ontario",total_screened_passengers,970444,23100312
+YYZ,2022-04-01,"Toronto/Lester B Pearson International, Ontario",total_screened_passengers,1087292,23100312
+YYZ,2022-05-01,"Toronto/Lester B Pearson International, Ontario",total_screened_passengers,1273564,23100312
+YYZ,2022-06-01,"Toronto/Lester B Pearson International, Ontario",total_screened_passengers,1419440,23100312
+YYZ,2022-07-01,"Toronto/Lester B Pearson International, Ontario",total_screened_passengers,1631584,23100312
+YYZ,2022-08-01,"Toronto/Lester B Pearson International, Ontario",total_screened_passengers,1642138,23100312
+YYZ,2022-09-01,"Toronto/Lester B Pearson International, Ontario",total_screened_passengers,1401332,23100312
+YYZ,2022-10-01,"Toronto/Lester B Pearson International, Ontario",total_screened_passengers,1447375,23100312
+YYZ,2022-11-01,"Toronto/Lester B Pearson International, Ontario",total_screened_passengers,1373522,23100312
+YYZ,2022-12-01,"Toronto/Lester B Pearson International, Ontario",total_screened_passengers,1522698,23100312
+YYZ,2023-01-01,"Toronto/Lester B Pearson International, Ontario",total_screened_passengers,1403684,23100312
+YYZ,2023-02-01,"Toronto/Lester B Pearson International, Ontario",total_screened_passengers,1354261,23100312
+YYZ,2023-03-01,"Toronto/Lester B Pearson International, Ontario",total_screened_passengers,1523075,23100312
+YYZ,2023-04-01,"Toronto/Lester B Pearson International, Ontario",total_screened_passengers,1544222,23100312
+YYZ,2023-05-01,"Toronto/Lester B Pearson International, Ontario",total_screened_passengers,1576219,23100312
+YYZ,2023-06-01,"Toronto/Lester B Pearson International, Ontario",total_screened_passengers,1665176,23100312
+YYZ,2023-07-01,"Toronto/Lester B Pearson International, Ontario",total_screened_passengers,1881961,23100312
+YYZ,2023-08-01,"Toronto/Lester B Pearson International, Ontario",total_screened_passengers,1876626,23100312
+YYZ,2023-09-01,"Toronto/Lester B Pearson International, Ontario",total_screened_passengers,1619985,23100312
+YYZ,2023-10-01,"Toronto/Lester B Pearson International, Ontario",total_screened_passengers,1625369,23100312
+YYZ,2023-11-01,"Toronto/Lester B Pearson International, Ontario",total_screened_passengers,1500101,23100312
+YYZ,2023-12-01,"Toronto/Lester B Pearson International, Ontario",total_screened_passengers,1688826,23100312
+YYZ,2024-01-01,"Toronto/Lester B Pearson International, Ontario",total_screened_passengers,1553662,23100312
+YYZ,2024-02-01,"Toronto/Lester B Pearson International, Ontario",total_screened_passengers,1520561,23100312
+YYZ,2024-03-01,"Toronto/Lester B Pearson International, Ontario",total_screened_passengers,1623943,23100312
+YYZ,2024-04-01,"Toronto/Lester B Pearson International, Ontario",total_screened_passengers,1601981,23100312
+YYZ,2024-05-01,"Toronto/Lester B Pearson International, Ontario",total_screened_passengers,1678902,23100312
+YYZ,2024-06-01,"Toronto/Lester B Pearson International, Ontario",total_screened_passengers,1748712,23100312
+YYZ,2024-07-01,"Toronto/Lester B Pearson International, Ontario",total_screened_passengers,1946906,23100312
+YYZ,2024-08-01,"Toronto/Lester B Pearson International, Ontario",total_screened_passengers,2029328,23100312
+YYZ,2024-09-01,"Toronto/Lester B Pearson International, Ontario",total_screened_passengers,1660664,23100312
+YYZ,2024-10-01,"Toronto/Lester B Pearson International, Ontario",total_screened_passengers,1687902,23100312
+YYZ,2024-11-01,"Toronto/Lester B Pearson International, Ontario",total_screened_passengers,1598683,23100312
+YYZ,2024-12-01,"Toronto/Lester B Pearson International, Ontario",total_screened_passengers,1764257,23100312
+YYZ,2025-01-01,"Toronto/Lester B Pearson International, Ontario",total_screened_passengers,1563965,23100312
+YYZ,2025-02-01,"Toronto/Lester B Pearson International, Ontario",total_screened_passengers,1498511,23100312
+YYZ,2025-03-01,"Toronto/Lester B Pearson International, Ontario",total_screened_passengers,1628079,23100312
+YYZ,2025-04-01,"Toronto/Lester B Pearson International, Ontario",total_screened_passengers,1654314,23100312
+YYZ,2025-05-01,"Toronto/Lester B Pearson International, Ontario",total_screened_passengers,1692575,23100312
+YYZ,2025-06-01,"Toronto/Lester B Pearson International, Ontario",total_screened_passengers,1786891,23100312
+YYZ,2025-07-01,"Toronto/Lester B Pearson International, Ontario",total_screened_passengers,1999708,23100312
+YYZ,2025-08-01,"Toronto/Lester B Pearson International, Ontario",total_screened_passengers,1971419,23100312
+YYZ,2025-09-01,"Toronto/Lester B Pearson International, Ontario",total_screened_passengers,1739840,23100312
+YYZ,2025-10-01,"Toronto/Lester B Pearson International, Ontario",total_screened_passengers,1765512,23100312
+YYZ,2025-11-01,"Toronto/Lester B Pearson International, Ontario",total_screened_passengers,1599404,23100312
+YYZ,2025-12-01,"Toronto/Lester B Pearson International, Ontario",total_screened_passengers,1805347,23100312

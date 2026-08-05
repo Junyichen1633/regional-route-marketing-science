@@ -7,7 +7,7 @@ Create a standalone portfolio dashboard for reviewing the final route marketing 
 The dashboard is designed for:
 
 - portfolio review
-- interview walkthrough
+- project walkthrough
 - quick comparison of budget cases
 - explaining the sensitivity caveat visually
 - connecting route recommendations to experiment design

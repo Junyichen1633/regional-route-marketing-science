@@ -2,7 +2,7 @@
 
 ## Objective
 
-Package the project into artifacts that are easy for a data science interviewer or reviewer to evaluate.
+Package the project into artifacts that are easy for a business or technical reviewer to evaluate.
 
 This phase answers:
 
@@ -34,12 +34,6 @@ Final portfolio case study:
 
 ```text
 reports/final_portfolio_case_study.md
-```
-
-Chinese interview talk track:
-
-```text
-reports/interview_talk_track_cn.md
 ```
 
 Short snapshot:
@@ -74,7 +68,7 @@ The project does not claim:
 observed causal channel ROI
 ```
 
-## Recommended Interview Framing
+## Recommended Presentation Framing
 
 Lead with the decision:
 

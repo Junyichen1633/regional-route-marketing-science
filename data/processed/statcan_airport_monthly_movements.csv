@@ -1,0 +1,721 @@
+iata,month,statcan_airport,domestic_total_itinerant_movements,domestic_air_carrier_level_i_iii_movements,domestic_air_carrier_level_iv_vi_movements,domestic_air_carrier_all_levels_movements,transborder_total_itinerant_movements,other_international_total_itinerant_movements,source_table
+YEG,2020-01-01,"Edmonton International, Alberta",8956,8153,232,8385,979,382,23100302
+YEG,2020-02-01,"Edmonton International, Alberta",8363,7432,340,7772,938,347,23100302
+YEG,2020-03-01,"Edmonton International, Alberta",7129,6390,284,6674,837,268,23100302
+YEG,2020-04-01,"Edmonton International, Alberta",3168,2558,241,2799,115,8,23100302
+YEG,2020-05-01,"Edmonton International, Alberta",3397,2558,326,2884,142,22,23100302
+YEG,2020-06-01,"Edmonton International, Alberta",4132,3214,291,3505,119,35,23100302
+YEG,2020-07-01,"Edmonton International, Alberta",4925,4035,302,4337,121,14,23100302
+YEG,2020-08-01,"Edmonton International, Alberta",5011,4068,307,4375,85,6,23100302
+YEG,2020-09-01,"Edmonton International, Alberta",4994,4009,283,4292,96,4,23100302
+YEG,2020-10-01,"Edmonton International, Alberta",4809,3978,253,4231,94,12,23100302
+YEG,2020-11-01,"Edmonton International, Alberta",4455,3745,232,3977,107,27,23100302
+YEG,2020-12-01,"Edmonton International, Alberta",4673,3998,257,4255,121,38,23100302
+YEG,2021-01-01,"Edmonton International, Alberta",4300,3514,310,3824,120,47,23100302
+YEG,2021-02-01,"Edmonton International, Alberta",3813,3173,216,3389,79,5,23100302
+YEG,2021-03-01,"Edmonton International, Alberta",4453,3580,358,3938,84,1,23100302
+YEG,2021-04-01,"Edmonton International, Alberta",4182,3411,301,3712,89,2,23100302
+YEG,2021-05-01,"Edmonton International, Alberta",4537,3727,336,4063,98,3,23100302
+YEG,2021-06-01,"Edmonton International, Alberta",5055,4106,304,4410,81,3,23100302
+YEG,2021-07-01,"Edmonton International, Alberta",6486,5375,302,5677,101,12,23100302
+YEG,2021-08-01,"Edmonton International, Alberta",7223,6256,273,6529,161,10,23100302
+YEG,2021-09-01,"Edmonton International, Alberta",7440,6431,288,6719,218,21,23100302
+YEG,2021-10-01,"Edmonton International, Alberta",7183,6276,330,6606,312,33,23100302
+YEG,2021-11-01,"Edmonton International, Alberta",6332,5529,255,5784,454,182,23100302
+YEG,2021-12-01,"Edmonton International, Alberta",6499,5839,204,6043,499,240,23100302
+YEG,2022-01-01,"Edmonton International, Alberta",5946,5281,261,5542,352,224,23100302
+YEG,2022-02-01,"Edmonton International, Alberta",5408,4675,277,4952,362,203,23100302
+YEG,2022-03-01,"Edmonton International, Alberta",6423,5596,306,5902,425,215,23100302
+YEG,2022-04-01,"Edmonton International, Alberta",6593,5757,357,6114,592,204,23100302
+YEG,2022-05-01,"Edmonton International, Alberta",8050,6868,390,7258,587,85,23100302
+YEG,2022-06-01,"Edmonton International, Alberta",8155,7004,380,7384,576,69,23100302
+YEG,2022-07-01,"Edmonton International, Alberta",8416,7253,368,7621,553,66,23100302
+YEG,2022-08-01,"Edmonton International, Alberta",8995,7826,374,8200,540,77,23100302
+YEG,2022-09-01,"Edmonton International, Alberta",8148,7049,349,7398,571,57,23100302
+YEG,2022-10-01,"Edmonton International, Alberta",7980,6991,356,7347,690,80,23100302
+YEG,2022-11-01,"Edmonton International, Alberta",7290,6542,265,6807,808,270,23100302
+YEG,2022-12-01,"Edmonton International, Alberta",7167,6503,222,6725,809,352,23100302
+YEG,2023-01-01,"Edmonton International, Alberta",6879,6208,316,6524,784,384,23100302
+YEG,2023-02-01,"Edmonton International, Alberta",6515,5758,321,6079,757,367,23100302
+YEG,2023-03-01,"Edmonton International, Alberta",7630,6707,430,7137,835,396,23100302
+YEG,2023-04-01,"Edmonton International, Alberta",7311,6341,415,6756,853,336,23100302
+YEG,2023-05-01,"Edmonton International, Alberta",9218,8076,369,8445,747,134,23100302
+YEG,2023-06-01,"Edmonton International, Alberta",8709,7686,341,8027,714,130,23100302
+YEG,2023-07-01,"Edmonton International, Alberta",9011,8047,292,8339,692,106,23100302
+YEG,2023-08-01,"Edmonton International, Alberta",9531,8368,332,8700,753,106,23100302
+YEG,2023-09-01,"Edmonton International, Alberta",8208,7213,342,7555,756,85,23100302
+YEG,2023-10-01,"Edmonton International, Alberta",8230,6988,562,7550,857,133,23100302
+YEG,2023-11-01,"Edmonton International, Alberta",6771,5915,327,6242,881,375,23100302
+YEG,2023-12-01,"Edmonton International, Alberta",6919,6010,359,6369,863,438,23100302
+YEG,2024-01-01,"Edmonton International, Alberta",6673,5991,275,6266,789,472,23100302
+YEG,2024-02-01,"Edmonton International, Alberta",6383,5606,309,5915,801,445,23100302
+YEG,2024-03-01,"Edmonton International, Alberta",6660,5873,324,6197,924,475,23100302
+YEG,2024-04-01,"Edmonton International, Alberta",7115,6160,396,6556,883,410,23100302
+YEG,2024-05-01,"Edmonton International, Alberta",8331,7230,325,7555,947,139,23100302
+YEG,2024-06-01,"Edmonton International, Alberta",8360,7375,295,7670,1004,85,23100302
+YEG,2024-07-01,"Edmonton International, Alberta",8905,7936,320,8256,961,84,23100302
+YEG,2024-08-01,"Edmonton International, Alberta",8783,7814,303,8117,988,88,23100302
+YEG,2024-09-01,"Edmonton International, Alberta",8209,7164,313,7477,976,74,23100302
+YEG,2024-10-01,"Edmonton International, Alberta",8084,7242,288,7530,939,134,23100302
+YEG,2024-11-01,"Edmonton International, Alberta",6928,6332,156,6488,877,355,23100302
+YEG,2024-12-01,"Edmonton International, Alberta",7182,6593,190,6783,833,441,23100302
+YEG,2025-01-01,"Edmonton International, Alberta",7272,6575,234,6809,797,471,23100302
+YEG,2025-02-01,"Edmonton International, Alberta",6404,5775,196,5971,751,425,23100302
+YEG,2025-03-01,"Edmonton International, Alberta",7165,6379,372,6751,927,483,23100302
+YEG,2025-04-01,"Edmonton International, Alberta",7484,6579,395,6974,824,401,23100302
+YEG,2025-05-01,"Edmonton International, Alberta",8692,7731,291,8022,828,109,23100302
+YEG,2025-06-01,"Edmonton International, Alberta",8986,7929,239,8168,860,96,23100302
+YEG,2025-07-01,"Edmonton International, Alberta",9512,8568,260,8828,806,81,23100302
+YEG,2025-08-01,"Edmonton International, Alberta",9045,8315,223,8538,843,90,23100302
+YEG,2025-09-01,"Edmonton International, Alberta",8547,7671,245,7916,822,84,23100302
+YEG,2025-10-01,"Edmonton International, Alberta",8339,7495,268,7763,831,138,23100302
+YEG,2025-11-01,"Edmonton International, Alberta",6865,6257,190,6447,820,405,23100302
+YEG,2025-12-01,"Edmonton International, Alberta",7098,6631,126,6757,826,453,23100302
+YHM,2020-01-01,"Hamilton, Ontario",1246,1006,128,1134,695,264,23100302
+YHM,2020-02-01,"Hamilton, Ontario",1197,947,115,1062,706,261,23100302
+YHM,2020-03-01,"Hamilton, Ontario",1210,1012,102,1114,648,202,23100302
+YHM,2020-04-01,"Hamilton, Ontario",723,674,4,678,389,27,23100302
+YHM,2020-05-01,"Hamilton, Ontario",753,687,9,696,394,41,23100302
+YHM,2020-06-01,"Hamilton, Ontario",1022,812,103,915,465,58,23100302
+YHM,2020-07-01,"Hamilton, Ontario",1529,890,313,1203,503,55,23100302
+YHM,2020-08-01,"Hamilton, Ontario",1724,868,397,1265,568,50,23100302
+YHM,2020-09-01,"Hamilton, Ontario",1615,834,417,1251,574,65,23100302
+YHM,2020-10-01,"Hamilton, Ontario",1409,909,243,1152,554,50,23100302
+YHM,2020-11-01,"Hamilton, Ontario",1395,889,395,1284,757,56,23100302
+YHM,2020-12-01,"Hamilton, Ontario",1554,1054,386,1440,839,67,23100302
+YHM,2021-01-01,"Hamilton, Ontario",1065,731,269,1000,710,49,23100302
+YHM,2021-02-01,"Hamilton, Ontario",831,650,93,743,487,54,23100302
+YHM,2021-03-01,"Hamilton, Ontario",995,763,114,877,666,48,23100302
+YHM,2021-04-01,"Hamilton, Ontario",1005,799,118,917,703,61,23100302
+YHM,2021-05-01,"Hamilton, Ontario",1026,730,181,911,666,61,23100302
+YHM,2021-06-01,"Hamilton, Ontario",1286,832,187,1019,683,60,23100302
+YHM,2021-07-01,"Hamilton, Ontario",1679,1081,150,1231,677,69,23100302
+YHM,2021-08-01,"Hamilton, Ontario",2023,1176,161,1337,691,69,23100302
+YHM,2021-09-01,"Hamilton, Ontario",1968,1181,162,1343,690,67,23100302
+YHM,2021-10-01,"Hamilton, Ontario",1786,1238,162,1400,723,89,23100302
+YHM,2021-11-01,"Hamilton, Ontario",1623,1288,140,1428,662,115,23100302
+YHM,2021-12-01,"Hamilton, Ontario",1712,1415,133,1548,884,183,23100302
+YHM,2022-01-01,"Hamilton, Ontario",1246,1135,30,1165,664,180,23100302
+YHM,2022-02-01,"Hamilton, Ontario",1238,1092,43,1135,697,172,23100302
+YHM,2022-03-01,"Hamilton, Ontario",1459,1223,55,1278,868,200,23100302
+YHM,2022-04-01,"Hamilton, Ontario",1349,1113,48,1161,748,163,23100302
+YHM,2022-05-01,"Hamilton, Ontario",1618,1291,44,1335,695,104,23100302
+YHM,2022-06-01,"Hamilton, Ontario",2069,1378,112,1490,769,93,23100302
+YHM,2022-07-01,"Hamilton, Ontario",1993,1357,106,1463,638,89,23100302
+YHM,2022-08-01,"Hamilton, Ontario",2203,1516,136,1652,740,76,23100302
+YHM,2022-09-01,"Hamilton, Ontario",1924,1344,134,1478,801,65,23100302
+YHM,2022-10-01,"Hamilton, Ontario",1892,1322,137,1459,797,98,23100302
+YHM,2022-11-01,"Hamilton, Ontario",1560,1281,127,1408,855,113,23100302
+YHM,2022-12-01,"Hamilton, Ontario",1566,1320,139,1459,804,187,23100302
+YHM,2023-01-01,"Hamilton, Ontario",1252,1042,114,1156,802,211,23100302
+YHM,2023-02-01,"Hamilton, Ontario",1193,980,97,1077,792,218,23100302
+YHM,2023-03-01,"Hamilton, Ontario",1299,1070,94,1164,942,232,23100302
+YHM,2023-04-01,"Hamilton, Ontario",1263,996,109,1105,803,187,23100302
+YHM,2023-05-01,"Hamilton, Ontario",1650,1207,108,1315,765,78,23100302
+YHM,2023-06-01,"Hamilton, Ontario",1885,1324,115,1439,781,105,23100302
+YHM,2023-07-01,"Hamilton, Ontario",1986,1374,137,1511,658,149,23100302
+YHM,2023-08-01,"Hamilton, Ontario",2051,1466,107,1573,679,127,23100302
+YHM,2023-09-01,"Hamilton, Ontario",1748,1140,96,1236,675,135,23100302
+YHM,2023-10-01,"Hamilton, Ontario",1552,1088,91,1179,715,142,23100302
+YHM,2023-11-01,"Hamilton, Ontario",1298,979,138,1117,717,104,23100302
+YHM,2023-12-01,"Hamilton, Ontario",1234,1026,123,1149,750,237,23100302
+YHM,2024-01-01,"Hamilton, Ontario",1081,911,112,1023,641,258,23100302
+YHM,2024-02-01,"Hamilton, Ontario",1076,837,125,962,633,234,23100302
+YHM,2024-03-01,"Hamilton, Ontario",1126,942,52,994,673,268,23100302
+YHM,2024-04-01,"Hamilton, Ontario",1082,924,83,1007,679,176,23100302
+YHM,2024-05-01,"Hamilton, Ontario",1337,1034,69,1103,666,118,23100302
+YHM,2024-06-01,"Hamilton, Ontario",1538,1023,65,1088,598,104,23100302
+YHM,2024-07-01,"Hamilton, Ontario",1497,1007,72,1079,503,101,23100302
+YHM,2024-08-01,"Hamilton, Ontario",1522,1015,78,1093,532,94,23100302
+YHM,2024-09-01,"Hamilton, Ontario",1367,910,54,964,482,89,23100302
+YHM,2024-10-01,"Hamilton, Ontario",1474,967,55,1022,598,84,23100302
+YHM,2024-11-01,"Hamilton, Ontario",1115,914,56,970,604,107,23100302
+YHM,2024-12-01,"Hamilton, Ontario",1080,966,35,1001,653,128,23100302
+YHM,2025-01-01,"Hamilton, Ontario",1057,943,33,976,566,162,23100302
+YHM,2025-02-01,"Hamilton, Ontario",933,826,27,853,682,136,23100302
+YHM,2025-03-01,"Hamilton, Ontario",1079,948,51,999,597,158,23100302
+YHM,2025-04-01,"Hamilton, Ontario",1061,918,40,958,595,89,23100302
+YHM,2025-05-01,"Hamilton, Ontario",1228,998,47,1045,572,43,23100302
+YHM,2025-06-01,"Hamilton, Ontario",1606,1140,98,1238,474,38,23100302
+YHM,2025-07-01,"Hamilton, Ontario",1865,1316,91,1407,531,29,23100302
+YHM,2025-08-01,"Hamilton, Ontario",1952,1257,74,1331,553,50,23100302
+YHM,2025-09-01,"Hamilton, Ontario",1637,1194,72,1266,548,43,23100302
+YHM,2025-10-01,"Hamilton, Ontario",1520,1139,41,1180,583,58,23100302
+YHM,2025-11-01,"Hamilton, Ontario",1244,1113,35,1148,610,85,23100302
+YHM,2025-12-01,"Hamilton, Ontario",1330,1240,29,1269,728,101,23100302
+YHZ,2020-01-01,"Halifax/Robert L. Stanfield International, Nova Scotia",4044,3722,144,3866,451,166,23100302
+YHZ,2020-02-01,"Halifax/Robert L. Stanfield International, Nova Scotia",3843,3488,204,3692,464,294,23100302
+YHZ,2020-03-01,"Halifax/Robert L. Stanfield International, Nova Scotia",3675,3339,209,3548,404,327,23100302
+YHZ,2020-04-01,"Halifax/Robert L. Stanfield International, Nova Scotia",1209,883,195,1078,65,56,23100302
+YHZ,2020-05-01,"Halifax/Robert L. Stanfield International, Nova Scotia",1304,766,248,1014,70,58,23100302
+YHZ,2020-06-01,"Halifax/Robert L. Stanfield International, Nova Scotia",1570,1043,281,1324,80,54,23100302
+YHZ,2020-07-01,"Halifax/Robert L. Stanfield International, Nova Scotia",2190,1441,374,1815,92,48,23100302
+YHZ,2020-08-01,"Halifax/Robert L. Stanfield International, Nova Scotia",2226,1506,355,1861,100,44,23100302
+YHZ,2020-09-01,"Halifax/Robert L. Stanfield International, Nova Scotia",1973,1404,302,1706,90,56,23100302
+YHZ,2020-10-01,"Halifax/Robert L. Stanfield International, Nova Scotia",2142,1487,301,1788,79,71,23100302
+YHZ,2020-11-01,"Halifax/Robert L. Stanfield International, Nova Scotia",1801,1355,217,1572,101,58,23100302
+YHZ,2020-12-01,"Halifax/Robert L. Stanfield International, Nova Scotia",1708,1363,180,1543,90,54,23100302
+YHZ,2021-01-01,"Halifax/Robert L. Stanfield International, Nova Scotia",1397,1113,122,1235,104,59,23100302
+YHZ,2021-02-01,"Halifax/Robert L. Stanfield International, Nova Scotia",1102,773,160,933,93,53,23100302
+YHZ,2021-03-01,"Halifax/Robert L. Stanfield International, Nova Scotia",1234,840,166,1006,97,85,23100302
+YHZ,2021-04-01,"Halifax/Robert L. Stanfield International, Nova Scotia",1302,885,153,1038,87,114,23100302
+YHZ,2021-05-01,"Halifax/Robert L. Stanfield International, Nova Scotia",1404,929,181,1110,104,65,23100302
+YHZ,2021-06-01,"Halifax/Robert L. Stanfield International, Nova Scotia",1502,979,251,1230,105,85,23100302
+YHZ,2021-07-01,"Halifax/Robert L. Stanfield International, Nova Scotia",2261,1564,325,1889,110,51,23100302
+YHZ,2021-08-01,"Halifax/Robert L. Stanfield International, Nova Scotia",3206,2438,307,2745,219,67,23100302
+YHZ,2021-09-01,"Halifax/Robert L. Stanfield International, Nova Scotia",3653,2733,340,3073,240,98,23100302
+YHZ,2021-10-01,"Halifax/Robert L. Stanfield International, Nova Scotia",3522,2796,357,3153,225,113,23100302
+YHZ,2021-11-01,"Halifax/Robert L. Stanfield International, Nova Scotia",2777,2153,259,2412,160,126,23100302
+YHZ,2021-12-01,"Halifax/Robert L. Stanfield International, Nova Scotia",3138,2723,189,2912,182,161,23100302
+YHZ,2022-01-01,"Halifax/Robert L. Stanfield International, Nova Scotia",2152,1873,119,1992,116,133,23100302
+YHZ,2022-02-01,"Halifax/Robert L. Stanfield International, Nova Scotia",1798,1496,143,1639,134,174,23100302
+YHZ,2022-03-01,"Halifax/Robert L. Stanfield International, Nova Scotia",2383,1994,173,2167,180,206,23100302
+YHZ,2022-04-01,"Halifax/Robert L. Stanfield International, Nova Scotia",2840,2327,171,2498,142,231,23100302
+YHZ,2022-05-01,"Halifax/Robert L. Stanfield International, Nova Scotia",4058,3418,311,3729,158,328,23100302
+YHZ,2022-06-01,"Halifax/Robert L. Stanfield International, Nova Scotia",4467,3685,391,4076,274,358,23100302
+YHZ,2022-07-01,"Halifax/Robert L. Stanfield International, Nova Scotia",4864,4032,452,4484,353,387,23100302
+YHZ,2022-08-01,"Halifax/Robert L. Stanfield International, Nova Scotia",5074,4300,451,4751,386,329,23100302
+YHZ,2022-09-01,"Halifax/Robert L. Stanfield International, Nova Scotia",4317,3625,391,4016,363,277,23100302
+YHZ,2022-10-01,"Halifax/Robert L. Stanfield International, Nova Scotia",4221,3564,354,3918,350,232,23100302
+YHZ,2022-11-01,"Halifax/Robert L. Stanfield International, Nova Scotia",3187,2672,263,2935,284,192,23100302
+YHZ,2022-12-01,"Halifax/Robert L. Stanfield International, Nova Scotia",3240,2873,192,3065,333,204,23100302
+YHZ,2023-01-01,"Halifax/Robert L. Stanfield International, Nova Scotia",2632,2235,174,2409,310,236,23100302
+YHZ,2023-02-01,"Halifax/Robert L. Stanfield International, Nova Scotia",2345,1749,201,1950,323,314,23100302
+YHZ,2023-03-01,"Halifax/Robert L. Stanfield International, Nova Scotia",2753,2410,198,2608,408,393,23100302
+YHZ,2023-04-01,"Halifax/Robert L. Stanfield International, Nova Scotia",3100,2136,268,2404,388,405,23100302
+YHZ,2023-05-01,"Halifax/Robert L. Stanfield International, Nova Scotia",3742,2598,281,2879,379,267,23100302
+YHZ,2023-06-01,"Halifax/Robert L. Stanfield International, Nova Scotia",3874,2920,284,3204,408,214,23100302
+YHZ,2023-07-01,"Halifax/Robert L. Stanfield International, Nova Scotia",4396,3302,362,3664,443,224,23100302
+YHZ,2023-08-01,"Halifax/Robert L. Stanfield International, Nova Scotia",4544,3784,400,4184,476,215,23100302
+YHZ,2023-09-01,"Halifax/Robert L. Stanfield International, Nova Scotia",3793,2821,333,3154,384,213,23100302
+YHZ,2023-10-01,"Halifax/Robert L. Stanfield International, Nova Scotia",3838,3210,297,3507,394,193,23100302
+YHZ,2023-11-01,"Halifax/Robert L. Stanfield International, Nova Scotia",3096,2627,214,2841,362,149,23100302
+YHZ,2023-12-01,"Halifax/Robert L. Stanfield International, Nova Scotia",2985,2625,211,2836,316,226,23100302
+YHZ,2024-01-01,"Halifax/Robert L. Stanfield International, Nova Scotia",2861,2505,196,2701,339,337,23100302
+YHZ,2024-02-01,"Halifax/Robert L. Stanfield International, Nova Scotia",2587,2247,169,2416,326,355,23100302
+YHZ,2024-03-01,"Halifax/Robert L. Stanfield International, Nova Scotia",3078,2712,160,2872,379,407,23100302
+YHZ,2024-04-01,"Halifax/Robert L. Stanfield International, Nova Scotia",3391,2886,212,3098,371,434,23100302
+YHZ,2024-05-01,"Halifax/Robert L. Stanfield International, Nova Scotia",4140,3445,361,3806,390,344,23100302
+YHZ,2024-06-01,"Halifax/Robert L. Stanfield International, Nova Scotia",4105,3489,362,3851,625,297,23100302
+YHZ,2024-07-01,"Halifax/Robert L. Stanfield International, Nova Scotia",4502,3887,353,4240,692,355,23100302
+YHZ,2024-08-01,"Halifax/Robert L. Stanfield International, Nova Scotia",4632,3958,357,4315,730,355,23100302
+YHZ,2024-09-01,"Halifax/Robert L. Stanfield International, Nova Scotia",4039,3349,455,3804,708,329,23100302
+YHZ,2024-10-01,"Halifax/Robert L. Stanfield International, Nova Scotia",3993,3276,510,3786,612,263,23100302
+YHZ,2024-11-01,"Halifax/Robert L. Stanfield International, Nova Scotia",3489,2863,375,3238,404,186,23100302
+YHZ,2024-12-01,"Halifax/Robert L. Stanfield International, Nova Scotia",3249,2775,320,3095,461,237,23100302
+YHZ,2025-01-01,"Halifax/Robert L. Stanfield International, Nova Scotia",3104,2808,126,2934,474,306,23100302
+YHZ,2025-02-01,"Halifax/Robert L. Stanfield International, Nova Scotia",2708,2404,170,2574,454,328,23100302
+YHZ,2025-03-01,"Halifax/Robert L. Stanfield International, Nova Scotia",3227,2865,209,3074,499,427,23100302
+YHZ,2025-04-01,"Halifax/Robert L. Stanfield International, Nova Scotia",3332,2907,178,3085,498,459,23100302
+YHZ,2025-05-01,"Halifax/Robert L. Stanfield International, Nova Scotia",3900,3397,183,3580,355,354,23100302
+YHZ,2025-06-01,"Halifax/Robert L. Stanfield International, Nova Scotia",4448,3673,348,4021,555,392,23100302
+YHZ,2025-07-01,"Halifax/Robert L. Stanfield International, Nova Scotia",4587,3979,286,4265,693,482,23100302
+YHZ,2025-08-01,"Halifax/Robert L. Stanfield International, Nova Scotia",4617,3952,338,4290,828,457,23100302
+YHZ,2025-09-01,"Halifax/Robert L. Stanfield International, Nova Scotia",4274,3676,310,3986,734,439,23100302
+YHZ,2025-10-01,"Halifax/Robert L. Stanfield International, Nova Scotia",4182,3630,246,3876,556,317,23100302
+YHZ,2025-11-01,"Halifax/Robert L. Stanfield International, Nova Scotia",3431,2920,193,3113,408,243,23100302
+YHZ,2025-12-01,"Halifax/Robert L. Stanfield International, Nova Scotia",3240,2963,164,3127,437,281,23100302
+YKF,2020-01-01,"Kitchener/Waterloo, Ontario",3334,137,2634,2771,104,24,23100302
+YKF,2020-02-01,"Kitchener/Waterloo, Ontario",4080,129,3247,3376,105,18,23100302
+YKF,2020-03-01,"Kitchener/Waterloo, Ontario",3389,98,2435,2533,91,19,23100302
+YKF,2020-04-01,"Kitchener/Waterloo, Ontario",747,49,42,91,18,,23100302
+YKF,2020-05-01,"Kitchener/Waterloo, Ontario",1045,51,52,103,21,2,23100302
+YKF,2020-06-01,"Kitchener/Waterloo, Ontario",2434,88,916,1004,29,2,23100302
+YKF,2020-07-01,"Kitchener/Waterloo, Ontario",4156,79,2727,2806,29,2,23100302
+YKF,2020-08-01,"Kitchener/Waterloo, Ontario",5280,118,3884,4002,33,5,23100302
+YKF,2020-09-01,"Kitchener/Waterloo, Ontario",5869,85,4497,4582,57,6,23100302
+YKF,2020-10-01,"Kitchener/Waterloo, Ontario",5916,160,4640,4800,60,6,23100302
+YKF,2020-11-01,"Kitchener/Waterloo, Ontario",5291,150,4065,4215,66,2,23100302
+YKF,2020-12-01,"Kitchener/Waterloo, Ontario",3120,121,2297,2418,110,9,23100302
+YKF,2021-01-01,"Kitchener/Waterloo, Ontario",3513,81,2795,2876,69,6,23100302
+YKF,2021-02-01,"Kitchener/Waterloo, Ontario",4093,132,3278,3410,35,1,23100302
+YKF,2021-03-01,"Kitchener/Waterloo, Ontario",5768,137,4645,4782,52,,23100302
+YKF,2021-04-01,"Kitchener/Waterloo, Ontario",5231,89,4254,4343,58,2,23100302
+YKF,2021-05-01,"Kitchener/Waterloo, Ontario",7011,146,5544,5690,74,4,23100302
+YKF,2021-06-01,"Kitchener/Waterloo, Ontario",5732,158,4324,4482,55,6,23100302
+YKF,2021-07-01,"Kitchener/Waterloo, Ontario",5902,319,4299,4618,85,8,23100302
+YKF,2021-08-01,"Kitchener/Waterloo, Ontario",6534,300,4680,4980,93,1,23100302
+YKF,2021-09-01,"Kitchener/Waterloo, Ontario",6001,291,4428,4719,83,4,23100302
+YKF,2021-10-01,"Kitchener/Waterloo, Ontario",4343,325,2967,3292,112,7,23100302
+YKF,2021-11-01,"Kitchener/Waterloo, Ontario",4212,234,3110,3344,88,6,23100302
+YKF,2021-12-01,"Kitchener/Waterloo, Ontario",3504,199,2557,2756,140,18,23100302
+YKF,2022-01-01,"Kitchener/Waterloo, Ontario",4006,173,3193,3366,136,20,23100302
+YKF,2022-02-01,"Kitchener/Waterloo, Ontario",2930,202,2269,2471,122,20,23100302
+YKF,2022-03-01,"Kitchener/Waterloo, Ontario",4194,183,3237,3420,152,20,23100302
+YKF,2022-04-01,"Kitchener/Waterloo, Ontario",5470,257,4242,4499,200,11,23100302
+YKF,2022-05-01,"Kitchener/Waterloo, Ontario",6697,248,5254,5502,149,15,23100302
+YKF,2022-06-01,"Kitchener/Waterloo, Ontario",6921,339,5334,5673,147,12,23100302
+YKF,2022-07-01,"Kitchener/Waterloo, Ontario",6721,307,5213,5520,141,15,23100302
+YKF,2022-08-01,"Kitchener/Waterloo, Ontario",6064,367,4420,4787,138,17,23100302
+YKF,2022-09-01,"Kitchener/Waterloo, Ontario",6194,324,4620,4944,170,13,23100302
+YKF,2022-10-01,"Kitchener/Waterloo, Ontario",5811,317,4320,4637,176,11,23100302
+YKF,2022-11-01,"Kitchener/Waterloo, Ontario",3396,218,2528,2746,194,26,23100302
+YKF,2022-12-01,"Kitchener/Waterloo, Ontario",2501,223,1805,2028,176,40,23100302
+YKF,2023-01-01,"Kitchener/Waterloo, Ontario",2496,278,1801,2079,165,41,23100302
+YKF,2023-02-01,"Kitchener/Waterloo, Ontario",3601,243,2764,3007,169,55,23100302
+YKF,2023-03-01,"Kitchener/Waterloo, Ontario",5223,244,4286,4530,184,57,23100302
+YKF,2023-04-01,"Kitchener/Waterloo, Ontario",6123,217,5006,5223,181,30,23100302
+YKF,2023-05-01,"Kitchener/Waterloo, Ontario",8158,302,6671,6973,139,16,23100302
+YKF,2023-06-01,"Kitchener/Waterloo, Ontario",5974,339,4787,5126,143,15,23100302
+YKF,2023-07-01,"Kitchener/Waterloo, Ontario",7269,389,5909,6298,181,11,23100302
+YKF,2023-08-01,"Kitchener/Waterloo, Ontario",7053,499,5406,5905,179,13,23100302
+YKF,2023-09-01,"Kitchener/Waterloo, Ontario",7506,378,6009,6387,159,18,23100302
+YKF,2023-10-01,"Kitchener/Waterloo, Ontario",5043,324,3942,4266,144,16,23100302
+YKF,2023-11-01,"Kitchener/Waterloo, Ontario",4821,206,3863,4069,192,22,23100302
+YKF,2023-12-01,"Kitchener/Waterloo, Ontario",2650,212,2076,2288,178,61,23100302
+YKF,2024-01-01,"Kitchener/Waterloo, Ontario",1985,232,1494,1726,138,72,23100302
+YKF,2024-02-01,"Kitchener/Waterloo, Ontario",5244,205,4343,4548,165,65,23100302
+YKF,2024-03-01,"Kitchener/Waterloo, Ontario",4932,227,3997,4224,148,76,23100302
+YKF,2024-04-01,"Kitchener/Waterloo, Ontario",5071,292,3977,4269,218,30,23100302
+YKF,2024-05-01,"Kitchener/Waterloo, Ontario",7389,384,5839,6223,135,21,23100302
+YKF,2024-06-01,"Kitchener/Waterloo, Ontario",6271,513,4878,5391,125,15,23100302
+YKF,2024-07-01,"Kitchener/Waterloo, Ontario",8135,521,6510,7031,154,4,23100302
+YKF,2024-08-01,"Kitchener/Waterloo, Ontario",6992,549,5209,5758,125,11,23100302
+YKF,2024-09-01,"Kitchener/Waterloo, Ontario",7197,415,5699,6114,149,3,23100302
+YKF,2024-10-01,"Kitchener/Waterloo, Ontario",6173,390,4650,5040,198,15,23100302
+YKF,2024-11-01,"Kitchener/Waterloo, Ontario",4074,214,3162,3376,160,17,23100302
+YKF,2024-12-01,"Kitchener/Waterloo, Ontario",2269,290,1680,1970,178,43,23100302
+YKF,2025-01-01,"Kitchener/Waterloo, Ontario",2461,250,1892,2142,194,64,23100302
+YKF,2025-02-01,"Kitchener/Waterloo, Ontario",2637,259,2100,2359,211,50,23100302
+YKF,2025-03-01,"Kitchener/Waterloo, Ontario",5006,260,4072,4332,195,61,23100302
+YKF,2025-04-01,"Kitchener/Waterloo, Ontario",5888,278,4778,5056,211,43,23100302
+YKF,2025-05-01,"Kitchener/Waterloo, Ontario",6366,320,5028,5348,113,16,23100302
+YKF,2025-06-01,"Kitchener/Waterloo, Ontario",6882,324,5338,5662,129,10,23100302
+YKF,2025-07-01,"Kitchener/Waterloo, Ontario",7889,353,6260,6613,135,6,23100302
+YKF,2025-08-01,"Kitchener/Waterloo, Ontario",7645,325,6005,6330,151,7,23100302
+YKF,2025-09-01,"Kitchener/Waterloo, Ontario",7679,269,6284,6553,192,8,23100302
+YKF,2025-10-01,"Kitchener/Waterloo, Ontario",6455,287,5252,5539,161,5,23100302
+YKF,2025-11-01,"Kitchener/Waterloo, Ontario",4545,308,3679,3987,139,11,23100302
+YKF,2025-12-01,"Kitchener/Waterloo, Ontario",2554,283,1981,2264,157,26,23100302
+YLW,2020-01-01,"Kelowna, British Columbia",3878,3255,227,3482,315,65,23100302
+YLW,2020-02-01,"Kelowna, British Columbia",4196,3058,283,3341,333,53,23100302
+YLW,2020-03-01,"Kelowna, British Columbia",3737,2602,284,2886,240,42,23100302
+YLW,2020-04-01,"Kelowna, British Columbia",1713,1042,207,1249,42,,23100302
+YLW,2020-05-01,"Kelowna, British Columbia",2231,1032,164,1196,36,1,23100302
+YLW,2020-06-01,"Kelowna, British Columbia",2786,1249,310,1559,49,3,23100302
+YLW,2020-07-01,"Kelowna, British Columbia",3958,1752,536,2288,42,,23100302
+YLW,2020-08-01,"Kelowna, British Columbia",4089,1940,445,2385,33,,23100302
+YLW,2020-09-01,"Kelowna, British Columbia",3423,1778,323,2101,33,2,23100302
+YLW,2020-10-01,"Kelowna, British Columbia",3431,1830,342,2172,41,,23100302
+YLW,2020-11-01,"Kelowna, British Columbia",2819,1686,201,1887,33,3,23100302
+YLW,2020-12-01,"Kelowna, British Columbia",2803,1925,182,2107,44,1,23100302
+YLW,2021-01-01,"Kelowna, British Columbia",2718,1677,229,1906,33,2,23100302
+YLW,2021-02-01,"Kelowna, British Columbia",3209,1595,339,1934,18,2,23100302
+YLW,2021-03-01,"Kelowna, British Columbia",4278,1797,336,2133,30,1,23100302
+YLW,2021-04-01,"Kelowna, British Columbia",4166,1748,450,2198,31,1,23100302
+YLW,2021-05-01,"Kelowna, British Columbia",4148,1794,289,2083,48,2,23100302
+YLW,2021-06-01,"Kelowna, British Columbia",4387,2040,351,2391,39,,23100302
+YLW,2021-07-01,"Kelowna, British Columbia",4362,2648,252,2900,49,1,23100302
+YLW,2021-08-01,"Kelowna, British Columbia",4265,2738,252,2990,58,2,23100302
+YLW,2021-09-01,"Kelowna, British Columbia",4965,3031,196,3227,63,2,23100302
+YLW,2021-10-01,"Kelowna, British Columbia",4689,2835,279,3114,85,3,23100302
+YLW,2021-11-01,"Kelowna, British Columbia",3885,2586,245,2831,67,1,23100302
+YLW,2021-12-01,"Kelowna, British Columbia",3822,2824,257,3081,147,8,23100302
+YLW,2022-01-01,"Kelowna, British Columbia",3496,2471,323,2794,297,23,23100302
+YLW,2022-02-01,"Kelowna, British Columbia",4082,2333,325,2658,315,35,23100302
+YLW,2022-03-01,"Kelowna, British Columbia",4531,2711,313,3024,341,27,23100302
+YLW,2022-04-01,"Kelowna, British Columbia",4805,2742,463,3205,243,26,23100302
+YLW,2022-05-01,"Kelowna, British Columbia",5362,3224,276,3500,154,2,23100302
+YLW,2022-06-01,"Kelowna, British Columbia",5520,3431,424,3855,178,3,23100302
+YLW,2022-07-01,"Kelowna, British Columbia",5984,3399,386,3785,207,1,23100302
+YLW,2022-08-01,"Kelowna, British Columbia",5786,3548,351,3899,181,4,23100302
+YLW,2022-09-01,"Kelowna, British Columbia",4922,3098,219,3317,178,,23100302
+YLW,2022-10-01,"Kelowna, British Columbia",4786,3001,176,3177,140,5,23100302
+YLW,2022-11-01,"Kelowna, British Columbia",3640,2658,153,2811,126,29,23100302
+YLW,2022-12-01,"Kelowna, British Columbia",3531,2719,169,2888,183,58,23100302
+YLW,2023-01-01,"Kelowna, British Columbia",4064,2794,317,3111,325,69,23100302
+YLW,2023-02-01,"Kelowna, British Columbia",3806,2526,344,2870,322,59,23100302
+YLW,2023-03-01,"Kelowna, British Columbia",5078,2910,395,3305,275,66,23100302
+YLW,2023-04-01,"Kelowna, British Columbia",4960,2754,420,3174,169,38,23100302
+YLW,2023-05-01,"Kelowna, British Columbia",5471,3327,300,3627,105,3,23100302
+YLW,2023-06-01,"Kelowna, British Columbia",5545,3235,342,3577,114,1,23100302
+YLW,2023-07-01,"Kelowna, British Columbia",6193,3518,380,3898,156,,23100302
+YLW,2023-08-01,"Kelowna, British Columbia",4343,2866,196,3062,110,2,23100302
+YLW,2023-09-01,"Kelowna, British Columbia",4529,2971,166,3137,98,1,23100302
+YLW,2023-10-01,"Kelowna, British Columbia",4674,2919,219,3138,97,6,23100302
+YLW,2023-11-01,"Kelowna, British Columbia",4323,2777,231,3008,95,52,23100302
+YLW,2023-12-01,"Kelowna, British Columbia",3685,2841,183,3024,152,69,23100302
+YLW,2024-01-01,"Kelowna, British Columbia",3483,2622,296,2918,308,70,23100302
+YLW,2024-02-01,"Kelowna, British Columbia",3969,2635,298,2933,273,77,23100302
+YLW,2024-03-01,"Kelowna, British Columbia",4796,2851,294,3145,328,74,23100302
+YLW,2024-04-01,"Kelowna, British Columbia",4809,2740,399,3139,182,54,23100302
+YLW,2024-05-01,"Kelowna, British Columbia",5156,2997,290,3287,106,11,23100302
+YLW,2024-06-01,"Kelowna, British Columbia",5049,3095,277,3372,174,2,23100302
+YLW,2024-07-01,"Kelowna, British Columbia",5226,3314,185,3499,133,1,23100302
+YLW,2024-08-01,"Kelowna, British Columbia",4945,3272,141,3413,144,4,23100302
+YLW,2024-09-01,"Kelowna, British Columbia",4769,3068,123,3191,122,2,23100302
+YLW,2024-10-01,"Kelowna, British Columbia",4533,2989,258,3247,112,24,23100302
+YLW,2024-11-01,"Kelowna, British Columbia",3902,2690,284,2974,112,68,23100302
+YLW,2024-12-01,"Kelowna, British Columbia",3955,3008,285,3293,219,103,23100302
+YLW,2025-01-01,"Kelowna, British Columbia",4265,2975,425,3400,464,103,23100302
+YLW,2025-02-01,"Kelowna, British Columbia",3854,2696,403,3099,491,101,23100302
+YLW,2025-03-01,"Kelowna, British Columbia",4526,3034,394,3428,504,110,23100302
+YLW,2025-04-01,"Kelowna, British Columbia",5219,2934,459,3393,234,80,23100302
+YLW,2025-05-01,"Kelowna, British Columbia",5524,3225,325,3550,198,2,23100302
+YLW,2025-06-01,"Kelowna, British Columbia",6084,3382,386,3768,181,1,23100302
+YLW,2025-07-01,"Kelowna, British Columbia",6295,3834,304,4138,217,1,23100302
+YLW,2025-08-01,"Kelowna, British Columbia",6181,3675,229,3904,224,5,23100302
+YLW,2025-09-01,"Kelowna, British Columbia",5272,3275,185,3460,175,8,23100302
+YLW,2025-10-01,"Kelowna, British Columbia",5126,3247,290,3537,220,18,23100302
+YLW,2025-11-01,"Kelowna, British Columbia",4691,3308,340,3648,207,100,23100302
+YLW,2025-12-01,"Kelowna, British Columbia",4271,3549,309,3858,297,115,23100302
+YVR,2020-01-01,"Vancouver International, British Columbia",16051,15428,280,15708,5488,2718,23100302
+YVR,2020-02-01,"Vancouver International, British Columbia",15832,15042,332,15374,5178,2320,23100302
+YVR,2020-03-01,"Vancouver International, British Columbia",13405,12793,273,13066,4197,1916,23100302
+YVR,2020-04-01,"Vancouver International, British Columbia",4472,4185,112,4297,636,466,23100302
+YVR,2020-05-01,"Vancouver International, British Columbia",4864,4309,180,4489,554,775,23100302
+YVR,2020-06-01,"Vancouver International, British Columbia",7335,6465,271,6736,705,765,23100302
+YVR,2020-07-01,"Vancouver International, British Columbia",10173,8876,463,9339,987,864,23100302
+YVR,2020-08-01,"Vancouver International, British Columbia",11126,9579,572,10151,1018,890,23100302
+YVR,2020-09-01,"Vancouver International, British Columbia",9517,8585,294,8879,923,927,23100302
+YVR,2020-10-01,"Vancouver International, British Columbia",9294,8403,284,8687,953,934,23100302
+YVR,2020-11-01,"Vancouver International, British Columbia",8110,7613,113,7726,946,903,23100302
+YVR,2020-12-01,"Vancouver International, British Columbia",8542,8100,103,8203,1127,989,23100302
+YVR,2021-01-01,"Vancouver International, British Columbia",7508,7095,107,7202,993,890,23100302
+YVR,2021-02-01,"Vancouver International, British Columbia",6410,5954,108,6062,809,618,23100302
+YVR,2021-03-01,"Vancouver International, British Columbia",7536,6925,124,7049,709,674,23100302
+YVR,2021-04-01,"Vancouver International, British Columbia",7363,6839,90,6929,737,685,23100302
+YVR,2021-05-01,"Vancouver International, British Columbia",7915,7345,124,7469,806,769,23100302
+YVR,2021-06-01,"Vancouver International, British Columbia",9685,8706,255,8961,883,909,23100302
+YVR,2021-07-01,"Vancouver International, British Columbia",13835,12351,433,12784,1396,1050,23100302
+YVR,2021-08-01,"Vancouver International, British Columbia",16374,14617,596,15213,2083,1084,23100302
+YVR,2021-09-01,"Vancouver International, British Columbia",15177,13944,336,14280,2464,1184,23100302
+YVR,2021-10-01,"Vancouver International, British Columbia",14580,13496,225,13721,2910,1478,23100302
+YVR,2021-11-01,"Vancouver International, British Columbia",13520,12557,295,12852,3204,1474,23100302
+YVR,2021-12-01,"Vancouver International, British Columbia",13713,12872,253,13125,3442,1646,23100302
+YVR,2022-01-01,"Vancouver International, British Columbia",11356,10836,151,10987,3057,1604,23100302
+YVR,2022-02-01,"Vancouver International, British Columbia",11173,10401,182,10583,2776,1368,23100302
+YVR,2022-03-01,"Vancouver International, British Columbia",13552,12620,279,12899,3756,1658,23100302
+YVR,2022-04-01,"Vancouver International, British Columbia",14034,12801,423,13224,3992,1623,23100302
+YVR,2022-05-01,"Vancouver International, British Columbia",17109,15565,656,16221,3970,1580,23100302
+YVR,2022-06-01,"Vancouver International, British Columbia",18129,16403,740,17143,4904,1879,23100302
+YVR,2022-07-01,"Vancouver International, British Columbia",20140,17975,968,18943,5302,1968,23100302
+YVR,2022-08-01,"Vancouver International, British Columbia",20873,18412,1144,19556,5447,2025,23100302
+YVR,2022-09-01,"Vancouver International, British Columbia",17808,16214,684,16898,4886,1875,23100302
+YVR,2022-10-01,"Vancouver International, British Columbia",16675,15366,542,15908,4493,1809,23100302
+YVR,2022-11-01,"Vancouver International, British Columbia",14252,13306,362,13668,4129,1856,23100302
+YVR,2022-12-01,"Vancouver International, British Columbia",13284,12435,375,12810,4399,2124,23100302
+YVR,2023-01-01,"Vancouver International, British Columbia",13966,13159,377,13536,4706,2234,23100302
+YVR,2023-02-01,"Vancouver International, British Columbia",12586,11821,356,12177,4269,2012,23100302
+YVR,2023-03-01,"Vancouver International, British Columbia",15157,14166,505,14671,4882,2244,23100302
+YVR,2023-04-01,"Vancouver International, British Columbia",14708,13623,514,14137,4631,2044,23100302
+YVR,2023-05-01,"Vancouver International, British Columbia",17531,16212,542,16754,4834,1987,23100302
+YVR,2023-06-01,"Vancouver International, British Columbia",17727,16271,692,16963,5238,2028,23100302
+YVR,2023-07-01,"Vancouver International, British Columbia",19934,18093,930,19023,6056,2247,23100302
+YVR,2023-08-01,"Vancouver International, British Columbia",20281,18353,979,19332,6130,2224,23100302
+YVR,2023-09-01,"Vancouver International, British Columbia",17566,16126,652,16778,5246,2023,23100302
+YVR,2023-10-01,"Vancouver International, British Columbia",16467,15289,561,15850,4832,1959,23100302
+YVR,2023-11-01,"Vancouver International, British Columbia",14607,13678,481,14159,4857,2106,23100302
+YVR,2023-12-01,"Vancouver International, British Columbia",14550,13694,473,14167,5052,2526,23100302
+YVR,2024-01-01,"Vancouver International, British Columbia",13994,13197,443,13640,4798,2575,23100302
+YVR,2024-02-01,"Vancouver International, British Columbia",13874,13099,406,13505,4673,2398,23100302
+YVR,2024-03-01,"Vancouver International, British Columbia",14866,14205,211,14416,5256,2565,23100302
+YVR,2024-04-01,"Vancouver International, British Columbia",14954,14224,262,14486,5364,2312,23100302
+YVR,2024-05-01,"Vancouver International, British Columbia",17245,16384,244,16628,5943,2243,23100302
+YVR,2024-06-01,"Vancouver International, British Columbia",17513,16589,345,16934,6126,2154,23100302
+YVR,2024-07-01,"Vancouver International, British Columbia",19297,18023,557,18580,6590,2298,23100302
+YVR,2024-08-01,"Vancouver International, British Columbia",19448,18214,582,18796,6573,2318,23100302
+YVR,2024-09-01,"Vancouver International, British Columbia",16870,16086,317,16403,5914,2153,23100302
+YVR,2024-10-01,"Vancouver International, British Columbia",15916,15156,319,15475,5042,2250,23100302
+YVR,2024-11-01,"Vancouver International, British Columbia",13754,13135,267,13402,4551,2498,23100302
+YVR,2024-12-01,"Vancouver International, British Columbia",14247,13645,283,13928,5242,2914,23100302
+YVR,2025-01-01,"Vancouver International, British Columbia",14612,13874,375,14249,4666,2966,23100302
+YVR,2025-02-01,"Vancouver International, British Columbia",13023,12248,329,12577,4167,2646,23100302
+YVR,2025-03-01,"Vancouver International, British Columbia",15128,14208,458,14666,5051,2929,23100302
+YVR,2025-04-01,"Vancouver International, British Columbia",15463,14376,508,14884,5037,2639,23100302
+YVR,2025-05-01,"Vancouver International, British Columbia",17749,16626,501,17127,5704,2500,23100302
+YVR,2025-06-01,"Vancouver International, British Columbia",18467,17125,515,17640,6477,2546,23100302
+YVR,2025-07-01,"Vancouver International, British Columbia",21047,19279,811,20090,6763,2646,23100302
+YVR,2025-08-01,"Vancouver International, British Columbia",20747,18906,916,19822,6551,2494,23100302
+YVR,2025-09-01,"Vancouver International, British Columbia",18545,17020,782,17802,5741,2428,23100302
+YVR,2025-10-01,"Vancouver International, British Columbia",17066,15767,692,16459,5002,2554,23100302
+YVR,2025-11-01,"Vancouver International, British Columbia",14483,13490,622,14112,4343,2772,23100302
+YVR,2025-12-01,"Vancouver International, British Columbia",14738,13877,507,14384,4586,3106,23100302
+YXU,2020-01-01,"London, Ontario",2689,1102,123,1225,119,88,23100302
+YXU,2020-02-01,"London, Ontario",3072,976,191,1167,104,79,23100302
+YXU,2020-03-01,"London, Ontario",2444,784,188,972,115,59,23100302
+YXU,2020-04-01,"London, Ontario",622,110,109,219,32,,23100302
+YXU,2020-05-01,"London, Ontario",994,155,194,349,26,2,23100302
+YXU,2020-06-01,"London, Ontario",1483,135,194,329,58,,23100302
+YXU,2020-07-01,"London, Ontario",2503,260,290,550,58,,23100302
+YXU,2020-08-01,"London, Ontario",3356,357,423,780,42,,23100302
+YXU,2020-09-01,"London, Ontario",2876,362,333,695,159,2,23100302
+YXU,2020-10-01,"London, Ontario",3681,342,281,623,204,8,23100302
+YXU,2020-11-01,"London, Ontario",3459,314,275,589,97,1,23100302
+YXU,2020-12-01,"London, Ontario",1981,391,164,555,133,2,23100302
+YXU,2021-01-01,"London, Ontario",1060,285,141,426,83,2,23100302
+YXU,2021-02-01,"London, Ontario",1906,163,226,389,24,,23100302
+YXU,2021-03-01,"London, Ontario",3736,180,310,490,49,1,23100302
+YXU,2021-04-01,"London, Ontario",3396,180,358,538,57,,23100302
+YXU,2021-05-01,"London, Ontario",3897,237,425,662,58,,23100302
+YXU,2021-06-01,"London, Ontario",3577,185,413,598,67,3,23100302
+YXU,2021-07-01,"London, Ontario",3699,362,362,724,94,,23100302
+YXU,2021-08-01,"London, Ontario",3689,499,319,818,173,2,23100302
+YXU,2021-09-01,"London, Ontario",3741,466,337,803,142,1,23100302
+YXU,2021-10-01,"London, Ontario",3103,516,224,740,194,1,23100302
+YXU,2021-11-01,"London, Ontario",3282,435,230,665,119,4,23100302
+YXU,2021-12-01,"London, Ontario",2442,390,186,576,126,7,23100302
+YXU,2022-01-01,"London, Ontario",2338,319,169,488,92,2,23100302
+YXU,2022-02-01,"London, Ontario",2044,312,171,483,212,1,23100302
+YXU,2022-03-01,"London, Ontario",3268,366,238,604,203,14,23100302
+YXU,2022-04-01,"London, Ontario",3848,400,225,625,199,7,23100302
+YXU,2022-05-01,"London, Ontario",4474,483,294,777,191,,23100302
+YXU,2022-06-01,"London, Ontario",4620,421,372,793,125,,23100302
+YXU,2022-07-01,"London, Ontario",4995,548,362,910,241,5,23100302
+YXU,2022-08-01,"London, Ontario",4830,575,314,889,153,1,23100302
+YXU,2022-09-01,"London, Ontario",3696,438,294,732,195,,23100302
+YXU,2022-10-01,"London, Ontario",4098,453,333,786,156,3,23100302
+YXU,2022-11-01,"London, Ontario",3048,380,195,575,142,5,23100302
+YXU,2022-12-01,"London, Ontario",2132,396,134,530,182,44,23100302
+YXU,2023-01-01,"London, Ontario",2107,325,77,402,171,60,23100302
+YXU,2023-02-01,"London, Ontario",2338,241,144,385,167,64,23100302
+YXU,2023-03-01,"London, Ontario",3828,284,228,512,219,74,23100302
+YXU,2023-04-01,"London, Ontario",3836,279,327,606,118,46,23100302
+YXU,2023-05-01,"London, Ontario",5800,410,407,817,128,6,23100302
+YXU,2023-06-01,"London, Ontario",4712,521,318,839,177,3,23100302
+YXU,2023-07-01,"London, Ontario",4922,626,353,979,175,4,23100302
+YXU,2023-08-01,"London, Ontario",5006,636,412,1048,207,7,23100302
+YXU,2023-09-01,"London, Ontario",5389,507,404,911,238,3,23100302
+YXU,2023-10-01,"London, Ontario",4443,403,310,713,157,5,23100302
+YXU,2023-11-01,"London, Ontario",4516,421,341,762,130,17,23100302
+YXU,2023-12-01,"London, Ontario",2594,401,121,522,138,73,23100302
+YXU,2024-01-01,"London, Ontario",1273,298,97,395,90,84,23100302
+YXU,2024-02-01,"London, Ontario",4024,287,273,560,121,89,23100302
+YXU,2024-03-01,"London, Ontario",3462,336,222,558,124,89,23100302
+YXU,2024-04-01,"London, Ontario",3980,353,340,693,129,72,23100302
+YXU,2024-05-01,"London, Ontario",5193,394,301,695,138,7,23100302
+YXU,2024-06-01,"London, Ontario",4541,362,313,675,132,5,23100302
+YXU,2024-07-01,"London, Ontario",5755,534,413,947,182,,23100302
+YXU,2024-08-01,"London, Ontario",5275,509,391,900,173,1,23100302
+YXU,2024-09-01,"London, Ontario",4494,414,311,725,213,2,23100302
+YXU,2024-10-01,"London, Ontario",5701,398,348,746,183,10,23100302
+YXU,2024-11-01,"London, Ontario",3432,335,241,576,192,30,23100302
+YXU,2024-12-01,"London, Ontario",1642,387,150,537,119,58,23100302
+YXU,2025-01-01,"London, Ontario",2194,359,146,505,125,76,23100302
+YXU,2025-02-01,"London, Ontario",2719,291,143,434,125,67,23100302
+YXU,2025-03-01,"London, Ontario",4368,366,260,626,163,70,23100302
+YXU,2025-04-01,"London, Ontario",5017,325,287,612,135,46,23100302
+YXU,2025-05-01,"London, Ontario",4413,408,322,730,109,8,23100302
+YXU,2025-06-01,"London, Ontario",5128,444,318,762,127,2,23100302
+YXU,2025-07-01,"London, Ontario",5540,523,338,861,170,4,23100302
+YXU,2025-08-01,"London, Ontario",5931,556,361,917,160,2,23100302
+YXU,2025-09-01,"London, Ontario",5705,427,675,1102,234,1,23100302
+YXU,2025-10-01,"London, Ontario",6021,492,839,1331,168,1,23100302
+YXU,2025-11-01,"London, Ontario",4499,316,780,1096,119,22,23100302
+YXU,2025-12-01,"London, Ontario",2198,344,457,801,106,51,23100302
+YXX,2020-01-01,"Abbotsford, British Columbia",3241,725,2160,2885,35,35,23100302
+YXX,2020-02-01,"Abbotsford, British Columbia",5006,648,3642,4290,54,34,23100302
+YXX,2020-03-01,"Abbotsford, British Columbia",4556,569,3261,3830,47,29,23100302
+YXX,2020-04-01,"Abbotsford, British Columbia",1706,178,889,1067,20,,23100302
+YXX,2020-05-01,"Abbotsford, British Columbia",2841,133,1865,1998,10,,23100302
+YXX,2020-06-01,"Abbotsford, British Columbia",4299,185,3138,3323,35,,23100302
+YXX,2020-07-01,"Abbotsford, British Columbia",5696,262,4087,4349,26,,23100302
+YXX,2020-08-01,"Abbotsford, British Columbia",5597,264,4005,4269,54,,23100302
+YXX,2020-09-01,"Abbotsford, British Columbia",4363,285,3225,3510,64,,23100302
+YXX,2020-10-01,"Abbotsford, British Columbia",5036,315,3754,4069,47,1,23100302
+YXX,2020-11-01,"Abbotsford, British Columbia",4400,378,3182,3560,64,1,23100302
+YXX,2020-12-01,"Abbotsford, British Columbia",3336,402,2199,2601,114,,23100302
+YXX,2021-01-01,"Abbotsford, British Columbia",4631,256,3175,3431,121,3,23100302
+YXX,2021-02-01,"Abbotsford, British Columbia",3510,183,2439,2622,36,,23100302
+YXX,2021-03-01,"Abbotsford, British Columbia",6771,190,4955,5145,48,,23100302
+YXX,2021-04-01,"Abbotsford, British Columbia",5735,205,3971,4176,77,,23100302
+YXX,2021-05-01,"Abbotsford, British Columbia",5265,237,3388,3625,76,,23100302
+YXX,2021-06-01,"Abbotsford, British Columbia",5504,306,3728,4034,103,,23100302
+YXX,2021-07-01,"Abbotsford, British Columbia",6283,546,3980,4526,182,2,23100302
+YXX,2021-08-01,"Abbotsford, British Columbia",5948,990,3432,4422,269,,23100302
+YXX,2021-09-01,"Abbotsford, British Columbia",5741,1033,3481,4514,267,3,23100302
+YXX,2021-10-01,"Abbotsford, British Columbia",5522,989,3248,4237,473,2,23100302
+YXX,2021-11-01,"Abbotsford, British Columbia",6071,701,3757,4458,59,9,23100302
+YXX,2021-12-01,"Abbotsford, British Columbia",3620,723,2126,2849,41,15,23100302
+YXX,2022-01-01,"Abbotsford, British Columbia",3233,553,2058,2611,32,21,23100302
+YXX,2022-02-01,"Abbotsford, British Columbia",4720,540,3350,3890,50,32,23100302
+YXX,2022-03-01,"Abbotsford, British Columbia",6258,639,4495,5134,62,44,23100302
+YXX,2022-04-01,"Abbotsford, British Columbia",6106,630,4248,4878,63,43,23100302
+YXX,2022-05-01,"Abbotsford, British Columbia",5952,863,3634,4497,74,2,23100302
+YXX,2022-06-01,"Abbotsford, British Columbia",6478,802,3840,4642,106,3,23100302
+YXX,2022-07-01,"Abbotsford, British Columbia",6729,821,3989,4810,96,,23100302
+YXX,2022-08-01,"Abbotsford, British Columbia",6620,881,3726,4607,128,3,23100302
+YXX,2022-09-01,"Abbotsford, British Columbia",5972,883,3416,4299,72,,23100302
+YXX,2022-10-01,"Abbotsford, British Columbia",5317,891,3042,3933,69,1,23100302
+YXX,2022-11-01,"Abbotsford, British Columbia",5303,824,3324,4148,55,34,23100302
+YXX,2022-12-01,"Abbotsford, British Columbia",2494,679,1326,2005,45,73,23100302
+YXX,2023-01-01,"Abbotsford, British Columbia",4096,771,2346,3117,47,95,23100302
+YXX,2023-02-01,"Abbotsford, British Columbia",3906,639,2622,3261,59,112,23100302
+YXX,2023-03-01,"Abbotsford, British Columbia",6347,790,4189,4979,87,132,23100302
+YXX,2023-04-01,"Abbotsford, British Columbia",5960,767,4039,4806,101,73,23100302
+YXX,2023-05-01,"Abbotsford, British Columbia",7099,985,4314,5299,113,26,23100302
+YXX,2023-06-01,"Abbotsford, British Columbia",6565,1036,3759,4795,97,25,23100302
+YXX,2023-07-01,"Abbotsford, British Columbia",7339,1216,3927,5143,93,12,23100302
+YXX,2023-08-01,"Abbotsford, British Columbia",6734,1196,3307,4503,145,15,23100302
+YXX,2023-09-01,"Abbotsford, British Columbia",6704,919,3747,4666,66,21,23100302
+YXX,2023-10-01,"Abbotsford, British Columbia",5624,763,3045,3808,64,17,23100302
+YXX,2023-11-01,"Abbotsford, British Columbia",5506,439,3626,4065,48,2,23100302
+YXX,2023-12-01,"Abbotsford, British Columbia",3013,540,1624,2164,53,22,23100302
+YXX,2024-01-01,"Abbotsford, British Columbia",3092,486,1857,2343,26,29,23100302
+YXX,2024-02-01,"Abbotsford, British Columbia",5083,498,3383,3881,53,27,23100302
+YXX,2024-03-01,"Abbotsford, British Columbia",6697,580,4339,4919,58,30,23100302
+YXX,2024-04-01,"Abbotsford, British Columbia",7054,577,4325,4902,93,17,23100302
+YXX,2024-05-01,"Abbotsford, British Columbia",7129,812,4142,4954,80,,23100302
+YXX,2024-06-01,"Abbotsford, British Columbia",6937,761,3678,4439,75,,23100302
+YXX,2024-07-01,"Abbotsford, British Columbia",8292,880,4653,5533,98,1,23100302
+YXX,2024-08-01,"Abbotsford, British Columbia",7342,857,3816,4673,135,1,23100302
+YXX,2024-09-01,"Abbotsford, British Columbia",6543,867,3363,4230,74,,23100302
+YXX,2024-10-01,"Abbotsford, British Columbia",6357,822,3698,4520,65,1,23100302
+YXX,2024-11-01,"Abbotsford, British Columbia",5549,600,3360,3960,45,5,23100302
+YXX,2024-12-01,"Abbotsford, British Columbia",4052,662,2063,2725,65,9,23100302
+YXX,2025-01-01,"Abbotsford, British Columbia",5716,2028,1871,3899,71,11,23100302
+YXX,2025-02-01,"Abbotsford, British Columbia",4546,1733,1511,3244,48,8,23100302
+YXX,2025-03-01,"Abbotsford, British Columbia",6504,2016,2523,4539,48,12,23100302
+YXX,2025-04-01,"Abbotsford, British Columbia",7782,1930,3160,5090,58,6,23100302
+YXX,2025-05-01,"Abbotsford, British Columbia",7895,2239,2814,5053,82,,23100302
+YXX,2025-06-01,"Abbotsford, British Columbia",8218,2258,2766,5024,63,2,23100302
+YXX,2025-07-01,"Abbotsford, British Columbia",8779,2416,2976,5392,75,,23100302
+YXX,2025-08-01,"Abbotsford, British Columbia",7583,2122,2321,4443,134,,23100302
+YXX,2025-09-01,"Abbotsford, British Columbia",7378,2029,2382,4411,62,1,23100302
+YXX,2025-10-01,"Abbotsford, British Columbia",7297,2076,2149,4225,60,1,23100302
+YXX,2025-11-01,"Abbotsford, British Columbia",6184,1720,2061,3781,83,5,23100302
+YXX,2025-12-01,"Abbotsford, British Columbia",3111,1300,697,1997,82,12,23100302
+YYC,2020-01-01,"Calgary International, Alberta",14382,13451,279,13730,3502,1043,23100302
+YYC,2020-02-01,"Calgary International, Alberta",13314,12356,291,12647,3283,983,23100302
+YYC,2020-03-01,"Calgary International, Alberta",11594,10744,266,11010,2695,852,23100302
+YYC,2020-04-01,"Calgary International, Alberta",5201,4402,294,4696,346,31,23100302
+YYC,2020-05-01,"Calgary International, Alberta",4521,3627,333,3960,347,27,23100302
+YYC,2020-06-01,"Calgary International, Alberta",5538,4567,333,4900,427,23,23100302
+YYC,2020-07-01,"Calgary International, Alberta",7491,6365,429,6794,632,28,23100302
+YYC,2020-08-01,"Calgary International, Alberta",7833,6581,540,7121,620,56,23100302
+YYC,2020-09-01,"Calgary International, Alberta",7742,6476,438,6914,526,73,23100302
+YYC,2020-10-01,"Calgary International, Alberta",7805,6763,369,7132,624,109,23100302
+YYC,2020-11-01,"Calgary International, Alberta",7235,6420,261,6681,625,126,23100302
+YYC,2020-12-01,"Calgary International, Alberta",7659,6767,272,7039,929,198,23100302
+YYC,2021-01-01,"Calgary International, Alberta",6462,5721,251,5972,971,219,23100302
+YYC,2021-02-01,"Calgary International, Alberta",5332,4703,195,4898,625,74,23100302
+YYC,2021-03-01,"Calgary International, Alberta",6326,5291,341,5632,585,66,23100302
+YYC,2021-04-01,"Calgary International, Alberta",6285,5268,332,5600,630,58,23100302
+YYC,2021-05-01,"Calgary International, Alberta",6311,5314,335,5649,608,67,23100302
+YYC,2021-06-01,"Calgary International, Alberta",7491,6262,420,6682,674,71,23100302
+YYC,2021-07-01,"Calgary International, Alberta",10068,8739,446,9185,962,127,23100302
+YYC,2021-08-01,"Calgary International, Alberta",12195,10848,467,11315,1253,174,23100302
+YYC,2021-09-01,"Calgary International, Alberta",12476,11149,491,11640,1435,238,23100302
+YYC,2021-10-01,"Calgary International, Alberta",11922,10762,400,11162,1805,360,23100302
+YYC,2021-11-01,"Calgary International, Alberta",10490,9400,377,9777,1895,600,23100302
+YYC,2021-12-01,"Calgary International, Alberta",10941,10208,277,10485,2131,681,23100302
+YYC,2022-01-01,"Calgary International, Alberta",9316,8533,270,8803,1809,654,23100302
+YYC,2022-02-01,"Calgary International, Alberta",8749,7932,306,8238,1840,561,23100302
+YYC,2022-03-01,"Calgary International, Alberta",10541,9570,373,9943,2330,682,23100302
+YYC,2022-04-01,"Calgary International, Alberta",10816,9618,519,10137,2613,674,23100302
+YYC,2022-05-01,"Calgary International, Alberta",13997,12561,610,13171,2574,537,23100302
+YYC,2022-06-01,"Calgary International, Alberta",14595,13001,820,13821,2607,484,23100302
+YYC,2022-07-01,"Calgary International, Alberta",15529,13847,727,14574,2767,534,23100302
+YYC,2022-08-01,"Calgary International, Alberta",15976,14406,777,15183,2663,557,23100302
+YYC,2022-09-01,"Calgary International, Alberta",14448,12917,740,13657,2704,535,23100302
+YYC,2022-10-01,"Calgary International, Alberta",14325,12864,680,13544,2721,577,23100302
+YYC,2022-11-01,"Calgary International, Alberta",12370,11151,563,11714,2539,828,23100302
+YYC,2022-12-01,"Calgary International, Alberta",11482,10460,490,10950,2418,967,23100302
+YYC,2023-01-01,"Calgary International, Alberta",11399,10281,487,10768,2500,1007,23100302
+YYC,2023-02-01,"Calgary International, Alberta",10418,9407,478,9885,2371,902,23100302
+YYC,2023-03-01,"Calgary International, Alberta",12141,10895,565,11460,2734,1005,23100302
+YYC,2023-04-01,"Calgary International, Alberta",11764,10460,646,11106,2831,951,23100302
+YYC,2023-05-01,"Calgary International, Alberta",14808,13204,773,13977,2943,742,23100302
+YYC,2023-06-01,"Calgary International, Alberta",14482,12928,859,13787,3212,714,23100302
+YYC,2023-07-01,"Calgary International, Alberta",15349,13840,743,14583,3621,791,23100302
+YYC,2023-08-01,"Calgary International, Alberta",15558,13947,783,14730,3472,766,23100302
+YYC,2023-09-01,"Calgary International, Alberta",13813,12327,742,13069,3277,739,23100302
+YYC,2023-10-01,"Calgary International, Alberta",13167,11877,669,12546,3201,749,23100302
+YYC,2023-11-01,"Calgary International, Alberta",11460,10064,668,10732,2813,872,23100302
+YYC,2023-12-01,"Calgary International, Alberta",11319,10118,640,10758,2808,1050,23100302
+YYC,2024-01-01,"Calgary International, Alberta",10862,9821,544,10365,2710,1073,23100302
+YYC,2024-02-01,"Calgary International, Alberta",10639,9679,417,10096,2722,994,23100302
+YYC,2024-03-01,"Calgary International, Alberta",11169,10316,290,10606,2853,1121,23100302
+YYC,2024-04-01,"Calgary International, Alberta",11327,10355,344,10699,2696,1076,23100302
+YYC,2024-05-01,"Calgary International, Alberta",13131,12012,418,12430,3025,884,23100302
+YYC,2024-06-01,"Calgary International, Alberta",13398,12222,527,12749,3475,816,23100302
+YYC,2024-07-01,"Calgary International, Alberta",14460,13260,439,13699,3969,847,23100302
+YYC,2024-08-01,"Calgary International, Alberta",13618,12681,324,13005,3751,866,23100302
+YYC,2024-09-01,"Calgary International, Alberta",13413,12305,420,12725,3517,800,23100302
+YYC,2024-10-01,"Calgary International, Alberta",13080,12088,410,12498,3108,793,23100302
+YYC,2024-11-01,"Calgary International, Alberta",10798,10081,239,10320,2708,989,23100302
+YYC,2024-12-01,"Calgary International, Alberta",11383,10621,279,10900,2772,1085,23100302
+YYC,2025-01-01,"Calgary International, Alberta",11326,10634,207,10841,2571,1077,23100302
+YYC,2025-02-01,"Calgary International, Alberta",9931,9316,179,9495,2572,985,23100302
+YYC,2025-03-01,"Calgary International, Alberta",11438,10678,206,10884,2975,1153,23100302
+YYC,2025-04-01,"Calgary International, Alberta",11893,11045,260,11305,2831,1113,23100302
+YYC,2025-05-01,"Calgary International, Alberta",14012,13037,287,13324,3384,897,23100302
+YYC,2025-06-01,"Calgary International, Alberta",14533,13382,379,13761,3686,938,23100302
+YYC,2025-07-01,"Calgary International, Alberta",15331,14425,244,14669,4014,933,23100302
+YYC,2025-08-01,"Calgary International, Alberta",15105,14152,324,14476,3873,947,23100302
+YYC,2025-09-01,"Calgary International, Alberta",14135,13097,356,13453,3248,856,23100302
+YYC,2025-10-01,"Calgary International, Alberta",13793,12791,351,13142,3075,904,23100302
+YYC,2025-11-01,"Calgary International, Alberta",11467,10663,236,10899,2617,1075,23100302
+YYC,2025-12-01,"Calgary International, Alberta",11709,11099,155,11254,2717,1200,23100302
+YYZ,2020-01-01,"Toronto/Lester B. Pearson International, Ontario",13924,13478,155,13633,14038,7533,23100302
+YYZ,2020-02-01,"Toronto/Lester B. Pearson International, Ontario",12689,12234,150,12384,13314,6916,23100302
+YYZ,2020-03-01,"Toronto/Lester B. Pearson International, Ontario",10899,10545,116,10661,11230,5778,23100302
+YYZ,2020-04-01,"Toronto/Lester B. Pearson International, Ontario",3295,3141,62,3203,1383,803,23100302
+YYZ,2020-05-01,"Toronto/Lester B. Pearson International, Ontario",3146,2948,85,3033,1120,1225,23100302
+YYZ,2020-06-01,"Toronto/Lester B. Pearson International, Ontario",4598,4283,153,4436,1590,1110,23100302
+YYZ,2020-07-01,"Toronto/Lester B. Pearson International, Ontario",6198,5835,186,6021,2191,1445,23100302
+YYZ,2020-08-01,"Toronto/Lester B. Pearson International, Ontario",6652,6300,191,6491,2088,1637,23100302
+YYZ,2020-09-01,"Toronto/Lester B. Pearson International, Ontario",6113,5807,147,5954,1774,1551,23100302
+YYZ,2020-10-01,"Toronto/Lester B. Pearson International, Ontario",5996,5711,120,5831,2014,1818,23100302
+YYZ,2020-11-01,"Toronto/Lester B. Pearson International, Ontario",5108,4847,98,4945,2214,2110,23100302
+YYZ,2020-12-01,"Toronto/Lester B. Pearson International, Ontario",5967,5787,95,5882,2565,2378,23100302
+YYZ,2021-01-01,"Toronto/Lester B. Pearson International, Ontario",4781,4638,63,4701,2322,2271,23100302
+YYZ,2021-02-01,"Toronto/Lester B. Pearson International, Ontario",3241,3081,83,3164,1506,1669,23100302
+YYZ,2021-03-01,"Toronto/Lester B. Pearson International, Ontario",3516,3306,86,3392,1566,1888,23100302
+YYZ,2021-04-01,"Toronto/Lester B. Pearson International, Ontario",3598,3435,73,3508,1859,1813,23100302
+YYZ,2021-05-01,"Toronto/Lester B. Pearson International, Ontario",3934,3749,91,3840,1944,1790,23100302
+YYZ,2021-06-01,"Toronto/Lester B. Pearson International, Ontario",5011,4722,133,4855,2535,1784,23100302
+YYZ,2021-07-01,"Toronto/Lester B. Pearson International, Ontario",8313,7863,222,8085,3688,2200,23100302
+YYZ,2021-08-01,"Toronto/Lester B. Pearson International, Ontario",11378,10779,256,11035,5294,2759,23100302
+YYZ,2021-09-01,"Toronto/Lester B. Pearson International, Ontario",11643,11006,232,11238,6559,3124,23100302
+YYZ,2021-10-01,"Toronto/Lester B. Pearson International, Ontario",11536,10969,207,11176,7718,3732,23100302
+YYZ,2021-11-01,"Toronto/Lester B. Pearson International, Ontario",10239,9682,207,9889,8394,4454,23100302
+YYZ,2021-12-01,"Toronto/Lester B. Pearson International, Ontario",11134,10746,120,10866,8763,5600,23100302
+YYZ,2022-01-01,"Toronto/Lester B. Pearson International, Ontario",8345,8116,84,8200,7033,5113,23100302
+YYZ,2022-02-01,"Toronto/Lester B. Pearson International, Ontario",7784,7473,127,7600,6650,4000,23100302
+YYZ,2022-03-01,"Toronto/Lester B. Pearson International, Ontario",9655,9273,147,9420,9334,5345,23100302
+YYZ,2022-04-01,"Toronto/Lester B. Pearson International, Ontario",9995,9582,156,9738,10802,5479,23100302
+YYZ,2022-05-01,"Toronto/Lester B. Pearson International, Ontario",13097,12426,345,12771,11958,5339,23100302
+YYZ,2022-06-01,"Toronto/Lester B. Pearson International, Ontario",13096,12379,398,12777,12086,5718,23100302
+YYZ,2022-07-01,"Toronto/Lester B. Pearson International, Ontario",14084,13334,450,13784,12003,6244,23100302
+YYZ,2022-08-01,"Toronto/Lester B. Pearson International, Ontario",14663,13793,547,14340,12315,6361,23100302
+YYZ,2022-09-01,"Toronto/Lester B. Pearson International, Ontario",13312,12328,558,12886,12220,5799,23100302
+YYZ,2022-10-01,"Toronto/Lester B. Pearson International, Ontario",12696,11973,414,12387,12659,5775,23100302
+YYZ,2022-11-01,"Toronto/Lester B. Pearson International, Ontario",10650,10052,286,10338,12515,5837,23100302
+YYZ,2022-12-01,"Toronto/Lester B. Pearson International, Ontario",10350,9781,277,10058,12215,6748,23100302
+YYZ,2023-01-01,"Toronto/Lester B. Pearson International, Ontario",10240,9770,259,10029,12129,6813,23100302
+YYZ,2023-02-01,"Toronto/Lester B. Pearson International, Ontario",9418,8910,244,9154,11298,6081,23100302
+YYZ,2023-03-01,"Toronto/Lester B. Pearson International, Ontario",10976,10334,363,10697,12929,6946,23100302
+YYZ,2023-04-01,"Toronto/Lester B. Pearson International, Ontario",11565,10747,457,11204,12796,6759,23100302
+YYZ,2023-05-01,"Toronto/Lester B. Pearson International, Ontario",13002,12069,569,12638,13567,6309,23100302
+YYZ,2023-06-01,"Toronto/Lester B. Pearson International, Ontario",13044,12020,630,12650,12232,6072,23100302
+YYZ,2023-07-01,"Toronto/Lester B. Pearson International, Ontario",14117,13181,698,13879,12529,6781,23100302
+YYZ,2023-08-01,"Toronto/Lester B. Pearson International, Ontario",14746,13821,605,14426,12868,6804,23100302
+YYZ,2023-09-01,"Toronto/Lester B. Pearson International, Ontario",13548,12613,609,13222,12640,6353,23100302
+YYZ,2023-10-01,"Toronto/Lester B. Pearson International, Ontario",13283,12428,533,12961,13389,6168,23100302
+YYZ,2023-11-01,"Toronto/Lester B. Pearson International, Ontario",11259,10496,442,10938,12969,6693,23100302
+YYZ,2023-12-01,"Toronto/Lester B. Pearson International, Ontario",11445,10834,426,11260,13500,7825,23100302
+YYZ,2024-01-01,"Toronto/Lester B. Pearson International, Ontario",11062,10479,404,10883,12685,7612,23100302
+YYZ,2024-02-01,"Toronto/Lester B. Pearson International, Ontario",10513,9955,367,10322,12414,7066,23100302
+YYZ,2024-03-01,"Toronto/Lester B. Pearson International, Ontario",11058,10683,150,10833,13733,7955,23100302
+YYZ,2024-04-01,"Toronto/Lester B. Pearson International, Ontario",11190,10745,174,10919,13368,7414,23100302
+YYZ,2024-05-01,"Toronto/Lester B. Pearson International, Ontario",12584,12103,237,12340,13600,6989,23100302
+YYZ,2024-06-01,"Toronto/Lester B. Pearson International, Ontario",12869,12347,249,12596,12989,6784,23100302
+YYZ,2024-07-01,"Toronto/Lester B. Pearson International, Ontario",14104,13710,211,13921,13220,7162,23100302
+YYZ,2024-08-01,"Toronto/Lester B. Pearson International, Ontario",14382,13798,264,14062,12829,7222,23100302
+YYZ,2024-09-01,"Toronto/Lester B. Pearson International, Ontario",13279,12698,259,12957,13038,6558,23100302
+YYZ,2024-10-01,"Toronto/Lester B. Pearson International, Ontario",12834,12333,226,12559,13241,6342,23100302
+YYZ,2024-11-01,"Toronto/Lester B. Pearson International, Ontario",11229,10794,185,10979,13125,6751,23100302
+YYZ,2024-12-01,"Toronto/Lester B. Pearson International, Ontario",11539,11202,154,11356,12909,7585,23100302
+YYZ,2025-01-01,"Toronto/Lester B. Pearson International, Ontario",11165,10942,36,10978,12603,7590,23100302
+YYZ,2025-02-01,"Toronto/Lester B. Pearson International, Ontario",9286,9041,62,9103,11022,6669,23100302
+YYZ,2025-03-01,"Toronto/Lester B. Pearson International, Ontario",11295,11042,60,11102,13703,7688,23100302
+YYZ,2025-04-01,"Toronto/Lester B. Pearson International, Ontario",11427,11133,79,11212,13133,7447,23100302
+YYZ,2025-05-01,"Toronto/Lester B. Pearson International, Ontario",12917,12573,92,12665,13521,6920,23100302
+YYZ,2025-06-01,"Toronto/Lester B. Pearson International, Ontario",13735,13359,100,13459,12608,7241,23100302
+YYZ,2025-07-01,"Toronto/Lester B. Pearson International, Ontario",15176,14873,96,14969,12405,7757,23100302
+YYZ,2025-08-01,"Toronto/Lester B. Pearson International, Ontario",14823,14388,110,14498,12232,7516,23100302
+YYZ,2025-09-01,"Toronto/Lester B. Pearson International, Ontario",14163,13742,98,13840,12743,7061,23100302
+YYZ,2025-10-01,"Toronto/Lester B. Pearson International, Ontario",13637,13198,106,13304,12897,6928,23100302
+YYZ,2025-11-01,"Toronto/Lester B. Pearson International, Ontario",11352,11044,72,11116,11914,7355,23100302
+YYZ,2025-12-01,"Toronto/Lester B. Pearson International, Ontario",11830,11574,47,11621,12410,8539,23100302

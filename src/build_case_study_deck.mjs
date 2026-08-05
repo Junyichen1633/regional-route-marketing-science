@@ -547,7 +547,7 @@ async function main() {
       19,
     );
     addNotes(slide, [
-      "This slide frames the problem at L4 DS level: ambiguous business decision, incomplete data, and a need to connect analysis to action.",
+      "This slide frames the problem as an ambiguous business decision under incomplete data, with a need to connect analysis to action.",
       "",
       "[Sources]",
       "Project source: reports/final_portfolio_case_study.md",
@@ -813,7 +813,7 @@ async function main() {
       headerFontSize: 13,
     });
     addNotes(slide, [
-      "This is the key recommendation slide for an interview walkthrough.",
+      "This is the key recommendation slide for a project walkthrough.",
       "",
       "[Sources]",
       "Project data: data/processed/budget_optimization_case_summary_v0.csv",
@@ -927,7 +927,7 @@ async function main() {
     );
     addText(
       slide,
-      "Interview line: I did not run Meridian because the data does not support a production MMM yet. I designed exactly where it would plug in once real spend and outcomes exist.",
+      "Project caveat: I did not run Meridian because the data does not support a production MMM yet. I designed exactly where it would plug in once real spend and outcomes exist.",
       { left: 72, top: 562, width: 1050, height: 70 },
       { fontSize: 24, bold: true },
     );
@@ -952,7 +952,6 @@ async function main() {
     "",
     "Project sources used:",
     "- reports/final_portfolio_case_study.md",
-    "- reports/interview_talk_track_cn.md",
     "- data/processed/route_opportunity_score_v0.csv",
     "- data/processed/marketing_sensitivity_summary_v0.csv",
     "- data/processed/budget_optimization_case_summary_v0.csv",

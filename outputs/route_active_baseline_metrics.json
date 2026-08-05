@@ -1,0 +1,120 @@
+{
+  "metrics": {
+    "train": {
+      "n": 693,
+      "positive_rate": 0.8917748917748918,
+      "accuracy": 0.9927849927849928,
+      "precision": 1.0,
+      "recall": 0.9919093851132686,
+      "f1": 0.9959382615759546,
+      "roc_auc": 0.9999784250269688
+    },
+    "test_2025": {
+      "n": 201,
+      "positive_rate": 0.9104477611940298,
+      "accuracy": 0.945273631840796,
+      "precision": 0.967391304347826,
+      "recall": 0.9726775956284153,
+      "f1": 0.9700272479564033,
+      "roc_auc": 0.8509411050394657
+    }
+  },
+  "label_summary": {
+    "rows": 1296,
+    "labeled_rows": 894,
+    "label_coverage": 0.6898148148148148,
+    "positive_rate_labeled": 0.8959731543624161,
+    "by_route": {
+      "YKF_YVR": {
+        "active": 53,
+        "inactive": 3,
+        "uncovered": 16
+      },
+      "YKF_YYC": {
+        "active": 33,
+        "inactive": 0,
+        "uncovered": 39
+      },
+      "YKF_YEG": {
+        "active": 41,
+        "inactive": 15,
+        "uncovered": 16
+      },
+      "YKF_YHZ": {
+        "active": 56,
+        "inactive": 0,
+        "uncovered": 16
+      },
+      "YHM_YVR": {
+        "active": 7,
+        "inactive": 0,
+        "uncovered": 65
+      },
+      "YHM_YYC": {
+        "active": 13,
+        "inactive": 0,
+        "uncovered": 59
+      },
+      "YHM_YEG": {
+        "active": 47,
+        "inactive": 0,
+        "uncovered": 25
+      },
+      "YXU_YVR": {
+        "active": 28,
+        "inactive": 3,
+        "uncovered": 41
+      },
+      "YXU_YYC": {
+        "active": 65,
+        "inactive": 0,
+        "uncovered": 7
+      },
+      "YXX_YYC": {
+        "active": 44,
+        "inactive": 0,
+        "uncovered": 28
+      },
+      "YXX_YEG": {
+        "active": 64,
+        "inactive": 0,
+        "uncovered": 8
+      },
+      "YXX_YVR": {
+        "active": 0,
+        "inactive": 72,
+        "uncovered": 0
+      },
+      "YLW_YVR": {
+        "active": 72,
+        "inactive": 0,
+        "uncovered": 0
+      },
+      "YLW_YYC": {
+        "active": 42,
+        "inactive": 0,
+        "uncovered": 30
+      },
+      "YLW_YEG": {
+        "active": 20,
+        "inactive": 0,
+        "uncovered": 52
+      },
+      "YYZ_YVR": {
+        "active": 72,
+        "inactive": 0,
+        "uncovered": 0
+      },
+      "YYZ_YYC": {
+        "active": 72,
+        "inactive": 0,
+        "uncovered": 0
+      },
+      "YVR_YYC": {
+        "active": 72,
+        "inactive": 0,
+        "uncovered": 0
+      }
+    }
+  }
+}
