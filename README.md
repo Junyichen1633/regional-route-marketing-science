@@ -81,6 +81,40 @@ Current implemented layers:
 - Case study PowerPoint deck.
 - Meridian and Vertex AI positioning note clarifying what is future production path versus current prototype.
 
+## PySpark Data Engineering Layer
+
+The project includes a small PySpark ETL layer that prepares a curated route-month analytical dataset upstream of the existing modeling workflow. It ingests existing route, airport demand, movement, and supply files; standardizes route/time keys; joins source tables; runs lightweight data-quality checks; and writes a Parquet dataset for downstream analysis.
+
+```text
+Raw / Project Input Data
+   |
+   v
+PySpark ETL
+   |
+   +-- Schema Standardization
+   +-- Cleaning
+   +-- Joins
+   +-- Aggregations
+   +-- Data Quality Checks
+   |
+   v
+Curated Parquet Dataset
+   |
+   v
+Pandas / SciPy
+   |
+   v
+Adstock -> Saturation -> Scenario Simulation -> Budget Optimization
+```
+
+Run from the project root after installing dependencies:
+
+```bash
+python src/spark_etl.py
+```
+
+The ETL output is written to `data/processed/spark/route_month_curated/` and is intentionally not committed.
+
 ## Dashboard Preview
 
 ![Dashboard preview](dashboard/dashboard_preview.png)

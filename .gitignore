@@ -12,6 +12,7 @@ data/raw/*
 !data/raw/.gitkeep
 
 # Keep processed data and summary outputs versioned for portfolio review.
+data/processed/spark/
 
 # Keep reports and docs versioned.
 reports/*.html
