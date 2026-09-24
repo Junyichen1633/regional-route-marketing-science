@@ -83,28 +83,27 @@ Current implemented layers:
 
 ## PySpark Data Engineering Layer
 
-The project includes a small PySpark ETL layer that prepares a curated route-month analytical dataset upstream of the existing modeling workflow. It ingests existing route, airport demand, movement, and supply files; standardizes route/time keys; joins source tables; runs lightweight data-quality checks; and writes a Parquet dataset for downstream analysis.
+The original lightweight Python panel builders remain available as the reference implementation. The project also includes a PySpark implementation that consolidates the same upstream route-month panel construction: route expansion, schema standardization, airport demand joins, movement joins, route-supply joins, validation, and Parquet/CSV output.
 
 ```text
-Raw / Project Input Data
+Source Data
    |
    v
 PySpark ETL
    |
-   +-- Schema Standardization
-   +-- Cleaning
-   +-- Joins
-   +-- Aggregations
-   +-- Data Quality Checks
+Curated Route-Month Panel
    |
    v
-Curated Parquet Dataset
+Route Opportunity Scoring
    |
    v
-Pandas / SciPy
+Marketing Response
    |
    v
-Adstock -> Saturation -> Scenario Simulation -> Budget Optimization
+Budget Optimization
+   |
+   v
+Experiment Design / Dashboard
 ```
 
 Run from the project root after installing dependencies:
@@ -113,7 +112,13 @@ Run from the project root after installing dependencies:
 python src/spark_etl.py
 ```
 
-The ETL output is written to `data/processed/spark/route_month_curated/` and is intentionally not committed.
+The Spark ETL writes `data/processed/spark/route_month_panel_v2.parquet/` and a compatibility CSV at `data/processed/spark/route_month_panel_v2.csv`. The unchanged downstream scorer can optionally read the Spark output:
+
+```bash
+python src/build_route_opportunity_score.py --panel-source spark
+```
+
+By default, downstream scripts continue to use the original `data/processed/route_month_panel_v2.csv`.
 
 ## Dashboard Preview
 

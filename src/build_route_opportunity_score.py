@@ -7,6 +7,7 @@ before adding marketing response curves and budget optimization.
 
 from __future__ import annotations
 
+import argparse
 import csv
 import math
 from collections import defaultdict
@@ -20,6 +21,7 @@ OUTPUTS_DIR = PROJECT_ROOT / "outputs"
 REPORTS_DIR = PROJECT_ROOT / "reports"
 
 PANEL_FILE = PROCESSED_DIR / "route_month_panel_v2.csv"
+SPARK_PANEL_FILE = PROCESSED_DIR / "spark" / "route_month_panel_v2.csv"
 SCORE_FILE = PROCESSED_DIR / "route_opportunity_score_v0.csv"
 SUMMARY_FILE = OUTPUTS_DIR / "route_opportunity_score_v0_summary.md"
 REPORT_FILE = REPORTS_DIR / "phase3_route_opportunity_memo.md"
@@ -40,9 +42,24 @@ CONFIDENCE_WEIGHTS = {
 }
 
 
-def read_panel() -> list[dict[str, str]]:
-    with PANEL_FILE.open(newline="", encoding="utf-8-sig") as handle:
+def read_panel(panel_file: Path = PANEL_FILE) -> list[dict[str, str]]:
+    with panel_file.open(newline="", encoding="utf-8-sig") as handle:
         return list(csv.DictReader(handle))
+
+
+def parse_args() -> argparse.Namespace:
+    parser = argparse.ArgumentParser(description="Build route opportunity score from a route-month panel.")
+    parser.add_argument(
+        "--panel-source",
+        choices=["legacy", "spark"],
+        default="legacy",
+        help="Use the original panel_v2 CSV or the Spark-generated compatible panel.",
+    )
+    return parser.parse_args()
+
+
+def panel_path_for_source(panel_source: str) -> Path:
+    return SPARK_PANEL_FILE if panel_source == "spark" else PANEL_FILE
 
 
 def to_float(value: str | None) -> float | None:
@@ -577,13 +594,19 @@ def write_report(records: list[dict[str, object]]) -> None:
 
 
 def main() -> None:
-    rows = read_panel()
+    args = parse_args()
+    panel_file = panel_path_for_source(args.panel_source)
+    if not panel_file.exists():
+        hint = " Run `python src/spark_etl.py` first." if args.panel_source == "spark" else ""
+        raise FileNotFoundError(f"Panel file not found: {panel_file.relative_to(PROJECT_ROOT)}.{hint}")
+    rows = read_panel(panel_file)
     if not rows:
-        raise ValueError(f"No rows found in {PANEL_FILE}")
+        raise ValueError(f"No rows found in {panel_file}")
     records = add_scores(build_base_records(rows))
     write_csv(records)
     write_summary(records)
     write_report(records)
+    print(f"Read panel source: {panel_file.relative_to(PROJECT_ROOT)}")
     print(f"Wrote {SCORE_FILE}")
     print(f"Wrote {SUMMARY_FILE}")
     print(f"Wrote {REPORT_FILE}")
